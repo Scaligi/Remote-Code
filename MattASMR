@@ -37,8 +37,10 @@ else if(q=="chess list"){u+" --> CNE ASMR video list is: "+chess;}
 else if(q=="cne"){"CNE "+s+" suggestion for "+u+" "+a[cne[Math.floor(Math.random()*2)]-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="cne list"){u+" --> CNE ASMR video list is: "+cne;}
 
-else if(q=="fratbro"||q=="bro"||q=="frat"){"Frat Bro "+s+" suggestion for "+u+" "+a[frat[Math.floor(Math.random()*8)]-1]+tag[Math.floor(Math.random()*5)];}
-else if(q=="fratbro list"){u+" --> Frat Bro ASMR video list is: "+frat;}
+else if(q=="fratbro"||q=="frat"){"Frat Bro "+s+" suggestion for "+u+" "+a[frat[Math.floor(Math.random()*8)]-1]+tag[Math.floor(Math.random()*5)];}
+else if(q=="frat bro"||q=="bro"){"Frat Bro "+s+" suggestion for "+u+" "+a[frat[Math.floor(Math.random()*8)]-1]+tag[Math.floor(Math.random()*5)];}
+else if(q=="fratbro list"||q=="frat list"){u+" --> Frat Bro ASMR video list is: "+frat;}
+else if(q=="frat bro list"||q=="bro list"){u+" --> Frat Bro ASMR video list is: "+frat;}
  
 else if(q=="hair"){"Hair "+s+" suggestion for "+u+" "+a[hair[Math.floor(Math.random()*6)]-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="hair list"){u+" --> Hair ASMR video list is: "+hair;}
@@ -59,7 +61,9 @@ else if(q=="nfl"){"NFL "+s+" suggestion for "+u+" "+a[nfl[Math.floor(Math.random
 else if(q=="nfl list"){u+" --> NFL ASMR video list is: "+nfl;}
  
 else if(q=="personal attention"||q=="attention"){"Personal attention "+s+" suggestion for "+u+" "+a[pa[Math.floor(Math.random()*7)]-1] +tag[Math.floor(Math.random()*5)];}
-else if(q=="pa list"){u+" --> Personal attention "+s+" list is: "+pa;}
+else if(q=="pa"||q=="personal"){"Personal attention "+s+" suggestion for "+u+" "+a[pa[Math.floor(Math.random()*7)]-1] +tag[Math.floor(Math.random()*5)];}
+else if(q=="pa list"||q=="personal attention list"){u+" --> Personal attention "+s+" list is: "+pa;}
+else if(q=="personal list"||q=="attention list"){u+" --> Personal attention "+s+" list is: "+pa;}
 
 else if(q=="pokemon"){"Pokemon "+s+" suggestion for "+u+" "+a[pokemon[Math.floor(Math.random()*4)]-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="pokemon list"){u+" --> Pokemon ASMR video list is: "+pokemon;}
