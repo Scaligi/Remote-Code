@@ -1,15 +1,15 @@
 s ="ASMR Video";
 tag =[" - Don't forget to like the video!", " - What are you waiting for? Share, share, share!", " - Go comment to feed the YouTube algorithm!", " - Have you subscribed to Cap Bailey ASMR?", " - Don't miss another video, hit that notification bell!"];
 
-cne =[5,8,38,87,91,115,154,163,167,184,189,194,197,201,210,221,225,226,228,231,253,261];
+cne =[5,8,38,87,115,154,163,167,184,189,194,197,201,210,221,225,226,228,231,253,261];
 hair =[44,50,84,97,112,138,213,233,239,249];
-lit =[2,5,20,21,33,49,55,61,62,63,69,70,73,75,76,78,86,87,88,93,96,106,117,118,120,132,135,136,179,184,188,190,206,207,222,226,228,261];
+lit =[2,5,20,21,33,49,55,61,62,63,69,70,73,75,76,78,86,87,88,93,96,106,118,120,132,136,179,184,188,190,206,207,222,226,228,261];
 shv =[19,64,89,116,153,157,202,216,257];
 boy =[239,240,241,244,247,251,256,262];
 drf =[49,58,69,88,104];
 jk =[54,99,194,248];
 ww2 =[18,78,101,124,152,199,237,252];
-gun =[141,142,143,144,146,148,151,169,185,215,224,229,234];
+gun =[142,143,144,146,148,151,169,185,215,224,229,234];
 tark =[130,146,211];
 bg =[249,260];
 
@@ -27,10 +27,10 @@ else if(q=="shorts"||q=="short"){"#Shorts "+s+" suggestion for "+u+" "+a[shorts[
 else if(q=="shorts list"){u+" --> #Shorts ASMR video list is: "+shorts;}
 
 else if(q=="apache"){s+" of Apache selected by "+u+" "+a[22]+tag[Math.floor(Math.random()*5)];}
-else if(q=="tattoo"){"Cap Bailey's tattoos selected by "+u+" "+a[52]+" and "+a[225];}
-else if(q=="cod"){"COD "+s+"s selected by "+u+" "+a[4]+" and "+a[103];}
-else if(q=="cyberpunk"){"Cyberpunk "+s+"s selected by "+u+" "+a[24]+" and "+a[73];}
-else if(q=="starwars"){"Star Wars "+s+" selected by "+u+" "+a[97];}
+else if(q=="tattoo"){"Cap Bailey's tattoos selected by "+u+" "+a[52]+" and "+a[245];}
+else if(q=="cod"){"COD "+s+"s selected by "+u+" "+a[4]+" and "+a[105];}
+else if(q=="cyberpunk"){"Cyberpunk "+s+"s selected by "+u+" "+a[24]+" and "+a[74];}
+else if(q=="starwars"){"Star Wars "+s+" selected by "+u+" "+a[99];}
 else if(q=="latest"||q=="new"){"My latest video on YouTube "+a[n-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="total"){"Cap Bailey has "+n+" ASMR videos on his YouTube channel, including "+[n-20]+" Full length videos, 19 Shorts and one announcement";}
 else if(q=="list"){"The video list database used by this command is available here: https://pastebin.com/1zsTq3Hj";}
@@ -55,7 +55,7 @@ else if(q=="boy list"){u+" --> Boy at the back of the class "+s+" list is: "+boy
 
 else if(q=="bodyguard #"){"Bodyguard "+s+" suggestion for "+u+" "+a[bg[Math.floor(Math.random()*2)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="bodyguard list"){u+" --> Bodyguard "+s+" list is: "+bg;}
-else if(q=="bodyguard"){"Bodyguard Videos selected by "+u+" "+a[228]+" and "+a[239];}
+else if(q=="bodyguard"){"Bodyguard Videos selected by "+u+" "+a[248]+" and "+a[259];}
 
 else if(q=="drfrantic"){"Dr Frantic "+s+" suggestion for "+u+" "+a[drf[Math.floor(Math.random()*5)]-1]+" ☠️⚰️💀 RIP Dr Frantic! 💀⚰️☠️";}
 else if(q=="drfrantic list"){u+" --> Dr Frantic "+s+" list is: "+drf;}
@@ -70,7 +70,7 @@ else if(q=="guns"){"Gun "+s+" suggestion for "+u+" "+a[gun[Math.floor(Math.rando
 else if(q=="guns list"){u+" --> Gun "+s+" list is: "+gun;}
 
 else if(q=="tarkov"){"Escape from Tarkov "+s+" suggestion for "+u+" "+a[tark[Math.floor(Math.random()*3)]-1] +tag[Math.floor(Math.random()*5)];}
-else if(q=="tarkov all"){"All Tarkov Videos selected by "+u+" "+a[120]+" and "+a[130]+" and "+a[191];}
+else if(q=="tarkov all"){"All Tarkov Videos selected by "+u+" "+a[129]+" and "+a[145]+" and "+a[210];}
 else if(q=="tarkov list"){u+" --> Tarkov "+s+" list is: "+tark;}
 
 else{u+" --> When specifying a number please select between 1 and "+n+" or use !asmr help for a list of other command options";}
