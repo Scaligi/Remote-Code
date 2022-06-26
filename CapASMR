@@ -13,7 +13,7 @@ gun =[127,128,129,131,133,136,153,166,195,204,209,214];
 tark =[121,131,191];
 bg =[229,240];
 
-if(t=="test"){"Test results for Cap Bailey's ASMR command: V5.3 User="+u+", Query="+q+", Total="+n+", Random="+r+", Found="+f+", URLfetch Successful: Database:xd4wYYVR Code:Scaligi/Remote-Code/main/CapASMR";}
+if(t=="test"){"Test Results - Cap Bailey's ASMR command: V5.3 User="+u+", Query="+q+", Total="+n+", Random="+r+", Found="+f+", URLfetch Successful: Database:xd4wYYVR Code:Scaligi/Remote-Code/main/CapASMR";}
 
 else if(t=="Scaligi"){"Scaligi's favourite Cap Bailey "+s+": "+a[60];}
 else if(t=="scaligi"){"Scaligi's second favourite Cap Bailey "+s+": "+a[1];}
