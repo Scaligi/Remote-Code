@@ -1,37 +1,43 @@
 s ="ASMR Video";
 tag =[" - Don't forget to like the video!", " - What are you waiting for? Share, share, share!", " - Go comment to feed the YouTube algorithm!", " - Have you subscribed to Cap Bailey ASMR?", " - Don't miss another video, hit that notification bell!"];
  
-cne =[5,8,38,86,113,139,147,151,165,170,174,177,181,190,201,205,208,211,233,241];
-hair =[44,50,83,95,110,125,193,213,219,229];
-lit =[2,5,20,21,33,49,55,61,62,63,68,69,72,74,75,77,85,86,87,91,94,96,104,115,116,122,124,161,165,169,171,186,187,202,206,208,241];
-shv =[19,64,88,114,138,142,182,196,237];
-boy =[219,220,221,224,227,231,236];
-drf =[49,58,68,87,102];
-jk =[54,97,174,228];
-ww2 =[18,78,99,118,137,217,179,232];
-gun =[127,128,129,131,133,136,153,166,195,204,209,214];
-tark =[121,131,191];
-bg =[229,240];
+boy =[185,191,194];
+chess =[77,79,87,95];
+cne =[175,189];
+frat =[84,98,114,128,146,161,171,188];
+hair =[82,88,103,120,165,194];
+lights =[84,97];
+madden =[4,6,12,14,20,23,26,35,39,47,56,69,76,89,101,147];
+minecraft =[8,11,15,19,22,25,30,71];
+mukbang =[40,115,121,127,135,144,153,159,167,192];
+nfl =[1,2,4,6,7,9,13,18,20,32,33,39,41,42,43,45,46,50,51,52,53,54,55,57,58,60,61,62,63,65,66,68,72,78,80,81,83,86,91,96,100,102,104,105,106,107,108,109,110,111,112,113,117,119,123,126,129,132,134,139,141,145,148,151,152,155,160,170,179];
+pa =[116,172,181,185,188,191,194];
+pokemon =[59,156,162,169];
+shorts =[88,130,137,149,189];
  
-if(t=="Scaligi"){"Scaligi's favourite MatthewThings "+s+": "+a[60];}
-else if(t=="scaligi"){"Scaligi's second favourite MatthewThings "+s+": "+a[1];}
+if(t=="Scaligi"){"Scaligi's favourite MatthewThings "+s+": "+a[174];}
+else if(t=="scaligi"){"Scaligi's second favourite MatthewThings "+s+": "+a[180];}
 else if(t=="mxryumm"||t=="_mxryumm"){"What is Maryum's favorite MatthewThings "+s+"? 🕷🕷🕷🤍🤍🤍";}
  
 else if(q==""||q=="#"){s+" suggestion for "+u+" "+a[Math.floor(Math.random()*n)]+tag[Math.floor(Math.random()*5)];}
- 
-else if(q=="apache"){s+" of Apache selected by "+u+" "+a[22]+tag[Math.floor(Math.random()*5)];}
-else if(q=="tattoo"){"Cap Bailey's tattoos selected by "+u+" "+a[52]+" and "+a[225];}
-else if(q=="cod"){"COD "+s+"s selected by "+u+" "+a[4]+" and "+a[103];}
-else if(q=="cyberpunk"){"Cyberpunk "+s+"s selected by "+u+" "+a[24]+" and "+a[73];}
-else if(q=="starwars"){"Star Wars "+s+" selected by "+u+" "+a[97];}
+
+else if(q=="help"){"!asmr suggests a random video from MatthewThings's YouTube channel | !asmr 1 - "+n+" selects a specific video | Other options include !asmr latest, list, new, total, boy, chess, cne, fratbro, hair, lights, madden, minecraft, mukbang, nfl, personal attention, pokemon, shorts";}
 else if(q=="latest"||q=="new"){"My latest video on YouTube "+a[n-1]+tag[Math.floor(Math.random()*5)];}
-else if(q=="total"){"Cap Bailey has "+[n+20]+" ASMR videos on his YouTube channel, including "+n+" Full length videos, 19 Shorts and one announcement";}
 else if(q=="list"){"The video list database used by this command is available here: https://pastebin.com/xd4wYYVR";}
-else if(q=="help"){"!asmr suggests a random video from Cap Bailey's YouTube channel | !asmr 1 - "+n+" selects a specific video | Other options include !asmr latest, list, new, total, apache, cne, hair, lights, shave, tattoo, boy, bodyguard, drfrantic, joker, starwars, ww2, guns, tarkov, cod";}
- 
+else if(q=="total"){"Cap Bailey has "+[n+20]+" ASMR videos on his YouTube channel, including "+n+" Full length videos, 19 Shorts and one announcement";} 
+
 else if(q>0&&q<=n){s+" selected by "+u+" "+a[q-1]+tag[Math.floor(Math.random()*5)];}
- 
+
+else if(q=="boy"){"CNE "+s+" suggestion for "+u+" "+a[cne[Math.floor(Math.random()*20)]-1]+tag[Math.floor(Math.random()*5)];}
+else if(q=="cne list"){u+" --> CNE ASMR video list is: "+cne;}
+
+else if(q=="chess"){"CNE "+s+" suggestion for "+u+" "+a[cne[Math.floor(Math.random()*20)]-1]+tag[Math.floor(Math.random()*5)];}
+else if(q=="cne list"){u+" --> CNE ASMR video list is: "+cne;}
+
 else if(q=="cne"){"CNE "+s+" suggestion for "+u+" "+a[cne[Math.floor(Math.random()*20)]-1]+tag[Math.floor(Math.random()*5)];}
+else if(q=="cne list"){u+" --> CNE ASMR video list is: "+cne;}
+
+else if(q=="fratbro"||q=="bro"){"CNE "+s+" suggestion for "+u+" "+a[cne[Math.floor(Math.random()*20)]-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="cne list"){u+" --> CNE ASMR video list is: "+cne;}
  
 else if(q=="hair"){"Hair "+s+" suggestion for "+u+" "+a[hair[Math.floor(Math.random()*10)]-1]+tag[Math.floor(Math.random()*5)];}
@@ -40,30 +46,26 @@ else if(q=="hair list"){u+" --> Hair ASMR video list is: "+hair;}
 else if(q=="lights"){"light triggers "+s+" suggestion for "+u+" "+a[lit[Math.floor(Math.random()*37)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="lights list"){u+" --> Light triggers "+s+" list is: "+lit;}
  
-else if(q=="shave"){"Shaving "+s+" suggestion for "+u+" "+a[shv[Math.floor(Math.random()*9)]-1]+tag[Math.floor(Math.random()*5)];}
+else if(q=="madden"){"Shaving "+s+" suggestion for "+u+" "+a[shv[Math.floor(Math.random()*9)]-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="shave list"){u+" --> Shaving "+s+" list is: "+shv;}
  
-else if(q=="boy"){"Boy at the back of the class "+s+" suggestion for "+u+" "+a[boy[Math.floor(Math.random()*7)]-1] +tag[Math.floor(Math.random()*5)];}
+else if(q=="minecraft"){"Boy at the back of the class "+s+" suggestion for "+u+" "+a[boy[Math.floor(Math.random()*7)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="boy list"){u+" --> Boy at the back of the class "+s+" list is: "+boy;}
  
-else if(q=="bodyguard #"){"Bodyguard "+s+" suggestion for "+u+" "+a[bg[Math.floor(Math.random()*2)]-1] +tag[Math.floor(Math.random()*5)];}
+else if(q=="mukbang"){"Bodyguard "+s+" suggestion for "+u+" "+a[bg[Math.floor(Math.random()*2)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="bodyguard list"){u+" --> Bodyguard "+s+" list is: "+bg;}
-else if(q=="bodyguard"){"Bodyguard Videos selected by "+u+" "+a[228]+" and "+a[239];}
  
-else if(q=="drfrantic"){"Dr Frantic "+s+" suggestion for "+u+" "+a[drf[Math.floor(Math.random()*5)]-1]+" ☠️⚰️💀 RIP Dr Frantic! 💀⚰️☠️";}
-else if(q=="drfrantic list"){u+" --> Dr Frantic "+s+" list is: "+drf;}
+else if(q=="nfl"){"CNE "+s+" suggestion for "+u+" "+a[cne[Math.floor(Math.random()*20)]-1]+tag[Math.floor(Math.random()*5)];}
+else if(q=="cne list"){u+" --> CNE ASMR video list is: "+cne;}
  
-else if(q=="joker"){"The Joker "+s+" suggestion for "+u+" "+a[jk[Math.floor(Math.random()*4)]-1] +tag[Math.floor(Math.random()*5)];}
+else if(q=="personal attention"||q=="attention"){"The Joker "+s+" suggestion for "+u+" "+a[jk[Math.floor(Math.random()*4)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="joker list"){u+" --> The Joker "+s+" list is: "+boy;}
+
+else if(q=="pokemon"){"CNE "+s+" suggestion for "+u+" "+a[cne[Math.floor(Math.random()*20)]-1]+tag[Math.floor(Math.random()*5)];}
+else if(q=="cne list"){u+" --> CNE ASMR video list is: "+cne;}
  
-else if(q=="ww2"){"WW2 "+s+" suggestion for "+u+" "+a[ww2[Math.floor(Math.random()*8)]-1]+tag[Math.floor(Math.random()*5)];}
-else if(q=="ww2 list"){u+" --> WW2 "+s+" list is: "+ww2;}
- 
-else if(q=="guns"){"Gun "+s+" suggestion for "+u+" "+a[gun[Math.floor(Math.random()*12)]-1]+tag[Math.floor(Math.random()*5)];}
+else if(q=="shorts"){"Gun "+s+" suggestion for "+u+" "+a[gun[Math.floor(Math.random()*12)]-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="guns list"){u+" --> Gun "+s+" list is: "+gun;}
- 
-else if(q=="tarkov"){"Escape from Tarkov "+s+" suggestion for "+u+" "+a[tark[Math.floor(Math.random()*3)]-1] +tag[Math.floor(Math.random()*5)];}
-else if(q=="tarkov all"){"All Tarkov Videos selected by "+u+" "+a[120]+" and "+a[130]+" and "+a[191];}
-else if(q=="tarkov list"){u+" --> Tarkov "+s+" list is: "+tark;}
+
  
 else{u+" --> When specifying a number please select between 1 and "+n+" or use !asmr help for a list of other command options";}
