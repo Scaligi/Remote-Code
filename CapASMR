@@ -17,7 +17,7 @@ if(t=="test"){"Scaligi's favourite Cap Bailey "+s+": "+a[60]+" Testing NEW: rand
 else if(t=="scaligi"){"Scaligi's second favourite Cap Bailey "+s+": "+a[1];}
 else if(t=="mxryumm"||t=="_mxryumm"){"Maryum's favorite Cap Bailey "+s+": "+a[51]+" 🕷🕷🕷🤍🤍🤍";}
 
-else if(q=="" && r==f){s+" FOUND suggestion for "+u+" "+a[r+1)]+tag[Math.floor(Math.random()*5)];}
+else if(q=="" && r==f){s+" FOUND suggestion for "+u+" "+a[r+1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="#" && r==f){s+" FOUND suggestion for "+u+" "+a[r+1]+tag[Math.floor(Math.random()*5)];}
 else if(q==""||q=="#"){s+" OK suggestion for "+u+" "+a[r]+tag[Math.floor(Math.random()*5)];}
 
