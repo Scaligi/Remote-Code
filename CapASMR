@@ -38,19 +38,19 @@ else if(q=="help"){"!asmr suggests a random video from Cap Bailey's YouTube chan
 
 else if(q>0&&q<=n){s+" selected by "+u+" "+a[q-1]+tag[Math.floor(Math.random()*5)];}
 
-else if(q=="cne"){"CNE "+s+" suggestion for "+u+" "+a[cne[Math.floor(Math.random()*20)]-1]+tag[Math.floor(Math.random()*5)];}
+else if(q=="cne"){"CNE "+s+" suggestion for "+u+" "+a[cne[Math.floor(Math.random()*21)]-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="cne list"){u+" --> CNE ASMR video list is: "+cne;}
 
 else if(q=="hair"){"Hair "+s+" suggestion for "+u+" "+a[hair[Math.floor(Math.random()*10)]-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="hair list"){u+" --> Hair ASMR video list is: "+hair;}
 
-else if(q=="lights"){"light triggers "+s+" suggestion for "+u+" "+a[lit[Math.floor(Math.random()*37)]-1] +tag[Math.floor(Math.random()*5)];}
+else if(q=="lights"){"light triggers "+s+" suggestion for "+u+" "+a[lit[Math.floor(Math.random()*36)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="lights list"){u+" --> Light triggers "+s+" list is: "+lit;}
 
 else if(q=="shave"){"Shaving "+s+" suggestion for "+u+" "+a[shv[Math.floor(Math.random()*9)]-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="shave list"){u+" --> Shaving "+s+" list is: "+shv;}
 
-else if(q=="boy"){"Boy at the back of the class "+s+" suggestion for "+u+" "+a[boy[Math.floor(Math.random()*7)]-1] +tag[Math.floor(Math.random()*5)];}
+else if(q=="boy"){"Boy at the back of the class "+s+" suggestion for "+u+" "+a[boy[Math.floor(Math.random()*8)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="boy list"){u+" --> Boy at the back of the class "+s+" list is: "+boy;}
 
 else if(q=="bodyguard #"){"Bodyguard "+s+" suggestion for "+u+" "+a[bg[Math.floor(Math.random()*2)]-1] +tag[Math.floor(Math.random()*5)];}
