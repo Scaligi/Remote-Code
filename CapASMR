@@ -13,11 +13,13 @@ gun =[127,128,129,131,133,136,153,166,195,204,209,214];
 tark =[121,131,191];
 bg =[229,240];
 
-if(t=="Scaligi"){"Scaligi's favourite Cap Bailey "+s+": "+a[60]+" Testing NEW: random="+r+" found="+found;}
+if(t=="test"){"Scaligi's favourite Cap Bailey "+s+": "+a[60]+" Testing NEW: random="+r+" found="+found;}
 else if(t=="scaligi"){"Scaligi's second favourite Cap Bailey "+s+": "+a[1];}
 else if(t=="mxryumm"||t=="_mxryumm"){"Maryum's favorite Cap Bailey "+s+": "+a[51]+" 🕷🕷🕷🤍🤍🤍";}
 
-else if(q==""||q=="#"){s+" suggestion for "+u+" "+a[Math.floor(Math.random()*n)]+tag[Math.floor(Math.random()*5)];}
+else if(q=="" && r==f){s+" FOUND suggestion for "+u+" "+a[r+1)]+tag[Math.floor(Math.random()*5)];}
+else if(q=="#" && r==f){s+" FOUND suggestion for "+u+" "+a[r+1]+tag[Math.floor(Math.random()*5)];}
+else if(q==""||q=="#"){s+" OK suggestion for "+u+" "+a[r]+tag[Math.floor(Math.random()*5)];}
 
 else if(q=="apache"){s+" of Apache selected by "+u+" "+a[22]+tag[Math.floor(Math.random()*5)];}
 else if(q=="tattoo"){"Cap Bailey's tattoos selected by "+u+" "+a[52]+" and "+a[225];}
