@@ -37,7 +37,7 @@ else if(q=="chess list"){u+" --> CNE ASMR video list is: "+chess;}
 else if(q=="cne"){"CNE "+s+" suggestion for "+u+" "+a[cne[Math.floor(Math.random()*2)]-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="cne list"){u+" --> CNE ASMR video list is: "+cne;}
 
-else if(q=="fratbro"||q=="bro"){"Frat Bro "+s+" suggestion for "+u+" "+a[frat[Math.floor(Math.random()*8)]-1]+tag[Math.floor(Math.random()*5)];}
+else if(q=="fratbro"||q=="bro"||q=="frat"){"Frat Bro "+s+" suggestion for "+u+" "+a[frat[Math.floor(Math.random()*8)]-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="fratbro list"){u+" --> Frat Bro ASMR video list is: "+frat;}
  
 else if(q=="hair"){"Hair "+s+" suggestion for "+u+" "+a[hair[Math.floor(Math.random()*6)]-1]+tag[Math.floor(Math.random()*5)];}
