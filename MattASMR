@@ -24,7 +24,7 @@ else if(q==""||q=="#"){s+" suggestion for "+u+" "+a[Math.floor(Math.random()*n)]
 else if(q=="help"){"!asmr suggests a random video from MatthewThings YouTube channel | !asmr 1 - "+n+" selects a specific video | Other options include !asmr latest, list, new, total, boy, chess, cne, fratbro, hair, lights, madden, minecraft, mukbang, nfl, personal attention, pokemon, shorts";}
 else if(q=="latest"||q=="new"){"My latest video on YouTube "+a[n-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="list"){"The video list database used by this command is available here: https://pastebin.com/9y3pznP6";}
-else if(q=="total"){"MatthewThings has "+[n+20]+" ASMR videos on his YouTube channel";} 
+else if(q=="total"){"MatthewThings has "+[n]+" ASMR videos on his YouTube channel";} 
 
 else if(q>0&&q<=n){s+" selected by "+u+" "+a[q-1]+tag[Math.floor(Math.random()*5)];}
 
