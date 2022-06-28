@@ -1,7 +1,7 @@
 s ="ASMR Video";
 tag =[" - Don't forget to like the video!", " - What are you waiting for? Share, share, share!", " - Go comment to feed the YouTube algorithm!", " - Have you subscribed to Cap Bailey ASMR?", " - Don't miss another video, hit that notification bell!"];
 
-cne =[5,8,38,87,115,154,163,167,184,189,194,197,201,210,221,225,226,228,231,253,261];
+cne =[5,8,38,87,115,154,163,167,184,189,194,197,201,210,221,225,226,228,231,253,261,264];
 hair =[44,50,84,97,112,138,213,233,239,249];
 lit =[2,5,20,21,33,49,55,61,62,63,69,70,73,75,76,78,86,87,88,93,96,106,118,120,132,136,179,184,188,190,206,207,222,226,228,261];
 shv =[19,64,89,116,153,157,202,216,257];
@@ -38,7 +38,7 @@ else if(q=="help"){"!asmr suggests a random video from Cap Bailey's YouTube chan
 
 else if(q>0&&q<=n){s+" selected by "+u+" "+a[q-1]+tag[Math.floor(Math.random()*5)];}
 
-else if(q=="cne"){"CNE "+s+" suggestion for "+u+" "+a[cne[Math.floor(Math.random()*21)]-1]+tag[Math.floor(Math.random()*5)];}
+else if(q=="cne"){"CNE "+s+" suggestion for "+u+" "+a[cne[Math.floor(Math.random()*22)]-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="cne list"){u+" --> CNE ASMR video list is: "+cne;}
 
 else if(q=="hair"){"Hair "+s+" suggestion for "+u+" "+a[hair[Math.floor(Math.random()*10)]-1]+tag[Math.floor(Math.random()*5)];}
