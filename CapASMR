@@ -28,7 +28,7 @@ else if(q=="shorts list"){u+" --> #Shorts ASMR video list is: "+shorts;}
 
 else if(q=="apache"){s+" of Apache selected by "+u+" "+a[22]+tag[Math.floor(Math.random()*5)];}
 else if(q=="tattoo"){"Cap Bailey's tattoos selected by "+u+" "+a[52]+" and "+a[245];}
-else if(q=="shark"){"Shark ASMR selected by "+u+" "+a[262];}
+else if(q=="shark"){"Cap Bailey's Shark ASMR selected by "+u+" "+a[262]+tag[Math.floor(Math.random()*5)];}
 else if(q=="cod"){"COD "+s+"s selected by "+u+" "+a[4]+" and "+a[105];}
 else if(q=="cyberpunk"){"Cyberpunk "+s+"s selected by "+u+" "+a[24]+" and "+a[74];}
 else if(q=="starwars"){"Star Wars "+s+" selected by "+u+" "+a[99];}
