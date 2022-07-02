@@ -21,7 +21,7 @@ else if(t=="Scaligi"){"Scaligi's favourite MatthewThings "+s+": "+a[174];}
 else if(t=="scaligi"){"Scaligi's second favourite MatthewThings "+s+": "+a[180];}
 else if(t=="mxryumm"||t=="_mxryumm"){"What is Maryum's favorite MatthewThings "+s+"? 🕷🕷🕷🤍🤍🤍";}
  
-else if(q==""||q=="#"){s+" suggestion for "+u+" "+a[r-1]+tag[Math.floor(Math.random()*5)];}
+else if(q==""||q=="#"){s+" suggestion for "+u+" "+a[r]+tag[Math.floor(Math.random()*5)];}
 
 else if(q=="help"){"!asmr suggests a random video from MatthewThings YouTube channel | !asmr 1 - "+n+" selects a specific video | Other options include !asmr latest, list, new, total, boy, chess, cne, fratbro, hair, lights, madden, minecraft, mukbang, nfl, personal attention, pokemon, shorts";}
 else if(q=="latest"||q=="new"){"My latest video on YouTube "+a[n-1]+tag[Math.floor(Math.random()*5)];}
