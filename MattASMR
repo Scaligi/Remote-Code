@@ -15,7 +15,7 @@ pa =[116,172,181,185,188,191,194];
 pokemon =[59,156,162,169];
 shorts =[88,130,137,149,189];
 
-if(t=="test"){"Test Results: MatthewThings ASMR command v2.1 User="+u+", Query="+q+", Total="+n+", Random="+r+", URLfetch Successful: Database:9y3pznP6 Remote_Code:Scaligi/Remote-Code/main/MattASMR";}
+if(t=="test"){"/me MatthewThings ASMR command v2.1 User="+u+", Query="+q+", Total="+n+", Random="+r+", URLfetch Successful: Database:9y3pznP6 Remote_Code:Scaligi/Remote-Code/main/MattASMR";}
 
 else if(t=="Scaligi"){"Scaligi's favourite MatthewThings "+s+": "+a[174];}
 else if(t=="scaligi"){"Scaligi's second favourite MatthewThings "+s+": "+a[180];}
