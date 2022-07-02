@@ -20,9 +20,9 @@ else if(t=="scaligi"){"Scaligi's second favourite Cap Bailey "+s+": "+a[1];}
 else if(t=="mxryumm"||t=="_mxryumm"){"Maryum's favorite Cap Bailey "+s+": "+a[51]+" 🕷🕷🕷🤍🤍🤍";}
 else if(t=="enola"){"Enola's favourite Cap Bailey "+s+": "+a[105-1];}
 
-else if(q=="" && r==f){"*"+s+" suggestion for "+u+" "+[r+1]+": "+a[r]+tag[Math.floor(Math.random()*5)];}
-else if(q=="#" && r==f){"*"+s+" suggestion for "+u+" "+[r+1]+": "+a[r]+tag[Math.floor(Math.random()*5)];}
-else if(q==""||q=="#"){s+" suggestion for "+u+" "+r+": "+a[r-1]+tag[Math.floor(Math.random()*5)];}
+else if(q=="" && r==f){"*"+s+" suggestion for "+u+" "+[r+1]+". "+a[r]+tag[Math.floor(Math.random()*5)];}
+else if(q=="#" && r==f){"*"+s+" suggestion for "+u+" "+[r+1]+". "+a[r]+tag[Math.floor(Math.random()*5)];}
+else if(q==""||q=="#"){s+" suggestion for "+u+" "+r+". "+a[r-1]+tag[Math.floor(Math.random()*5)];}
 
 else if(q=="shorts"||q=="short"){"#Shorts "+s+" suggestion for "+u+" "+a[shorts[Math.floor(Math.random()*shorts.length)]-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="shorts list"){u+" --> #Shorts ASMR video list is: "+shorts;}
