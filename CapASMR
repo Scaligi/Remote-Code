@@ -36,7 +36,7 @@ else if(q=="cyberpunk"){"Cyberpunk "+s+"s selected by "+u+" "+a[24]+" and "+a[74
 else if(q=="starwars"){"Star Wars "+s+" selected by "+u+" "+a[99];}
 else if(q=="latest"||q=="new"){"My latest video on YouTube "+a[n-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="total"){"Cap Bailey has "+n+" ASMR videos on his YouTube channel, including "+[n-20]+" Full length videos, 19 Shorts and one announcement";}
-else if(q=="list"){"The video list database used by this command is available here: https://pastebin.com/1zsTq3Hj";}
+else if(q=="list"){"The video list database used by this command is available here: https://pastebin.com/xd4wYYVR";}
 else if(q=="help"){"!asmr suggests a random video from Cap Bailey's YouTube channel | !asmr 1 - "+n+" selects a specific video | Other options include !asmr latest, list, new, shorts, total, apache, cne, hair, lights, shave, tattoo, boy, bodyguard, drfrantic, joker, starwars, ww2, guns, tarkov, cod";}
 
 else if(q>0&&q<=n){s+" selected by "+u+" "+a[q-1]+tag[Math.floor(Math.random()*5)];}
