@@ -3,9 +3,9 @@ tag =[" - Don't forget to like the video!", " - What are you waiting for? Share,
 
 cne =[5,8,38,87,115,154,163,167,184,189,194,197,201,210,221,225,226,228,231,253,261,264];
 hair =[44,50,84,97,112,138,213,233,239,249];
-lit =[2,5,20,21,33,49,55,61,62,63,69,70,73,75,76,78,86,87,88,93,96,106,118,120,132,136,179,184,188,190,206,207,222,226,228,261];
+lit =[2,5,20,21,33,49,55,61,62,63,69,70,73,75,76,78,86,87,88,93,96,106,118,120,132,136,179,184,188,190,206,207,222,226,228,261,264,265,267];
 shv =[19,64,89,116,153,157,202,216,257];
-boy =[239,240,241,244,247,251,256,262];
+boy =[239,240,241,244,247,251,256,262,265];
 drf =[49,58,69,88,104];
 jk =[54,99,194,248];
 ww2 =[18,78,101,124,152,199,237,252];
@@ -35,7 +35,7 @@ else if(q=="cod"){"COD "+s+"s selected by "+u+" "+a[4]+" and "+a[105];}
 else if(q=="cyberpunk"){"Cyberpunk "+s+"s selected by "+u+" "+a[24]+" and "+a[74];}
 else if(q=="starwars"){"Star Wars "+s+" selected by "+u+" "+a[99];}
 else if(q=="latest"||q=="new"){"My latest video on YouTube "+a[n-1]+tag[Math.floor(Math.random()*5)];}
-else if(q=="total"){"Cap Bailey has "+n+" ASMR videos on his YouTube channel, including "+[n-20]+" Full length videos, 20 Shorts and one announcement";}
+else if(q=="total"){"Cap Bailey has "+n+" ASMR videos on his YouTube channel, including "+[n-21]+" Full length videos, 20 Shorts and one announcement";}
 else if(q=="list"){"The video list database used by this command is available here: https://pastebin.com/xd4wYYVR";}
 else if(q=="help"){"!asmr suggests a random video from Cap Bailey's YouTube channel | !asmr 1 - "+n+" selects a specific video | Other options include !asmr latest, list, new, shorts, total, apache, cne, hair, lights, shave, tattoo, boy, bodyguard, drfrantic, joker, starwars, ww2, guns, tarkov, cod";}
 
