@@ -1,16 +1,17 @@
 tag =[" - Don't forget to like the video!", " - What are you waiting for? Share, share, share!", " - Go comment to feed the YouTube algorithm!", " - Have you subscribed to MatthewThings on YouTube?", " - Don't miss another video, hit that notification bell!"];
+aff ="Matthew Things just hit Affiliate on Twitch 🥳🥳🥳 - "
 
 if(q=="test"){"MatthewThings Promo Cycle Command v1.0 User="+u+", Query="+q+", Command Count="+cc+", Promo Number="+pn+", Twitch Game="+g+", TweetURL="+t+", ASMRTotal="+l+", URLfetch Successful: Database:9y3pznP6 Remote_Code:Scaligi/Remote-Code/main/MattPC";}
 
 else if(pn=="1"){"--> pn is 1 My latest video on YouTube "+a[l-1]+tag[Math.floor(Math.random()*5)];}
-else if(pn=="2"){"--> pn is 2";}
-else if(pn=="3"){"--> pn is 3";}
-else if(pn=="4"){"--> pn is 4";}
-else if(pn=="5"){"--> pn is 5";}
-else if(pn=="6"){"--> pn is 6";}
-else if(pn=="7"){"--> pn is 7";}
-else if(pn=="8"){"--> pn is 8";}
-else if(pn=="9"){"--> pn is 9";}
-else if(pn=="9"){"--> pn is 0";}
+else if(pn=="2"){"--> pn is 2 🐦 Click here to tweet! Please promote Matthewthings streaming "+g+" "+t;}
+else if(pn=="3"){"--> pn is 3 "+aff+"Show your support and subscribe to the channel https://www.twitch.tv/subs/matthewthings 😎😎😎";}
+else if(pn=="4"){"--> pn is 4 Follow me on my Instagram www.instagram.com/matthew.things";}
+else if(pn=="5"){"--> pn is 5 "+aff+"Subscribe with Amazon Prime for free! Link your prime account https://gaming.amazon.com/intro then subscribe to the channel";}
+else if(pn=="6"){"--> pn is 6 Come join my Discord https://discord.com/invite/as3wmX8";}
+else if(pn=="7"){"--> pn is 7 "+aff+"You can support streamers by cheering with bits https://www.twitch.tv/bits 💎💎💎";}
+else if(pn=="8"){"--> pn is 8 Click here to subscribe to my YouTube channel MatthewThingsASMR www.youtube.com/MatthewThingsASMR?sub_confirmation=1";}
+else if(pn=="9"){"--> pn is 9 "+aff+"Check out the channel point rewards";}
+else if(pn=="0"){"--> pn is 0 Drop a follow on my Twitter https://twitter.com/matthew_things";}
  
 else{" --> Command Error - Scaligi Please Help!";}
