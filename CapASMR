@@ -77,4 +77,4 @@ else if(q=="tarkov"){"Escape from Tarkov "+s+" suggestion for "+u+" "+a[tark[Mat
 else if(q=="tarkov all"){"All Tarkov Videos selected by "+u+" "+a[129]+" and "+a[145]+" and "+a[210];}
 else if(q=="tarkov list"){u+" --> Tarkov "+s+" list is: "+tark;}
 
-else{u+" --> When specifying a number please select between 1 and "+n+" or use !asmr help for a list of other command options";}
+else{u+" --> When specifying please select a number between 1 and "+n+" or use !asmr help for a list of other command options";}
