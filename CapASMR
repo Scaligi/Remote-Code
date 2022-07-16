@@ -61,7 +61,8 @@ else if(q=="bodyguard #"){"Bodyguard "+s+" suggestion for "+u+" "+a[bg[Math.floo
 else if(q=="bodyguard list"){u+" --> Bodyguard "+s+" list is: "+bg;}
 else if(q=="bodyguard"){"Bodyguard Videos selected by "+u+" "+a[248]+" and "+a[259];}
 
-else if(q=="drfrantic"){"Dr Frantic "+s+" suggestion for "+u+" "+a[drf[Math.floor(Math.random()*5)]-1]+" ☠️⚰️💀 RIP Dr Frantic! 💀⚰️☠️";}
+else if(q=="drfrantic"||q=="frantic"){"Dr Frantic "+s+" suggestion for "+u+" "+a[drf[Math.floor(Math.random()*5)]-1]+" ☠️⚰️💀 RIP Dr Frantic! 💀⚰️☠️";}
+else if(q=="doctor frantic"||q=="dr frantic"){"Dr Frantic "+s+" suggestion for "+u+" "+a[drf[Math.floor(Math.random()*5)]-1]+" ☠️⚰️💀 RIP Dr Frantic! 💀⚰️☠️";}
 else if(q=="drfrantic list"){u+" --> Dr Frantic "+s+" list is: "+drf;}
 
 else if(q=="joker"){"The Joker "+s+" suggestion for "+u+" "+a[jk[Math.floor(Math.random()*4)]-1] +tag[Math.floor(Math.random()*5)];}
