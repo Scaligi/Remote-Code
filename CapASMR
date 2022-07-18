@@ -1,7 +1,7 @@
 s ="ASMR Video";
 tag =[" - Don't forget to like the video!", " - What are you waiting for? Share, share, share!", " - Go comment to feed the YouTube algorithm!", " - Have you subscribed to Cap Bailey ASMR?", " - Don't miss another video, hit that notification bell!"];
 
-aff =[15,70,118,122,149]
+aff =[15,70,118,122,149];
 bg =[249,260];
 boy =[239,240,241,244,247,251,256,262,265];
 cne =[5,8,38,87,115,154,163,167,184,189,194,197,201,210,221,225,226,228,231,253,261,264];
