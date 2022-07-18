@@ -78,7 +78,7 @@ else if(q=="hair list"){u+" --> Hair ASMR video list is: "+hair;}
 else if(q=="hands"||q=="hand"){"Hands "+s+" suggestion for "+u+" "+a[hand[Math.floor(Math.random()*25)]-1]+" - Many thanks to winchester in wonderland for selectimg the video list for this option";}
 else if(q=="hand list"||q=="hands list"){u+" --> Hands ASMR video list is: "+hand+" - Many thanks to winchester in wonderland for selectimg this video list";}
 
-else if(q=="face"){"The Joker "+s+" suggestion for "+u+" "+a[face[Math.floor(Math.random()*20)]-1] +tag[Math.floor(Math.random()*5)];}
+else if(q=="face"){"Face touching "+s+" suggestion for "+u+" "+a[face[Math.floor(Math.random()*20)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="face list"){u+" --> Face touching "+s+" list is: "+face;}
 
 else if(q=="lights"){"light triggers "+s+" suggestion for "+u+" "+a[lit[Math.floor(Math.random()*39)]-1] +tag[Math.floor(Math.random()*5)];}
