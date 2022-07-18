@@ -14,7 +14,12 @@ shv =[19,64,89,116,153,157,202,216,257];
 tark =[130,146,211];
 ww2 =[18,78,101,124,152,199,237,252];
 
-if(q=="test"){"Cap Bailey's ASMR command v5.5 User="+u+", Query="+q+", Total="+n+", Shorts="+shorts.length+", Random="+r+", Found="+f+", URLfetch Successful: Database:xd4wYYVR Remote_Code:Scaligi/Remote-Code/main/CapASMR";}
+if(q=="test"){"Cap Bailey's ASMR command v5.6 User="+u+", Query="+q+", Total="+n+", Shorts="+shorts.length+", Random="+r+", Found="+f+", URLfetch Successful: Database:xd4wYYVR Remote_Code:/Scaligi/Remote-Code/main/CapASMR";}
+
+else if(q=="help"||q=="?"){"!asmr suggests a random video from Cap Bailey's YouTube channel | !asmr 1 - "+n+" selects a specific video | Command options include !asmr latest, list, total | Use !asmr options for a list of category options";}
+else if(q=="list"){"The video list database used by this command is available here: https://pastebin.com/xd4wYYVR";}
+else if(q=="options"||q=="option"){"ASMR category options include !asmr apache, bodyguard, boy, cne, cod, drfrantic, guns, hair, hands, joker, lights, pirate, shave, shorts, starwars, tarkov, tattoo, ww2";}
+else if(q=="total"){"Cap Bailey has "+n+" ASMR videos on his YouTube channel, including "+[n-21]+" Full length videos, 20 Shorts and one announcement";}
 
 else if(t=="Scaligi"){"Scaligi's favourite Cap Bailey "+s+": "+a[60];}
 else if(t=="scaligi"){"Scaligi's second favourite Cap Bailey "+s+": "+a[1];}
@@ -25,10 +30,7 @@ else if(q=="" && r==f){"*"+s+" suggestion for "+u+" "+[r+1]+". "+a[r]+tag[Math.f
 else if(q=="#" && r==f){"*"+s+" suggestion for "+u+" "+[r+1]+". "+a[r]+tag[Math.floor(Math.random()*5)];}
 else if(q==""||q=="#"){s+" suggestion for "+u+" "+r+". "+a[r-1]+tag[Math.floor(Math.random()*5)];}
 
-else if(q=="help"){"!asmr suggests a random video from Cap Bailey's YouTube channel | !asmr 1 - "+n+" selects a specific video | Other options include !asmr latest, list, new, shorts, total, apache, cne, hair, hands, lights, shave, tattoo, boy, bodyguard, drfrantic, joker, pirate, starwars, ww2, guns, tarkov, cod";}
 else if(q=="latest"||q=="new"){"My latest video on YouTube "+a[n-1]+tag[Math.floor(Math.random()*5)];}
-else if(q=="list"){"The video list database used by this command is available here: https://pastebin.com/xd4wYYVR";}
-else if(q=="total"){"Cap Bailey has "+n+" ASMR videos on his YouTube channel, including "+[n-21]+" Full length videos, 20 Shorts and one announcement";}
 
 else if(q=="shorts"||q=="short"){"#Shorts "+s+" suggestion for "+u+" "+a[shorts[Math.floor(Math.random()*shorts.length)]-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="shorts list"){u+" --> #Shorts ASMR video list is: "+shorts;}
