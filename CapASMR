@@ -5,6 +5,7 @@ bg =[249,260];
 boy =[239,240,241,244,247,251,256,262,265];
 cne =[5,8,38,87,115,154,163,167,184,189,194,197,201,210,221,225,226,228,231,253,261,264];
 drf =[49,58,69,88,104];
+face =[9,17,34,39,98,116,118,122,124,132,173,183,206,207,233,242,243,244,250,262];
 gun =[142,143,144,146,148,151,169,185,215,224,229,234];
 hair =[44,50,84,97,112,138,213,233,239,249];
 hand =[17,53,63,83,84,114,116,118,122,143,153,157,171,173,181,186,198,202,218,227,246,251,261,265,267];
@@ -19,7 +20,7 @@ if(q=="test"){"Cap Bailey's ASMR command v5.6 User="+u+", Query="+q+", Total="+n
 
 else if(q=="help"||q=="?"){"!asmr suggests a random video from Cap Bailey's YouTube channel | !asmr 1 - "+n+" selects a specific video | Command options include !asmr latest, list, total | Use !asmr options for a list of category options";}
 else if(q=="list"){"The video list database used by this command is available here: https://pastebin.com/xd4wYYVR";}
-else if(q=="options"||q=="option"){"ASMR category options include !asmr apache, bodyguard, boy, cne, cod, drfrantic, guns, hair, hands, joker, lights, pirate, shave, shorts, starwars, tarkov, tattoo, ww2";}
+else if(q=="options"||q=="option"){"ASMR category options include !asmr apache, bodyguard, boy, cne, cod, drfrantic, face, guns, hair, hands, joker, lights, personal attention, pirate, shave, shorts, starwars, tarkov, tattoo, ww2";}
 else if(q=="total"){"Cap Bailey has "+n+" ASMR videos on his YouTube channel, including "+[n-21]+" Full length videos, 20 Shorts and one announcement";}
 
 else if(t=="Scaligi"){"Scaligi's favourite Cap Bailey "+s+": "+a[60];}
@@ -61,6 +62,9 @@ else if(q=="drfrantic"||q=="frantic"){"Dr Frantic "+s+" suggestion for "+u+" "+a
 else if(q=="doctor frantic"||q=="dr frantic"){"Dr Frantic "+s+" suggestion for "+u+" "+a[drf[Math.floor(Math.random()*5)]-1]+" ☠️⚰️💀 RIP Dr Frantic! 💀⚰️☠️";}
 else if(q=="drfrantic list"){u+" --> Dr Frantic "+s+" list is: "+drf;}
 
+else if(q=="joker"){"The Joker "+s+" suggestion for "+u+" "+a[jk[Math.floor(Math.random()*4)]-1] +tag[Math.floor(Math.random()*5)];}
+else if(q=="joker list"){u+" --> The Joker "+s+" list is: "+jk;}
+
 else if(q=="guns"){"Gun "+s+" suggestion for "+u+" "+a[gun[Math.floor(Math.random()*12)]-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="guns list"){u+" --> Gun "+s+" list is: "+gun;}
 
@@ -70,8 +74,8 @@ else if(q=="hair list"){u+" --> Hair ASMR video list is: "+hair;}
 else if(q=="hands"||q=="hand"){"Hands "+s+" suggestion for "+u+" "+a[hand[Math.floor(Math.random()*25)]-1]+" - Many thanks to winchester in wonderland for selectimg the video list for this option";}
 else if(q=="hand list"||q=="hands list"){u+" --> Hands ASMR video list is: "+hand;}
 
-else if(q=="joker"){"The Joker "+s+" suggestion for "+u+" "+a[jk[Math.floor(Math.random()*4)]-1] +tag[Math.floor(Math.random()*5)];}
-else if(q=="joker list"){u+" --> The Joker "+s+" list is: "+boy;}
+else if(q=="face"){"The Joker "+s+" suggestion for "+u+" "+a[face[Math.floor(Math.random()*20)]-1] +tag[Math.floor(Math.random()*5)];}
+else if(q=="face list"){u+" --> Face touching "+s+" list is: "+face;}
 
 else if(q=="lights"){"light triggers "+s+" suggestion for "+u+" "+a[lit[Math.floor(Math.random()*39)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="lights list"){u+" --> Light triggers "+s+" list is: "+lit;}
