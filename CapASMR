@@ -3,6 +3,7 @@ tag =[" - Don't forget to like the video!", " - What are you waiting for? Share,
 
 cne =[5,8,38,87,115,154,163,167,184,189,194,197,201,210,221,225,226,228,231,253,261,264];
 hair =[44,50,84,97,112,138,213,233,239,249];
+hand =[17,53,63,83,84,114,116,118,122,143,153,157,171,173,181,186,198,202,218,227,246,251,261,265,267];
 lit =[2,5,20,21,33,49,55,61,62,63,69,70,73,75,76,78,86,87,88,93,96,106,118,120,132,136,179,184,188,190,206,207,222,226,228,261,264,265,267];
 shv =[19,64,89,116,153,157,202,216,257];
 boy =[239,240,241,244,247,251,256,262,265];
@@ -48,6 +49,9 @@ else if(q=="cne list"){u+" --> CNE ASMR video list is: "+cne;}
 else if(q=="hair"){"Hair "+s+" suggestion for "+u+" "+a[hair[Math.floor(Math.random()*10)]-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="hair list"){u+" --> Hair ASMR video list is: "+hair;}
 
+else if(q=="hands"||q=="hand"){"Hands "+s+" suggestion for "+u+" "+a[hand[Math.floor(Math.random()*25)]-1]+tag[Math.floor(Math.random()*5)]+" Many thanks to winchester in wonderland for selectimg the video list for this option";}
+else if(q=="hand list"){u+" --> Hands ASMR video list is: "+hand;}
+
 else if(q=="lights"){"light triggers "+s+" suggestion for "+u+" "+a[lit[Math.floor(Math.random()*39)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="lights list"){u+" --> Light triggers "+s+" list is: "+lit;}
 
@@ -60,8 +64,6 @@ else if(q=="boy list"){u+" --> Boy at the back of the class "+s+" list is: "+boy
 else if(q=="bodyguard #"){"Bodyguard "+s+" suggestion for "+u+" "+a[bg[Math.floor(Math.random()*2)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="bodyguard list"){u+" --> Bodyguard "+s+" list is: "+bg;}
 else if(q=="bodyguard"){"Bodyguard Videos selected by "+u+" "+a[248]+" and "+a[259];}
-
-else if(q=="hands"||q=="hand"){"Hands "+s+" selected by "+u+" 👀 "+a[268-1];}
 
 else if(q=="drfrantic"||q=="frantic"){"Dr Frantic "+s+" suggestion for "+u+" "+a[drf[Math.floor(Math.random()*5)]-1]+" ☠️⚰️💀 RIP Dr Frantic! 💀⚰️☠️";}
 else if(q=="doctor frantic"||q=="dr frantic"){"Dr Frantic "+s+" suggestion for "+u+" "+a[drf[Math.floor(Math.random()*5)]-1]+" ☠️⚰️💀 RIP Dr Frantic! 💀⚰️☠️";}
