@@ -49,12 +49,12 @@ else if(q=="shark"){"Cap Bailey's Shark ASMR selected by "+u+" "+a[262]+tag[Math
 else if(q=="starwars"){"Star Wars "+s+" selected by "+u+" "+a[99];}
 else if(q=="tattoo"){"Cap Bailey's tattoos selected by "+u+" "+a[52]+" and "+a[245];}
 
+else if(q=="affirmation"){"Positive affirmation "+s+" suggestion for "+u+" "+a[aff[Math.floor(Math.random()*5)]-1] +tag[Math.floor(Math.random()*5)];}
+else if(q=="affirmation list"){u+" --> Positive affirmation "+s+" list is: "+aff;}
+
 else if(q=="bodyguard #"){"Bodyguard "+s+" suggestion for "+u+" "+a[bg[Math.floor(Math.random()*2)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="bodyguard list"){u+" --> Bodyguard "+s+" list is: "+bg;}
 else if(q=="bodyguard"){"Bodyguard Videos selected by "+u+" "+a[248]+" and "+a[259];}
-
-else if(q=="affirmation"){"Positive affirmation "+s+" suggestion for "+u+" "+a[aff[Math.floor(Math.random()*5)]-1] +tag[Math.floor(Math.random()*5)];}
-else if(q=="affirmation list"){u+" --> Positive affirmation "+s+" list is: "+aff;}
 
 else if(q=="boy"){"Boy at the back of the class "+s+" suggestion for "+u+" "+a[boy[Math.floor(Math.random()*9)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="boy list"){u+" --> Boy at the back of the class "+s+" list is: "+boy;}
@@ -76,7 +76,7 @@ else if(q=="hair"){"Hair "+s+" suggestion for "+u+" "+a[hair[Math.floor(Math.ran
 else if(q=="hair list"){u+" --> Hair ASMR video list is: "+hair;}
 
 else if(q=="hands"||q=="hand"){"Hands "+s+" suggestion for "+u+" "+a[hand[Math.floor(Math.random()*25)]-1]+" - Many thanks to winchester in wonderland for selectimg the video list for this option";}
-else if(q=="hand list"||q=="hands list"){u+" --> Hands ASMR video list is: "+hand;}
+else if(q=="hand list"||q=="hands list"){u+" --> Hands ASMR video list is: "+hand+" - Many thanks to winchester in wonderland for selectimg this video list";}
 
 else if(q=="face"){"The Joker "+s+" suggestion for "+u+" "+a[face[Math.floor(Math.random()*20)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="face list"){u+" --> Face touching "+s+" list is: "+face;}
