@@ -1,6 +1,7 @@
 s ="ASMR Video";
 tag =[" - Don't forget to like the video!", " - What are you waiting for? Share, share, share!", " - Go comment to feed the YouTube algorithm!", " - Have you subscribed to Cap Bailey ASMR?", " - Don't miss another video, hit that notification bell!"];
 
+aff =[15,70,118,122,149]
 bg =[249,260];
 boy =[239,240,241,244,247,251,256,262,265];
 cne =[5,8,38,87,115,154,163,167,184,189,194,197,201,210,221,225,226,228,231,253,261,264];
@@ -20,7 +21,7 @@ if(q=="test"){"Cap Bailey's ASMR command v5.6 User="+u+", Query="+q+", Total="+n
 
 else if(q=="help"||q=="?"){"!asmr suggests a random video from Cap Bailey's YouTube channel | !asmr 1 - "+n+" selects a specific video | Command options include !asmr latest, list, total | Use !asmr options for a list of category options";}
 else if(q=="list"){"The video list database used by this command is available here: https://pastebin.com/xd4wYYVR";}
-else if(q=="options"||q=="option"){"ASMR category options include !asmr apache, bodyguard, boy, cne, cod, drfrantic, face, guns, hair, hands, joker, lights, personal attention, pirate, shave, shorts, starwars, tarkov, tattoo, ww2";}
+else if(q=="options"||q=="option"){"ASMR category options include !asmr affirmation, apache, bodyguard, boy, cne, cod, drfrantic, face, guns, hair, hands, joker, lights, personal attention, pirate, shave, shorts, starwars, tarkov, tattoo, ww2";}
 else if(q=="total"){"Cap Bailey has "+n+" ASMR videos on his YouTube channel, including "+[n-21]+" Full length videos, 20 Shorts and one announcement";}
 
 else if(t=="Scaligi"){"Scaligi's favourite Cap Bailey "+s+": "+a[60];}
@@ -51,6 +52,9 @@ else if(q=="tattoo"){"Cap Bailey's tattoos selected by "+u+" "+a[52]+" and "+a[2
 else if(q=="bodyguard #"){"Bodyguard "+s+" suggestion for "+u+" "+a[bg[Math.floor(Math.random()*2)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="bodyguard list"){u+" --> Bodyguard "+s+" list is: "+bg;}
 else if(q=="bodyguard"){"Bodyguard Videos selected by "+u+" "+a[248]+" and "+a[259];}
+
+else if(q=="affirmation"){"Positive affirmation "+s+" suggestion for "+u+" "+a[aff[Math.floor(Math.random()*5)]-1] +tag[Math.floor(Math.random()*5)];}
+else if(q=="affirmation list"){u+" --> Positive affirmation "+s+" list is: "+aff;}
 
 else if(q=="boy"){"Boy at the back of the class "+s+" suggestion for "+u+" "+a[boy[Math.floor(Math.random()*9)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="boy list"){u+" --> Boy at the back of the class "+s+" list is: "+boy;}
