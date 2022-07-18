@@ -10,6 +10,7 @@ hair =[44,50,84,97,112,138,213,233,239,249];
 hand =[17,53,63,83,84,114,116,118,122,143,153,157,171,173,181,186,198,202,218,227,246,251,261,265,267];
 jk =[54,99,194,248];
 lit =[2,5,20,21,33,49,55,61,62,63,69,70,73,75,76,78,86,87,88,93,96,106,118,120,132,136,179,184,188,190,206,207,222,226,228,261,264,265,267];
+pa =[3,9,15,20,33,59,60,61,68,69,70,73,118,136,239,240,241,242,244,245,247,248,249,251,254,255,256,258,259,260,262,265,268];
 shv =[19,64,89,116,153,157,202,216,257];
 tark =[130,146,211];
 ww2 =[18,78,101,124,152,199,237,252];
@@ -74,6 +75,11 @@ else if(q=="joker list"){u+" --> The Joker "+s+" list is: "+boy;}
 
 else if(q=="lights"){"light triggers "+s+" suggestion for "+u+" "+a[lit[Math.floor(Math.random()*39)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="lights list"){u+" --> Light triggers "+s+" list is: "+lit;}
+
+else if(q=="personal attention"||q=="pa"){"Personal attention "+s+" suggestion for "+u+" "+a[pa[Math.floor(Math.random()*33)]-1]+tag[Math.floor(Math.random()*5)];}
+else if(q=="personalattention"||q=="personal"){"Personal attention "+s+" suggestion for "+u+" "+a[pa[Math.floor(Math.random()*33)]-1]+tag[Math.floor(Math.random()*5)];}
+else if(q=="pa list"||q=="personalattention list"){u+" --> Personal attention ASMR video list is: "+pa;}
+else if(q=="personal list"||q=="personal attention list"){u+" --> Personal attention ASMR video list is: "+pa;}
 
 else if(q=="shave"){"Shaving "+s+" suggestion for "+u+" "+a[shv[Math.floor(Math.random()*9)]-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="shave list"){u+" --> Shaving "+s+" list is: "+shv;}
