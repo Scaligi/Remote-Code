@@ -5,6 +5,7 @@ aff =[15,70,118,122,149];
 bg =[249,260];
 boy =[239,240,241,244,247,251,256,262,265];
 cne =[5,8,38,87,115,154,163,167,184,189,194,197,201,210,221,225,226,228,231,253,261,264];
+collab =[25,159,163,196,199,207];
 drf =[49,58,69,88,104];
 face =[9,17,34,39,98,116,118,122,124,132,173,183,206,207,233,242,243,244,250,262];
 gun =[142,143,144,146,148,151,169,185,215,224,229,234];
@@ -21,7 +22,7 @@ if(q=="test"){"Cap Bailey's ASMR command v5.6 User="+u+", Query="+q+", Total="+n
 
 else if(q=="help"||q=="?"){"!asmr suggests a random video from Cap Bailey's YouTube channel | !asmr 1 - "+n+" selects a specific video | Command options include !asmr latest, list, total | Use !asmr options for a list of category options";}
 else if(q=="list"){"The video list database used by this command is available here: https://pastebin.com/xd4wYYVR";}
-else if(q=="options"||q=="option"){"ASMR category options include !asmr affirmation, apache, bodyguard, boy, cne, cod, drfrantic, face, guns, hair, hands, joker, lights, personal attention, pirate, shave, shorts, starwars, tarkov, tattoo, ww2";}
+else if(q=="options"||q=="option"){"ASMR category options include !asmr affirmation, apache, bodyguard, boy, collaboration, cne, cod, drfrantic, face, guns, hair, hands, joker, lights, personal attention, pirate, shave, shorts, starwars, tarkov, tattoo, ww2";}
 else if(q=="total"){"Cap Bailey has "+n+" ASMR videos on his YouTube channel, including "+[n-21]+" Full length videos, 20 Shorts and one announcement";}
 
 else if(t=="Scaligi"){"Scaligi's favourite Cap Bailey "+s+": "+a[60];}
@@ -61,6 +62,9 @@ else if(q=="boy list"){u+" --> Boy at the back of the class "+s+" list is: "+boy
 
 else if(q=="cne"){"CNE "+s+" suggestion for "+u+" "+a[cne[Math.floor(Math.random()*22)]-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="cne list"){u+" --> CNE ASMR video list is: "+cne;}
+
+else if(q=="collab"||q=="collaboration"){"Collaboration "+s+" suggestion for "+u+" "+a[collab[Math.floor(Math.random()*6)]-1]+tag[Math.floor(Math.random()*5)];}
+else if(q=="collab list"||q=="collaboration list"){u+" --> Collaboration ASMR video list is: "+collab;}
 
 else if(q=="drfrantic"||q=="frantic"){"Dr Frantic "+s+" suggestion for "+u+" "+a[drf[Math.floor(Math.random()*5)]-1]+" ☠️⚰️💀 RIP Dr Frantic! 💀⚰️☠️";}
 else if(q=="doctor frantic"||q=="dr frantic"){"Dr Frantic "+s+" suggestion for "+u+" "+a[drf[Math.floor(Math.random()*5)]-1]+" ☠️⚰️💀 RIP Dr Frantic! 💀⚰️☠️";}
