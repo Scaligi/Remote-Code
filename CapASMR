@@ -24,7 +24,7 @@ if(q=="test"){"Cap Bailey's ASMR command v5.6 User="+u+", Query="+q+", Total="+n
 
 else if(q=="help"||q=="?"){"!asmr suggests a random video from Cap Bailey's YouTube channel | !asmr 1 - "+n+" selects a specific video | Command options include !asmr latest, list, total | Use !asmr options for a list of category options";}
 else if(q=="list"){"The video list database used by this command is available here: https://pastebin.com/xd4wYYVR";}
-else if(q=="options"||q=="option"){"ASMR category options include !asmr affirmation, apache, bodyguard, binaural, boy, collaboration, cne, cod, drfrantic, face, guns, hair, hands, joker, lights, personal attention, pirate, shave, shorts, starwars, tarkov, tattoo, whispered, ww2";}
+else if(q=="options"||q=="option"){"ASMR category options include !asmr affirmation, apache, bodyguard, binaural, boy, collab, cne, cod, drfrantic, face, guns, hair, hands, joker, lights, personal attention, pirate, shave, shorts, starwars, tarkov, tattoo, whispered, ww2";}
 else if(q=="total"){"Cap Bailey has "+n+" ASMR videos on his YouTube channel, including "+[n-21]+" Full length videos, 20 Shorts and one announcement";}
 
 else if(t=="Scaligi"){"Scaligi's favourite Cap Bailey "+s+": "+a[60];}
