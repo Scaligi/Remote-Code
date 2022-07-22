@@ -1,27 +1,27 @@
 warn ="⚠️ Please be respectful of Cap Bailey and the community ";
 
-if(q=="test"){"Respect Warning Command v1.1 User="+u+", User_Level="+ul+", Query="+q+", URLfetch Successful: Remote_Code:/Scaligi/Remote-Code/main/CapRespect Authorised_Users: Owner, Moderator, Twitch_VIPs";}
+if(t=="test"){"Respect Warning Command v1.1 User="+u+", User_Level="+ul+", Query="+q+", Message="+m+", URLfetch Successful, Remote_Code:rCCUbm2h Authorised_Users: Owner, Moderator, Twitch_VIPs";}
 
 else if(ul=="owner" && q==""){warn;}
-else if(ul=="owner"){warn + t;}
+else if(ul=="owner"){warn + t + " " + m;}
 else if(ul=="moderator" && q==""){warn;}
-else if(ul=="moderator"){warn + t;}
+else if(ul=="moderator"){warn + t + " " + m;}
 else if(ul=="twitch_vip" && q==""){warn;}
-else if(ul=="twitch_vip"){warn + t;}
+else if(ul=="twitch_vip"){warn + t + " " + m;}
 
 else if(u=="capbailey.eth" && q==""){warn;}
-else if(u=="capbailey.eth"){warn + t;}
+else if(u=="capbailey.eth"){warn + t + " " + m;}
 
 else if(u=="_mxryumm" && q==""){warn;}
-else if(u=="_mxryumm"){warn + t;}
+else if(u=="_mxryumm"){warn + t + " " + m;}
 
 else if(u=="s5g" && q==""){warn;}
-else if(u=="s5g"){warn + t;}
+else if(u=="s5g"){warn + t + " " + m;}
 
 else if(u=="jonikarvinen" && q==""){warn;}
-else if(u=="jonikarvinen"){warn + t;}
+else if(u=="jonikarvinen"){warn + t + " " + m;}
 
 else if(u=="Kieekaa" && q==""){warn;}
-else if(u=="Kieekaa"){warn + t;}
+else if(u=="Kieekaa"){warn + t + " " + m;}
 
 else{" --> You are not authorised to use this command "+u;}
