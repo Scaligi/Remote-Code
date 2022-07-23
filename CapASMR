@@ -8,12 +8,12 @@ boy =[239,240,241,244,247,251,256,262,265];
 cne =[5,8,38,87,115,154,163,167,184,189,194,197,201,210,221,225,226,228,231,253,261,264];
 collab =[25,159,163,196,199,207];
 drf =[49,58,69,88,104];
-face =[9,17,34,39,98,116,118,122,124,132,173,183,206,207,233,242,243,244,250,262];
+face =[9,17,34,39,98,116,118,122,124,132,173,183,206,207,233,242,243,244,250,262,271];
 gun =[142,143,144,146,148,151,169,185,215,224,229,234];
 hair =[44,50,84,97,112,138,213,233,239,249];
-hand =[17,53,63,83,84,114,116,118,122,143,153,157,171,173,181,186,198,202,218,227,246,251,261,265,267];
+hand =[17,53,63,83,84,114,116,118,122,143,153,157,171,173,181,186,198,202,218,227,246,251,261,265,267,271];
 jk =[54,99,194,248];
-lit =[2,5,20,21,33,49,55,61,62,63,69,70,73,75,76,78,86,87,88,93,96,106,118,120,132,136,179,184,188,190,206,207,222,226,228,261,264,265,267];
+lit =[2,5,20,21,33,49,55,61,62,63,69,70,73,75,76,78,86,87,88,93,96,106,118,120,132,136,179,184,188,190,206,207,222,226,228,261,264,265,267,271];
 pa =[3,9,15,20,33,59,60,61,68,69,70,73,118,136,239,240,241,242,244,245,247,248,249,251,254,255,256,258,259,260,262,265,268];
 shv =[19,64,89,116,153,157,202,216,257];
 tark =[130,146,211];
@@ -84,13 +84,13 @@ else if(q=="guns list"){u+" --> Gun "+s+" list is: "+gun;}
 else if(q=="hair"){"Hair "+s+" suggestion for "+u+" "+a[hair[Math.floor(Math.random()*10)]-1]+tag[Math.floor(Math.random()*5)];}
 else if(q=="hair list"){u+" --> Hair ASMR video list is: "+hair;}
 
-else if(q=="hands"||q=="hand"){"Hands "+s+" suggestion for "+u+" "+a[hand[Math.floor(Math.random()*25)]-1]+" - Many thanks to winchester in wonderland for selecting the video list for this option";}
+else if(q=="hands"||q=="hand"){"Hands "+s+" suggestion for "+u+" "+a[hand[Math.floor(Math.random()*26)]-1]+" - Many thanks to winchester in wonderland for selecting the video list for this option";}
 else if(q=="hand list"||q=="hands list"){u+" --> Hands ASMR video list is: "+hand+" - Many thanks to winchester in wonderland for selecting this video list";}
 
-else if(q=="face"){"Face touching "+s+" suggestion for "+u+" "+a[face[Math.floor(Math.random()*20)]-1]+" - Many thanks to winchester in wonderland for suggesting this option";}
+else if(q=="face"){"Face touching "+s+" suggestion for "+u+" "+a[face[Math.floor(Math.random()*21)]-1]+" - Many thanks to winchester in wonderland for suggesting this option";}
 else if(q=="face list"){u+" --> Face touching "+s+" list is: "+face;}
 
-else if(q=="lights"){"light triggers "+s+" suggestion for "+u+" "+a[lit[Math.floor(Math.random()*39)]-1] +tag[Math.floor(Math.random()*5)];}
+else if(q=="lights"){"light triggers "+s+" suggestion for "+u+" "+a[lit[Math.floor(Math.random()*40)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="lights list"){u+" --> Light triggers "+s+" list is: "+lit;}
 
 else if(q=="personal attention"||q=="pa"){"Personal attention "+s+" suggestion for "+u+" "+a[pa[Math.floor(Math.random()*33)]-1]+tag[Math.floor(Math.random()*5)];}
