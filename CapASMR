@@ -1,7 +1,7 @@
 s ="ASMR Video";
 tag =[" - Don't forget to like the video!", " - What are you waiting for? Share, share, share!", " - Go comment to feed the YouTube algorithm!", " - Have you subscribed to Cap Bailey ASMR?", " - Don't miss another video, hit that notification bell!"];
 
-aff =[15,70,118,122,149]; aff_l =aff.length;
+aff =[15,70,118,122,149];
 bg =[249,260];
 bi =[71,99,100,101,102,104,105,106,107,108,112,116,120,124,144,154,157,183,185,189,216,226,256,269];
 boy =[239,240,241,244,247,251,256,262,265];
@@ -20,7 +20,7 @@ tark =[130,146,211];
 whisp =[61,99,105,106,108,122,124,139,140,173,179,185,217,225,226,243,246,250,259,262,263,265,270];
 ww2 =[18,78,101,124,152,199,237,252];
 
-if(q=="test"){"***Cap Bailey's ASMR command v5.6 User="+u+", Query="+q+", Total="+n+", Shorts="+shorts.length+", Random="+r+", Found="+f+", URLfetch Successful: Database:xd4wYYVR Remote_Code:/Scaligi/Remote-Code/main/CapASMR l$="+aff_l+" l.l="+aff.length;}
+if(q=="test"){"***Cap Bailey's ASMR command v5.6a User="+u+", Query="+q+", Total="+n+", Shorts="+shorts.length+", Random="+r+", Found="+f+", URLfetch Successful: Database:xd4wYYVR Remote_Code:/Scaligi/Remote-Code/main/CapASMR, aff.l="+aff.length;}
 
 else if(q=="help"||q=="?"){"!asmr suggests a random video from Cap Bailey's YouTube channel | !asmr 1 - "+n+" selects a specific video | Command options include !asmr latest, list, total | Use !asmr options for a list of category options";}
 else if(q=="list"){"The video list database used by this command is available here: https://pastebin.com/xd4wYYVR";}
@@ -53,7 +53,7 @@ else if(q=="starwars"){"Star Wars "+s+" selected by "+u+" "+a[99];}
 else if(q=="tattoo"){"Cap Bailey's tattoos selected by "+u+" "+a[52]+" and "+a[245];}
 
 else if(q=="affirmation"){"Positive affirmation "+s+" suggestion for "+u+" "+a[aff[Math.floor(Math.random()*aff.length)]-1] +tag[Math.floor(Math.random()*5)];}
-else if(q=="affirmation list"){u+" --> Positive affirmation "+s+" list is: "+aff;}
+else if(q=="affirmation list"){u+" --> Positive affirmation "+s+" list is: "+aff+" Total="+aff.lenght;}
 
 else if(q=="bodyguard #"){"Bodyguard "+s+" suggestion for "+u+" "+a[bg[Math.floor(Math.random()*2)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="bodyguard list"){u+" --> Bodyguard "+s+" list is: "+bg;}
