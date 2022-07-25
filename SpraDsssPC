@@ -16,7 +16,7 @@ facebook= "🎮 Follow me on Facebook https://www.facebook.com/gaming/SpraDsss";
 
 if(q=="test"){title+" "+version+" User="+u+", Query="+q+", Command Count="+cc+", Promo Number="+pn+", URLfetch Successful: Remote_Code:"+rc_url;}
 
-else if(q=="list"){"Promo Messages are: 1🔔follow | 2🐦twitter | 3🅿prime | 4📷instagram | 5💎bits | 6📱tiktiok | 7✅subscribe | 8🎥youtube | 9👉discord | 0🎮facebook - Next in cycle is No."+[(pn*1)+1];}
+else if(q=="list"){"Promo Messages are: 1🔔follow | 2🐦twitter | 3🅿prime | 4📷instagram | 5💎bits | 6📱tiktiok | 7✅subscribe | 8🎥youtube | 9👉discord | 10🎮facebook - Next in cycle is No."+[(pn*1)+1];}
 
 else if(q=="1"||q=="twitch"){twitch;}
 else if(q=="2"||q=="twitter"){twitter;}
@@ -27,7 +27,7 @@ else if(q=="6"||q=="tiktok"){tiktok;}
 else if(q=="7"||q=="subscribe"){subscribe;}
 else if(q=="8"||q=="youtube"){youtube;}
 else if(q=="9"||q=="discord"){discord;}
-else if(q=="0"||q=="facebook"){facebook;}
+else if(q=="10"||q=="facebook"){facebook;}
 
 else if(pn=="1"){twitch;}
 else if(pn=="2"){twitter;}
