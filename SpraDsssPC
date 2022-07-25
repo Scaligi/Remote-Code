@@ -1,14 +1,43 @@
-if(q=="test"){"SpraDsss's Promo Cycle Command v1.0 User="+u+", Query="+q+", Command Count="+cc+", Promo Number="+pn+", URLfetch Successful: Remote_Code:/Scaligi/Remote-Code/main/SpraDssPC";}
+title= "SpraDsss's Promo Cycle Command";
+version= "v1.1";
+rc_url= "/Scaligi/Remote-Code/main/SpraDssPC";
 
-else if(pn=="1"){"🔔 Drop a follow and turn notifications on so you don't miss the next one";}
-else if(pn=="2"){"🐦 Follow me on Twitter for updates. https://www.Twitter.com/SpraDsss";}
-else if(pn=="3"){"🅿 Subscribe with Amazon Prime for free! Link your prime account https://gaming.amazon.com/intro then subscribe to the channel here https://www.twitch.tv/subs/spradsss 🎮";}
-else if(pn=="4"){"📷 Follow me on IG for highlights, and family photos www.Instagram.com/SpraDsss";}
-else if(pn=="5"){"💎 You can support streamers by cheering with bits https://www.twitch.tv/bits";}
-else if(pn=="6"){"📱 Follow me on TikTok - @spradsss www.tiktok.com/@spradsss";}
-else if(pn=="7"){"✅ Click here to subscribe to the channel and get add free viewing https://www.twitch.tv/subs/spradsss";}
-else if(pn=="8"){"🎥 Subscribe to my Youtube channel";}
-else if(pn=="9"){"👉 Come Join the discord: TBA";}
-else if(pn=="0"){"🕹 Follow me on Facebook https://www.facebook.com/gaming/SpraDsss";}
+twitch= "🔔 Drop a follow and turn notifications on so you don't miss the next one";
+twitter= "🐦 Follow me on Twitter for updates https://www.Twitter.com/SpraDsss";
+prime= "🅿 Subscribe with Amazon Prime for free! Link your prime account https://gaming.amazon.com/intro then subscribe to the channel here https://www.twitch.tv/subs/spradsss";
+instagram= "📷 Follow me on IG for highlights, and family photos www.Instagram.com/SpraDsss";
+bits= "💎 You can support streamers by cheering with bits https://www.twitch.tv/bits";
+tiktiok= "📱 Follow me on TikTok - @spradsss www.tiktok.com/@spradsss";
+subscribe= "✅ Click here to subscribe to the channel and get add free viewing https://www.twitch.tv/subs/spradsss";
+youtube= "🎥 Subscribe to my YouTube channel";
+discord= "👉 Come Join the discord: TBA";
+facebook= "🎮 Follow me on Facebook https://www.facebook.com/gaming/SpraDsss";
+
+
+if(q=="test"){title+" "+version+" User="+u+", Query="+q+", Command Count="+cc+", Promo Number="+pn+", URLfetch Successful: Remote_Code:"+rc_url;}
+
+else if(q=="list"){"Promo Messages are: 🔔follow | 🐦twitter | 🅿prime | 📷instagram | 💎bits | 📱tiktiok | ✅subscribe | 🎥youtube | 👉discord | 🎮facebook";}
+
+else if(q=="twitch"){twitch;}
+else if(q=="twitter"){twitter;}
+else if(q=="prime"){prime;}
+else if(q=="instagram"){instagram;}
+else if(q=="bits"){bits;}
+else if(q=="tiktok"){tiktok;}
+else if(q=="subscribe"){subscribe;}
+else if(q=="youtube"){youtube;}
+else if(q=="discord"){discord;}
+else if(q=="facebook"){facebook;}
+
+else if(pn=="1"){twitch;}
+else if(pn=="2"){twitter;}
+else if(pn=="3"){prime;}
+else if(pn=="4"){instagram;}
+else if(pn=="5"){bits;}
+else if(pn=="6"){tiktok;}
+else if(pn=="7"){subscribe;}
+else if(pn=="8"){youtube;}
+else if(pn=="9"){discord;}
+else if(pn=="0"){facebook;}
  
 else{" --> Command Error - Scaligi Please Help!";}
