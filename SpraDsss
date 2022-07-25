@@ -1,0 +1,14 @@
+if(q=="test"){"SpraDsss's Promo Cycle Command v1.0 User="+u+", Query="+q+", Command Count="+cc+", Promo Number="+pn+", URLfetch Successful: Remote_Code:https:Scaligi/rc/main/";}
+
+else if(pn=="1"){"🔔 Drop a follow and turn notifications on so you don't miss the next one";}
+else if(pn=="2"){"🐦 Follow me on Twitter for updates. https://www.Twitter.com/SpraDsss";}
+else if(pn=="3"){"🅿 Subscribe with Amazon Prime for free! Link your prime account https://gaming.amazon.com/intro then subscribe to the channel here https://www.twitch.tv/subs/spradsss 🎮";}
+else if(pn=="4"){"📷 Follow me on IG for highlights, and family photos www.Instagram.com/SpraDsss";}
+else if(pn=="5"){"💎 You can support streamers by cheering with bits https://www.twitch.tv/bits";}
+else if(pn=="6"){"📱 Follow me on TikTok - @spradsss www.tiktok.com/@spradsss";}
+else if(pn=="7"){"✅ Click here to subscribe to the channel and get add free viewing https://www.twitch.tv/subs/spradsss";}
+else if(pn=="8"){"🎥 Subscribe to my Youtube channel";}
+else if(pn=="9"){"👉 Come Join the discord: TBA";}
+else if(pn=="0"){"🕹 Follow me on Facebook https://www.facebook.com/gaming/SpraDsss";}
+ 
+else{" --> Command Error - Scaligi Please Help!";}
