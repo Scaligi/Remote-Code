@@ -1,5 +1,5 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v6.1";
+rc_v ="v6.2";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
@@ -65,6 +65,7 @@ else if(q=="pirate"||q=="pirates"){"Pirate "+s+" selected by "+u+" 59. "+a[59-1]
 else if(q=="shark"){"Cap Bailey's Shark ASMR selected by "+u+" 263. "+a[263-1]+tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="starwars"||q=="star wars"){"Star Wars "+s+" selected by "+u+" 100. "+a[100-1];}
 else if(q=="tattoo"||q=="tattoos"){"Cap Bailey's tattoos selected by "+u+" 53. "+a[53-1]+" and 246. "+a[246-1];}
+else if(q=="I'm your idiot"||q=="I'm an idiot"){"I'm your idiot "+s+" selected by "+u+" 105. "+a[105-1];}
 
 else if(q=="affirmation"){"Positive affirmation "+s+" suggestion for "+u+" "+aff[aff_r]+". "+a[aff[aff_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="affirmation list"){u+" --> Positive affirmation "+s+" list is: "+aff+" Total="+aff.length;}
