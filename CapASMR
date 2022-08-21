@@ -1,5 +1,5 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v6.5";
+rc_v ="v7.0";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
@@ -12,18 +12,18 @@ shorts_r = Math.floor(Math.random()*shorts.length);
 aff =[15,70,118,122,149]; aff_r = Math.floor(Math.random()*aff.length);
 bg =[249,260]; bg_r = Math.floor(Math.random()*bg.length);
 bi =[71,99,100,101,102,104,105,106,107,108,112,116,120,124,144,154,157,183,185,189,216,226,256,269]; bi_r = Math.floor(Math.random()*bi.length);
-boy =[239,240,241,244,247,251,256,262,265,267,272,275,279]; boy_r = Math.floor(Math.random()*boy.length);
+boy =[239,240,241,244,247,251,256,262,265,267,272,275,279,281]; boy_r = Math.floor(Math.random()*boy.length);
 cne =[5,8,38,87,115,154,163,167,184,189,194,197,201,210,221,225,226,228,231,253,261,264,278]; cne_r = Math.floor(Math.random()*cne.length);
 collab =[25,159,163,196,199,207]; collab_r = Math.floor(Math.random()*collab.length);
 drf =[49,58,69,88,104]; drf_r = Math.floor(Math.random()*drf.length);
 face =[9,17,34,39,98,116,118,122,124,132,173,183,206,207,233,242,243,244,250,262,271]; face_r = Math.floor(Math.random()*face.length);
 gun =[142,143,144,146,148,151,169,185,215,224,229,234]; gun_r = Math.floor(Math.random()*gun.length);
-hair =[44,50,84,97,112,138,213,233,239,249]; hair_r = Math.floor(Math.random()*hair.length);
+hair =[44,50,84,97,112,138,213,233,239,249,281]; hair_r = Math.floor(Math.random()*hair.length);
 hand =[17,53,63,83,84,114,116,118,122,143,153,157,171,173,181,186,198,202,218,227,246,251,261,265,267,271]; hand_r = Math.floor(Math.random()*hand.length);
 jk =[54,99,194,248]; jk_r = Math.floor(Math.random()*jk.length);
 lit =[2,5,20,21,33,49,55,61,62,63,69,70,73,75,76,78,86,87,88,93,96,106,118,120,132,136,179,184,188,190,206,207,222,226,228,261,264,265,267,271]; lit_r = Math.floor(Math.random()*lit.length);
 mafia =[10,109,160,169,257]; mafia_r = Math.floor(Math.random()*mafia.length);
-pa =[3,9,15,20,33,59,60,61,68,69,70,73,118,136,239,240,241,242,244,245,247,248,249,251,254,255,256,258,259,260,262,265,268,272,274,275]; pa_r = Math.floor(Math.random()*pa.length);
+pa =[3,9,15,20,33,59,60,61,68,69,70,73,118,136,239,240,241,242,244,245,247,248,249,251,254,255,256,258,259,260,262,265,268,272,274,275,279]; pa_r = Math.floor(Math.random()*pa.length);
 shv =[19,64,89,116,153,157,202,216,257,274]; shv_r = Math.floor(Math.random()*shv.length);
 tark =[130,146,211]; tark_r = Math.floor(Math.random()*tark.length);
 whisp =[61,99,105,106,108,122,124,139,140,173,179,185,217,225,226,243,246,250,259,262,263,265,270]; whisp_r = Math.floor(Math.random()*whisp.length);
@@ -62,6 +62,7 @@ else if(q=="cod"){"COD "+s+"s selected by "+u+" 5. "+a[5-1]+" and 106. "+a[106-1
 else if(q=="cyberpunk"){"Cyberpunk "+s+"s selected by "+u+" 25. "+a[25-1]+" and 75. "+a[75-1];}
 else if(q=="beat"||q=="beating"){"Cap Bailey's beating then fixing you selected by "+u+" 208. "+a[208-1]+tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="fix"||q=="punch"){"Cap Bailey's beating then fixing you selected by "+u+" 208. "+a[208-1]+tag[Math.floor(Math.random()*tag.length)];}
+else if(q=="members"||q=="members only"){"Members Only pre-release "+s+" selected by "+u+" "+[n+1]+". "+a[n];}
 else if(q=="pirate"||q=="pirates"){"Pirate "+s+" selected by "+u+" 59. "+a[59-1];}
 else if(q=="shark"){"Cap Bailey's Shark ASMR selected by "+u+" 263. "+a[263-1]+tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="starwars"||q=="star wars"){"Star Wars "+s+" selected by "+u+" 100. "+a[100-1];}
