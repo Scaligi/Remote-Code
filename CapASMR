@@ -1,5 +1,5 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v7.1";
+rc_v ="v7.2";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
@@ -54,8 +54,8 @@ else if(q=="latest"||q=="new"){"My latest video on YouTube "+a[n-1]+tag[Math.flo
 else if(q=="shorts"||q=="short"){"#Shorts "+s+" suggestion for "+u+" "+a[shorts[Math.floor(Math.random()*shorts.length)]-1]+tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="shorts list"||q=="short list"){u+" --> #Shorts ASMR video list is: "+shorts+" Total="+shorts.length;}
 else if(q=="announcement"||q=="twitch"){"Announcement "+s+"s selected by "+u+" 66. "+a[66-1]+tag[Math.floor(Math.random()*tag.length)];}
-else if(q=="members" && a[n]==""){"There is no current Members Only pre-release "+s;}
-else if(q=="members only" && a[n]==""){"There is no current Members Only pre-release "+s;}
+else if(q=="members" && a[n]==""){"There is no current members only pre-release "+s+" "+u;}
+else if(q=="members only" && a[n]==""){"There is no current members only pre-release "+s+" "+u;}
 else if(q=="members"||q=="members only"){"Members Only pre-release "+s+" selected by "+u+" "+[n+1]+". "+a[n];}
 
 else if(q>0&&q<=n){s+" selected by "+u+" "+a[q-1]+tag[Math.floor(Math.random()*tag.length)];}
