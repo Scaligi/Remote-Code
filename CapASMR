@@ -1,11 +1,11 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v7.2";
+rc_v ="v7.3";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
 tag =[" - Don't forget to like the video!", " - What are you waiting for? Share, share, share!", " - Go comment to feed the YouTube algorithm!", " - Have you subscribed to Cap Bailey ASMR?", " - Don't miss another video, hit that notification bell!"];
 
-options ="affirmation, apache, bodyguard, binaural, boy, collab, cne, cod, drfrantic, face, guns, hair, hands, joker, lights, mafia, personal attention, pirate, shave, shorts, starwars, tarkov, tattoo, whispered, ww2";
+options ="affirmation, apache, bodyguard, binaural, boy, collab, cne, cod, drfrantic, face, guns, hair, hands, joker, lights, mafia, non roleplay, personal attention, pirate, shave, shorts, starwars, tarkov, tattoo, whispered, ww2";
 
 shorts_r = Math.floor(Math.random()*shorts.length);
 
@@ -23,6 +23,7 @@ hand =[17,53,63,83,84,114,116,118,122,143,153,157,171,173,181,186,198,202,218,22
 jk =[54,99,194,248]; jk_r = Math.floor(Math.random()*jk.length);
 lit =[2,5,20,21,33,49,55,61,62,63,69,70,73,75,76,78,86,87,88,93,96,106,118,120,132,136,179,184,188,190,206,207,222,226,228,261,264,265,267,271]; lit_r = Math.floor(Math.random()*lit.length);
 mafia =[10,109,160,169,257]; mafia_r = Math.floor(Math.random()*mafia.length);
+nonrp =[15,17,22,23,29,33,36,41,45,48,50,53,56,61,66,73,77,80,85,86,90,97,98,105,110,114,118,122,140,142,143,144,148,151,153,164,165,172,180,185,188,207,208,215,222,227,242,246,252,255,259,263,268,270,271,276]; nonrp_r = Math.floor(Math.random()*nonrp.length);
 pa =[3,9,15,20,33,59,60,61,68,69,70,73,118,136,239,240,241,242,244,245,247,248,249,251,254,255,256,258,259,260,262,265,268,272,274,275,279]; pa_r = Math.floor(Math.random()*pa.length);
 shv =[19,64,89,116,153,157,202,216,257,274]; shv_r = Math.floor(Math.random()*shv.length);
 tark =[130,146,211]; tark_r = Math.floor(Math.random()*tark.length);
@@ -115,6 +116,9 @@ else if(q=="lights list"){u+" --> Light triggers "+s+" list is: "+lit+" Total="+
 
 else if(q=="mafia"||q=="mob"){"Mafia mob triggers "+s+" suggestion for "+u+" " +mafia[mafia_r]+ ". " +a[mafia[mafia_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="mafia list"||q=="mob list"){u+" --> Mafia mob triggers "+s+" list is: "+mafia+" Total="+mafia.length;}
+
+else if(q=="non roleplay"||q=="non rp"){"Non Roleplay "+s+" suggestion for "+u+" " +nonrp[nonrp_r]+ ". " +a[nonrp[nonrp_r]-1]+" - Thanks to KitKat1107 for suggesting this option and putting together the list along with winchester in wonderland for further suggestions";}
+else if(q=="non roleplay list"||q=="non rp list"){u+" --> Non Roleplay "+s+" list is: "+nonrp+" Total="+nonrp.length;}
 
 else if(q=="personal attention"||q=="pa"){"Personal attention "+s+" suggestion for "+u+" " +pa[pa_r]+ ". " +a[pa[pa_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="personalattention"||q=="personal"){"Personal attention "+s+" suggestion for "+u+" " +pa[pa_r]+ ". " +a[pa[pa_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
