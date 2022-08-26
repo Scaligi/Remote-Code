@@ -19,7 +19,7 @@ drf =[49,58,69,88,104]; drf_r = Math.floor(Math.random()*drf.length);
 ear =[108,115,191,200,221,226,228,261,264,282]; ear_r = Math.floor(Math.random()*ear.length);
 eye =[2,16,25,55,78,96,107,115,120,136,156,166,179,190,198,214,221,223,228,243,247,261,264,269,280]; eye_r = Math.floor(Math.random()*eye.length);
 face =[9,17,34,39,98,116,118,122,124,132,173,183,206,207,233,242,243,244,250,262,271]; face_r = Math.floor(Math.random()*face.length);
-gun =[142,143,144,146,148,151,169,185,215,224,229,234]; gun_r = Math.floor(Math.random()*gun.length);
+gun =[142,143,144,146,148,151,169,185,215,224,229,234,270,283]; gun_r = Math.floor(Math.random()*gun.length);
 hair =[44,50,84,97,112,138,213,233,239,249,281]; hair_r = Math.floor(Math.random()*hair.length);
 hand =[17,53,63,83,84,114,116,118,122,143,153,157,171,173,181,186,198,202,218,227,246,251,261,265,267,271]; hand_r = Math.floor(Math.random()*hand.length);
 jk =[54,99,194,248]; jk_r = Math.floor(Math.random()*jk.length);
