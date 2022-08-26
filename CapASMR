@@ -1,11 +1,11 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v7.4";
+rc_v ="v7.5";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
 tag =[" - Don't forget to like the video!", " - What are you waiting for? Share, share, share!", " - Go comment to feed the YouTube algorithm!", " - Have you subscribed to Cap Bailey ASMR?", " - Don't miss another video, hit that notification bell!"];
 
-options ="affirmation, apache, bodyguard, binaural, boy, collab, cne, cod, drfrantic, ears, eyes, face, guns, hair, hands, joker, lights, mafia, medical, non roleplay, personal attention, pirate, shave, shorts, starwars, tarkov, tattoo, whispered, ww2";
+options ="affirmation, apache, bodyguard, binaural, boy, collab, cne, cod, drfrantic, ears, eyes, face, guns, hair, hands, joker, keyboard, lights, mafia, medical, non roleplay, personal attention, pirate, shave, shorts, starwars, tarkov, tattoo, typing, whispered, ww2";
 
 shorts_r = Math.floor(Math.random()*shorts.length);
 
@@ -106,20 +106,25 @@ else if(q=="ear list"||q=="ears list"){u+" --> Ears "+s+" list is: "+ear+" Total
 else if(q=="eye"||q=="eyes"){"Eyes "+s+" suggestion for "+u+" " +eye[eye_r]+ ". " +a[eye[eye_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="eye list"||q=="eyes list"){u+" --> Eyes "+s+" list is: "+eye+" Total="+eye.length;}
 
+else if(q=="face"){"Face touching "+s+" suggestion for "+u+" " +face[face_r]+ ". " +a[face[face_r]-1]+" - Many thanks to winchester in wonderland for suggesting this option";}
+else if(q=="face list"){u+" --> Face touching "+s+" list is: "+face+" Total="+face.length;}
+
 else if(q=="joker"){"The Joker "+s+" suggestion for "+u+" " +jk[jk_r]+ ". " +a[jk[jk_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="joker list"){u+" --> The Joker "+s+" list is: "+jk+" Total="+jk.length;}
 
-else if(q=="guns"){"Gun "+s+" suggestion for "+u+" " +gun[gun_r]+ ". " +a[gun[gun_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
-else if(q=="guns list"){u+" --> Gun "+s+" list is: "+gun+" Total="+gun.length;}
+else if(q=="keyboard"||q=="key board"){"Keyboard Typing "+s+" suggestion for "+u+" " +key[key_r]+ ". " +a[key[key_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
+else if(q=="key"||q=="typing"){"Keyboard Typing "+s+" suggestion for "+u+" " +key[key_r]+ ". " +a[key[key_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
+else if(q=="keyboard list"||q=="key board list"){u+" --> Keyboard Typing "+s+" list is: "+key+" Total="+key.length;}
+else if(q=="key list"||q=="typing list"){u+" --> Keyboard Typing "+s+" list is: "+key+" Total="+key.length;}
+
+else if(q=="guns"||q=="gun"){"Gun "+s+" suggestion for "+u+" " +gun[gun_r]+ ". " +a[gun[gun_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
+else if(q=="guns list"||q=="gun list"){u+" --> Gun "+s+" list is: "+gun+" Total="+gun.length;}
 
 else if(q=="hair"){"Hair "+s+" suggestion for "+u+" " +hair[hair_r]+ ". " +a[hair[hair_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="hair list"){u+" --> Hair ASMR video list is: "+hair+" Total="+hair.length;}
 
 else if(q=="hands"||q=="hand"){"Hands "+s+" suggestion for "+u+" " +hand[hand_r]+ ". " +a[hand[hand_r]-1]+" - Many thanks to winchester in wonderland for selecting the video list for this option";}
 else if(q=="hand list"||q=="hands list"){u+" --> Hands ASMR video list is: "+hand+" Total="+hand.length+" - Many thanks to winchester in wonderland for selecting this video list";}
-
-else if(q=="face"){"Face touching "+s+" suggestion for "+u+" " +face[face_r]+ ". " +a[face[face_r]-1]+" - Many thanks to winchester in wonderland for suggesting this option";}
-else if(q=="face list"){u+" --> Face touching "+s+" list is: "+face+" Total="+face.length;}
 
 else if(q=="lights"){"light triggers "+s+" suggestion for "+u+" " +lit[lit_r]+ ". " +a[lit[lit_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="lights list"){u+" --> Light triggers "+s+" list is: "+lit+" Total="+lit.length;}
