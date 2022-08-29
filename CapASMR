@@ -9,7 +9,7 @@ options ="affirmation, apache, bodyguard, binaural, boy, collab, cne, cod, drfra
 
 shorts_r = Math.floor(Math.random()*shorts.length);
 
-aff =[15,70,118,122,149,268,284]; aff_r = Math.floor(Math.random()*aff.length);
+aff =[15,70,118,122,149,268,284,285]; aff_r = Math.floor(Math.random()*aff.length);
 bg =[249,260]; bg_r = Math.floor(Math.random()*bg.length);
 bi =[71,99,100,101,102,104,105,106,107,108,112,116,120,124,144,154,157,183,185,189,216,226,256,269]; bi_r = Math.floor(Math.random()*bi.length);
 boy =[239,240,241,244,247,251,256,262,265,267,272,275,279,281]; boy_r = Math.floor(Math.random()*boy.length);
