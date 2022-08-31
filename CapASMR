@@ -1,5 +1,5 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v7.5";
+rc_v ="v7.6";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
@@ -12,9 +12,9 @@ shorts_r = Math.floor(Math.random()*shorts.length);
 aff =[15,70,118,122,149,268,284,285]; aff_r = Math.floor(Math.random()*aff.length);
 bg =[249,260]; bg_r = Math.floor(Math.random()*bg.length);
 bi =[71,99,100,101,102,104,105,106,107,108,112,116,120,124,144,154,157,183,185,189,216,226,256,269]; bi_r = Math.floor(Math.random()*bi.length);
-boy =[239,240,241,244,247,251,256,262,265,267,272,275,279,281]; boy_r = Math.floor(Math.random()*boy.length);
+boy =[239,240,241,244,247,251,256,262,265,267,272,275,279,281,286]; boy_r = Math.floor(Math.random()*boy.length);
 cne =[5,8,38,87,115,154,163,167,184,189,194,197,201,210,221,225,226,228,231,253,261,264,278]; cne_r = Math.floor(Math.random()*cne.length);
-collab =[25,159,163,196,199,207]; collab_r = Math.floor(Math.random()*collab.length);
+collab =[25,159,163,196,199,207,286]; collab_r = Math.floor(Math.random()*collab.length);
 drf =[49,58,69,88,104]; drf_r = Math.floor(Math.random()*drf.length);
 ear =[108,115,191,200,221,226,228,261,264,282]; ear_r = Math.floor(Math.random()*ear.length);
 eye =[2,16,25,55,78,96,107,115,120,136,156,166,179,190,198,214,221,223,228,243,247,261,264,269,280]; eye_r = Math.floor(Math.random()*eye.length);
