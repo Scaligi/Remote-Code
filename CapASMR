@@ -1,5 +1,5 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v7.6c";
+rc_v ="v7.6d";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
@@ -34,7 +34,7 @@ tark =[130,146,211]; tark_r = Math.floor(Math.random()*tark.length);
 whisp =[61,99,105,106,108,122,124,139,140,173,179,185,217,225,226,243,246,250,259,262,263,265,270]; whisp_r = Math.floor(Math.random()*whisp.length);
 ww2 =[18,78,101,124,152,199,237,252]; ww2_r = Math.floor(Math.random()*ww2.length);
 
-if(q=="test" && a[n]==""){title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Total="+n+", Shorts="+shorts.length+", Members=None, Random="+r+", Found="+f+", URLfetch Successful: Database:"+db+" Remote_Code:"+rc_url;}
+if(q=="test"){title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Total="+n+", Shorts="+shorts.length+", Members="+a[n]+", Random="+r+", Found="+f+", URLfetch Successful: Database:"+db+" Remote_Code:"+rc_url;}
 if(q=="test" && a[n]!=""){title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Total="+n+", Shorts="+shorts.length+", Members="+[n+1]+", Random="+r+", Found="+f+", URLfetch Successful: Database:"+db+" Remote_Code:"+rc_url;}
 else if(q=="tags"||q=="tag list"){"The post hyperlink tags are: "+tag+" Total Tags="+tag.length;}
 
