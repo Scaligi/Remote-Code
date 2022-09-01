@@ -1,5 +1,5 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v7.6t";
+rc_v ="v7.6tt";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
@@ -77,7 +77,7 @@ else if(q=="tattoo"||q=="tattoos"){"Cap Bailey's tattoos selected by "+u+" 53. "
 else if(q=="I'm your idiot"||q=="I'm an idiot"){"I'm your idiot "+s+" selected by "+u+" 105. "+a[105-1];}
 else if(q=="i'm your idiot"||q=="i'm an idiot"){"I'm your idiot "+s+" selected by "+u+" 105. "+a[105-1];}
 
-else if(q=="affirmation"){tt=111 ; tt+" Positive affirmation "+s+" suggestion for "+u+" "+aff[aff_r]+". "+a[aff[aff_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
+else if(q=="affirmation"){tt="tt" ; tt+" Positive affirmation "+s+" suggestion for "+u+" "+aff[aff_r]+". "+a[aff[aff_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="affirmation list"){u+" --> Positive affirmation "+s+" list is: "+aff+" Total="+aff.length;}
 
 else if(q=="bodyguard #"){"Bodyguard "+s+" suggestion for "+u+" " +bg[bg_r]+ ". " +a[bg[bg_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
