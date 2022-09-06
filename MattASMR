@@ -9,7 +9,7 @@ hair =[76,82,96,113,157,186];
 lights =[78,90];
 madden =[4,6,12,14,20,23,26,34,36,44,51,63,70,83,94,140];
 minecraft =[8,11,15,19,22,25,30,65];
-mukbang =[37,108,114,120,128,137,146,151,159,184,189,203];
+mukbang =[37,108,114,120,128,137,146,151,159,184,189,203,205];
 nfl =[1,2,4,6,7,9,13,18,20,32,33,36,38,39,40,42,43,45,46,47,48,49,50,52,53,55,56,57,58,59,60,62,66,72,74,75,77,80,85,89,93,95,97,98,99,100,101,102,103,104,105,106,110,112,116,122,125,127,132,134,138,141,144,145,148,152,171];
 pa =[109,164,173,177,180,183,186];
 pokemon =[54,149,154,161];
@@ -56,7 +56,7 @@ else if(q=="madden list"){u+" --> Madden "+s+" list is: "+madden;}
 else if(q=="minecraft"){"Minecraf "+s+" suggestion for "+u+" "+a[minecraft[Math.floor(Math.random()*8)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="minecraft list"){u+" --> Minecraft "+s+" list is: "+minecraft;}
  
-else if(q=="mukbang"){"Mukbang "+s+" suggestion for "+u+" "+a[mukbang[Math.floor(Math.random()*12)]-1] +tag[Math.floor(Math.random()*5)];}
+else if(q=="mukbang"){"Mukbang "+s+" suggestion for "+u+" "+a[mukbang[Math.floor(Math.random()*13)]-1] +tag[Math.floor(Math.random()*5)];}
 else if(q=="mukbang list"){u+" --> Mukbang "+s+" list is: "+mukbang;}
  
 else if(q=="nfl"){"NFL "+s+" suggestion for "+u+" "+a[nfl[Math.floor(Math.random()*67)]-1]+tag[Math.floor(Math.random()*5)];}
