@@ -1,5 +1,5 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v7.6h";
+rc_v ="v7.6i";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
@@ -156,4 +156,4 @@ else if(q=="whisper list"||q=="whispered list"){u+" --> Whispered "+s+" list is:
 else if(q=="ww2"){"WW2 "+s+" suggestion for "+u+" " +ww2[ww2_r]+ ". " +a[ww2[ww2_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="ww2 list"){u+" --> WW2 "+s+" list is: "+ww2+" Total="+ww2.length;}
 
-else{u+" --> When specifying please select a number between 1 and "+n+" or use !asmr help for a list of other command options";}
+else{"/me "+u+" --> When specifying please select a number between 1 and "+n+" or use !asmr help for a list of other command options";}
