@@ -1,11 +1,11 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v7.6m";
+rc_v ="v7.6n";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
 tag =[" - Don't forget to like the video!", " - What are you waiting for? Share, share, share!", " - Go comment to feed the YouTube algorithm!", " - Have you subscribed to Cap Bailey ASMR?", " - Don't miss another video, hit that notification bell!"];
 
-options ="affirmation, apache, bodyguard, binaural, boy, collab, cne, cod, drfrantic, ears, eyes, face, gaming, guns, hair, hands, joker, keyboard, lights, mafia, medical, movies, non roleplay, personal attention, pirate, q&a, shave, shorts, sports, starwars, tarkov, tattoo, typing, western, whispered, ww2";
+options ="affirmation, apache, bodyguard, binaural, boy, collab, cne, cod, dr frantic, ears, eyes, face, gaming, guns, hair, hands, joker, keyboard, lights, mafia, medical, movies, non roleplay, personal attention, pirate, q&a, shave, shorts, sports, starwars, tarkov, tattoo, typing, western, whispered, ww2";
 
 shorts_r = Math.floor(Math.random()*shorts.length);
 
@@ -47,7 +47,7 @@ else if(q=="spit random"||q=="test random"){"Random selections are: affirmation=
 
 else if(q=="help"||q=="?"){"!asmr suggests a random video from Cap Bailey's YouTube channel | !asmr 1 - "+n+" selects a specific video | Command options include !asmr latest, list, total | Use !asmr options for a list of category options";}
 else if(q=="list"){"The video list database used by this command is available here: https://pastebin.com/"+db;}
-else if(q=="options"||q=="option"){"ASMR category options include !asmr "+options;}
+else if(q=="options"||q=="option"){"**Category Options:** "+options;}
 else if(q=="total"){"Cap Bailey has "+n+" ASMR videos on his YouTube channel, including "+[n-shorts.length]+" Full length videos and "+[shorts.length]+" #Shorts, including one announcement.";}
 
 else if(t=="Scaligi"){"Scaligi's favourite Cap Bailey "+s+" 61. "+a[61-1];}
@@ -114,13 +114,8 @@ else if(q=="eye list"||q=="eyes list"){u+" --> Eyes "+s+" list is: "+eye+" Total
 else if(q=="face"){"Face touching "+s+" suggestion for "+u+" " +face[face_r]+ ". " +a[face[face_r]-1]+" - Many thanks to winchester in wonderland for suggesting this option";}
 else if(q=="face list"){u+" --> Face touching "+s+" list is: "+face+" Total="+face.length;}
 
-else if(q=="joker"){"The Joker "+s+" suggestion for "+u+" " +jk[jk_r]+ ". " +a[jk[jk_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
-else if(q=="joker list"){u+" --> The Joker "+s+" list is: "+jk+" Total="+jk.length;}
-
-else if(q=="keyboard"||q=="key board"){"Keyboard Typing "+s+" suggestion for "+u+" " +key[key_r]+ ". " +a[key[key_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
-else if(q=="key"||q=="typing"){"Keyboard Typing "+s+" suggestion for "+u+" " +key[key_r]+ ". " +a[key[key_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
-else if(q=="keyboard list"||q=="key board list"){u+" --> Keyboard Typing "+s+" list is: "+key+" Total="+key.length;}
-else if(q=="key list"||q=="typing list"){u+" --> Keyboard Typing "+s+" list is: "+key+" Total="+key.length;}
+else if(q=="gaming"||q=="video game"){"Gaming "+s+" suggestion for "+u+" " +game[game_r]+ ". " +a[game[game_r]-1]+" - Many thanks to Vera_1107 for suggesting this option";}
+else if(q=="gaming list"||q=="video game list"){u+" --> Gaming "+s+" list is: "+game+" Total="+game.length;}
 
 else if(q=="guns"||q=="gun"){"Gun "+s+" suggestion for "+u+" " +gun[gun_r]+ ". " +a[gun[gun_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="guns list"||q=="gun list"){u+" --> Gun "+s+" list is: "+gun+" Total="+gun.length;}
@@ -131,6 +126,14 @@ else if(q=="hair list"){u+" --> Hair ASMR video list is: "+hair+" Total="+hair.l
 else if(q=="hands"||q=="hand"){"Hands "+s+" suggestion for "+u+" " +hand[hand_r]+ ". " +a[hand[hand_r]-1]+" - Many thanks to winchester in wonderland for selecting the video list for this option";}
 else if(q=="hand list"||q=="hands list"){u+" --> Hands ASMR video list is: "+hand+" Total="+hand.length+" - Many thanks to winchester in wonderland for selecting this video list";}
 
+else if(q=="joker"){"The Joker "+s+" suggestion for "+u+" " +jk[jk_r]+ ". " +a[jk[jk_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
+else if(q=="joker list"){u+" --> The Joker "+s+" list is: "+jk+" Total="+jk.length;}
+
+else if(q=="keyboard"||q=="key board"){"Keyboard Typing "+s+" suggestion for "+u+" " +key[key_r]+ ". " +a[key[key_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
+else if(q=="key"||q=="typing"){"Keyboard Typing "+s+" suggestion for "+u+" " +key[key_r]+ ". " +a[key[key_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
+else if(q=="keyboard list"||q=="key board list"){u+" --> Keyboard Typing "+s+" list is: "+key+" Total="+key.length;}
+else if(q=="key list"||q=="typing list"){u+" --> Keyboard Typing "+s+" list is: "+key+" Total="+key.length;}
+
 else if(q=="lights"){"light triggers "+s+" suggestion for "+u+" " +lit[lit_r]+ ". " +a[lit[lit_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="lights list"){u+" --> Light triggers "+s+" list is: "+lit+" Total="+lit.length;}
 
@@ -140,6 +143,9 @@ else if(q=="mafia list"||q=="mob list"){u+" --> Mafia mob triggers "+s+" list is
 else if(q=="medical"||q=="med"){"Medical "+s+" suggestion for "+u+" " +med[med_r]+ ". " +a[med[med_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="medical list"||q=="med list"){u+" --> Medical "+s+" list is: "+med+" Total="+med.length;}
 
+else if(q=="movie"||q=="movies"){"Movie inspired "+s+" suggestion for "+u+" " +movie[movie_r]+ ". " +a[movie[movie_r]-1]+" - Many thanks to Vera_1107 for suggesting this option";}
+else if(q=="movie list"||q=="movies list"){u+" --> Movie inspired "+s+" list is: "+movie+" Total="+movie.length;}
+
 else if(q=="non roleplay"||q=="non rp"){"Non Roleplay "+s+" suggestion for "+u+" " +nonrp[nonrp_r]+ ". " +a[nonrp[nonrp_r]-1]+" - Thanks to Vera_1107 for suggesting this option and putting together the list along with winchester in wonderland for further suggestions";}
 else if(q=="non roleplay list"||q=="non rp list"){u+" --> Non Roleplay "+s+" list is: "+nonrp+" Total="+nonrp.length;}
 
@@ -148,12 +154,18 @@ else if(q=="personalattention"||q=="personal"){"Personal attention "+s+" suggest
 else if(q=="pa list"||q=="personalattention list"){u+" --> Personal attention ASMR video list is: "+pa+" Total="+pa.length;}
 else if(q=="personal list"||q=="personal attention list"){u+" --> Personal attention ASMR video list is: "+pa+" Total="+pa.length;}
 
+else if(q=="Q&A"||q=="q&a"){"Q&A "+s+" suggestion for "+u+" " +qa[qa_r]+ ". " +a[qa[qa_r]-1]+" - Many thanks to Vera_1107 for suggesting this option";}
+else if(q=="Q&A list"||q=="a&a list"){u+" --> Q&A "+s+" list is: "+qa+" Total="+qa.length;}
+
 else if(q=="shave"){"Shaving "+s+" suggestion for "+u+" " +shv[shv_r]+ ". " +a[shv[shv_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="shave list"){u+" --> Shaving "+s+" list is: "+shv+" Total="+shv.length;}
 
 else if(q=="tarkov"){"Escape from Tarkov "+s+" suggestion for "+u+" " +tark[tark_r]+ ". " +a[tark[tark_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="tarkov all"){"All Tarkov Videos selected by "+u+" 130. "+a[130-1]+" and 146. "+a[146-1]+" and 211. "+a[211-1];}
 else if(q=="tarkov list"){u+" --> Tarkov "+s+" list is: "+tark+" Total="+tark.length;}
+
+else if(q=="sports"||q=="sport"){"Sports "+s+" suggestion for "+u+" " +sport[sport_r]+ ". " +a[sport[sport_r]-1]+" - Many thanks to Vera_1107 for suggesting this option";}
+else if(q=="sports list"||q=="sport list"){u+" --> Sports "+s+" list is: "+sport+" Total="+sport.length;}
 
 else if(q=="western"||q=="west"){"Western "+s+" suggestion for "+u+" " +west[west_r]+ ". " +a[west[west_r]-1]+" - Many thanks to Vera_1107 for suggesting this option";}
 else if(q=="western list"||q=="west list"){u+" --> Western "+s+" list is: "+west+" Total="+west.length;}
