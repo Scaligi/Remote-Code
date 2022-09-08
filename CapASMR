@@ -1,5 +1,5 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v8.1";
+rc_v ="v8.2";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
@@ -51,7 +51,7 @@ else if(q=="total"){"Cap Bailey has "+n+" ASMR videos on his YouTube channel, in
 
 else if(t=="Scaligi"){"Scaligi's favourite Cap Bailey "+s+" 61. "+a[61-1];}
 else if(t=="scaligi"){"Scaligi's second favourite Cap Bailey "+s+" 2. "+a[2-1];}
-else if(t=="mxryumm"||t=="_mxryumm"){"Maryum's favorite Cap Bailey "+s+" 52. "+a[52-1]+" 🕷🕷🕷🤍🤍🤍";}
+else if(t=="mxryumm"||t=="_mxryumm"){"Maryum's favorite Cap Bailey "+s+" 280. "+a[280-1]+" 🕷🕷🕷🤍🤍🤍";}
 else if(t=="enola"){"Enola's favourite Cap Bailey "+s+" 105. "+a[105-1];}
 
 else if(q=="" && r==f){"*"+s+" suggestion for "+u+" "+[r+1]+". "+a[r]+tag[Math.floor(Math.random()*tag.length)];}
