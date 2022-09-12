@@ -1,11 +1,11 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v8.3";
+rc_v ="v8.3a";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
 tag =[" - Don't forget to like the video!", " - What are you waiting for? Share, share, share!", " - Go comment to feed the YouTube algorithm!", " - Have you subscribed to Cap Bailey ASMR?", " - Don't miss another video, hit that notification bell!"];
 
-options ="affirmation, apache, bodyguard, binaural, boy, collab, cne, cod, dr frantic, ears, eyes, face, gaming, guns, hair, hands, joker, keyboard, lights, mafia, medical, movies, non roleplay, personal attention, pirate, q&a, shave, shorts, sports, starwars, tarkov, tattoo, typing, western, whispered, ww2";
+options ="affirmation, apache, bodyguard, binaural, boy, collab, cne, cod, dr frantic, ears, eyes, face, gaming, guns, hair, hands, joker, keyboard, lights, lumberjack, mafia, medical, movies, non roleplay, personal attention, pirate, q&a, shave, shorts, sports, starwars, tarkov, tattoo, typing, western, whispered, ww2";
 
 shorts_r = Math.floor(Math.random()*shorts.length);
 
@@ -74,6 +74,8 @@ else if(q=="cod"){"COD "+s+"s selected by "+u+" 5. "+a[5-1]+" and 106. "+a[106-1
 else if(q=="cyberpunk"){"Cyberpunk "+s+"s selected by "+u+" 25. "+a[25-1]+" and 75. "+a[75-1];}
 else if(q=="beat"||q=="beating"){"Cap Bailey's beating then fixing you selected by "+u+" 208. "+a[208-1]+tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="fix"||q=="punch"){"Cap Bailey's beating then fixing you selected by "+u+" 208. "+a[208-1]+tag[Math.floor(Math.random()*tag.length)];}
+else if(q=="lumberjack"||q=="raccoon"){"Lumberjack "+s+" selected by "+u+" 291. "+a[291-1]+tag[Math.floor(Math.random()*tag.length)];}
+
 else if(q=="pirate"||q=="pirates"){"Pirate "+s+" selected by "+u+" 59. "+a[59-1];}
 else if(q=="shark"){"Cap Bailey's Shark ASMR selected by "+u+" 263. "+a[263-1]+tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="starwars"||q=="star wars"){"Star Wars "+s+" selected by "+u+" 100. "+a[100-1];}
