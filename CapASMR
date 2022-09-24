@@ -1,5 +1,5 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v8.4i";
+rc_v ="v8.4j";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
@@ -148,7 +148,7 @@ else if(q=="mafia"||q=="mob"){mafia_r = Math.floor(Math.random()*mafia.length); 
 else if(q=="mafia list"||q=="mob list"){mafia.reverse(); u+" --> Mafia mob triggers "+s+" list is: "+mafia+" Total="+mafia.length;}
 
 else if(q=="medical"||q=="med"){med_r = Math.floor(Math.random()*med.length); "Medical "+s+" suggestion for "+u+" " +med[med_r]+ ". " +a[med[med_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
-else if(q=="medical list"||q=="med list"){med.reverse();"Medical list: "+med+" Total="+med.length;}
+else if(q=="medical list"||q=="med list"){u+" --> Medical "+s+" list isavailable here: https://raw.githubusercontent.com/Scaligi/Remote-Code/main/MedicalList Total="+med.length;}
 
 else if(q=="movie"||q=="movies"){movie_r = Math.floor(Math.random()*movie.length); "Movie inspired "+s+" suggestion for "+u+" " +movie[movie_r]+ ". " +a[movie[movie_r]-1]+" - Many thanks to Vera_1107 for suggesting this option";}
 else if(q=="movie list"||q=="movies list"){movie.reverse(); u+" --> Movie inspired "+s+" list is: "+movie+" Total="+movie.length;}
