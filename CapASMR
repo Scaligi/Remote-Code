@@ -1,5 +1,5 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v9c";
+rc_v ="v9d";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
@@ -40,11 +40,20 @@ west =[220,186,150,128,127,103,72,51,11];
 whisp =[290,287,270,265,263,262,260,259,250,246,243,226,225,217,185,179,173,140,139,124,122,108,106,105,99,61];
 ww2 =[252,237,199,152,124,101,79,18];
 
+other =[
+"James Matthew ASMR - DARK ASMR - THE RITUAL (Featuring CAP BAILEY!) HALLOWEEN ROLE PLAY! https://youtu.be/wz4tvVyZxcI",
+"Atlas ASMR: The Gentlemen 2 | Male ASMR Collab https://www.youtu.be/CXO8GeDLiR0",
+"RaffyTaphyASMR: ASMR Good Sounds with the Boys (hand sounds, gloves, tapping) https://youtu.be/TQHCBJGv8Rs",
+"ASMR Rich: ASMR | INSANE GUN SOUNDS WITH THE HOMIES With @RaffyTaphyASMR and @Cap Bailey ASMR For Sleep https://youtu.be/OCdxI1cu7pI",
+"edafoxx ASMR: The Girl In The Back Of The Class Gives You A Head Massage - Relaxing ASMR ft. @Cap Bailey ASMR https://youtu.be/Y7LB5tsE89k"];
+
 
 if(q=="test" && a[n]==""){title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Total="+n+", Shorts="+shorts.length+", Members=None, Random="+r+", URLfetch Successful: Database:"+db+" Remote_Code:"+rc_url;}
 else if(q=="test"){title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Total="+n+", Shorts="+shorts.length+", Members="+[n+1]+", Random="+r+", URLfetch Successful: Database:"+db+" Remote_Code:"+rc_url;}
 else if(q=="v"){"Version: NC_"+nc_v+"/RC_"+rc_v;}
 else if(q=="tags"||q=="tag list"){"The post hyperlink tags are: "+tag+" Total Tags="+tag.length;}
+
+else if(q=="other"||q=="featuring bailey"){"Other ASMR artist featuring Cap Bailey: "+other+" Total Tags="+other.length;}
 
 else if(q=="help"||q=="?"){"!asmr suggests a random video from Cap Bailey's YouTube channel | !asmr 1 - "+n+" selects a specific video | Command options include !asmr latest, list, total | Use !asmr options for a list of category options";}
 else if(q=="list"){"The video list database used by this command is available here: https://pastebin.com/"+db;}
