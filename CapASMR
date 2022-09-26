@@ -1,5 +1,5 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v9d";
+rc_v ="v9e";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
@@ -53,8 +53,6 @@ else if(q=="test"){title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Tot
 else if(q=="v"){"Version: NC_"+nc_v+"/RC_"+rc_v;}
 else if(q=="tags"||q=="tag list"){"The post hyperlink tags are: "+tag+" Total Tags="+tag.length;}
 
-else if(q=="other"||q=="featuring bailey"){"Other ASMR artist featuring Cap Bailey: "+other+" Total Tags="+other.length;}
-
 else if(q=="help"||q=="?"){"!asmr suggests a random video from Cap Bailey's YouTube channel | !asmr 1 - "+n+" selects a specific video | Command options include !asmr latest, list, total | Use !asmr options for a list of category options";}
 else if(q=="list"){"The video list database used by this command is available here: https://pastebin.com/"+db;}
 else if(q=="options"||q=="option"){"**Category Options:** "+options;}
@@ -83,6 +81,8 @@ else if(q=="announcement"||q=="twitch"){"Announcement "+s+"s selected by "+u+" 6
 else if(q=="members" && a[n]==""){"There is no current members only pre-release "+s+" "+u;}
 else if(q=="members only" && a[n]==""){"There is no current members only pre-release "+s+" "+u;}
 else if(q=="members"||q=="members only"){"Members Only pre-release "+s+" selected by "+u+" "+[n+1]+". "+a[n];}
+
+else if(q=="other"||q=="featuring bailey"){"Other ASMR artist featuring Cap Bailey: "+ other[Math.floor(Math.random()*other.length)];}
 
 else if(q>0&&q<=n){s+" selected by "+u+" "+a[q-1]+tag[Math.floor(Math.random()*tag.length)];}
 
