@@ -1,5 +1,5 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v9e";
+rc_v ="v9f";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
@@ -10,10 +10,10 @@ options ="affirmation, apache, bodyguard, binaural, boy, collab, cne, cod, dr fr
 shorts = [295,288,277,266,193,182,178,175,158,141,139,137,135,133,131,129,127,125,123,121,119,117,91,66];
 
 aff =[285,284,268,149,122,118,70,15];
-patch =[297,288,23];
+apache =[297,288,23];
 bg =[284,260,249];
 bi =[269,256,226,216,198,189,185,183,157,154,144,124,120,116,112,108,107,106,105,104,102,101,100,99,71]; 
-boy =[286,281,279,275,272,267,265,262,256,251,247,244,241,240,239];
+boy =[286,281,275,272,262,256,251,247,244,241,240,239];
 cne =[278,277,264,261,253,231,228,226,225,221,210,201,197,194,189,184,167,163,154,115,87,38,8,5];
 collab =[286,207,199,196,163,159,63,25];
 drf =[104,88,69,58,49];
@@ -24,7 +24,7 @@ game =[211,146,130,129,128,127,94,92,65,11,5];
 gun =[284,283,270,234,229,224,215,185,169,151,148,146,144,143,142];
 hair =[281,249,239,233,213,138,112,97,84,50,44];
 hand =[271,267,265,261,251,246,227,218,202,198,186,181,173,171,157,153,143,122,118,116,114,84,83,63,53,17];
-jk =[54,99,194,248];
+jk =[54,99,159,194,248];
 key =[284,280,269,126,125,45,35];
 lit =[293,292,271,267,265,264,261,228,226,222,207,206,190,188,184,179,136,132,120,118,106,98,96,93,88,87,86,78,76,75,73,70,69,63,62,61,55,49,33,21,20,5,2];
 mafia =[257,169,160,109,10];
@@ -86,7 +86,7 @@ else if(q=="other"||q=="featuring bailey"){"Other ASMR artist featuring Cap Bail
 
 else if(q>0&&q<=n){s+" selected by "+u+" "+a[q-1]+tag[Math.floor(Math.random()*tag.length)];}
 
-else if(q=="apache"){s+" of Apache selected by "+u+" 23. "+a[23-1]+" and #Short 288. "+a[288-1];}
+else if(q=="apache"||q=="Apache"){s+" of Apache selected by "+u+" 23. "+a[23-1]+" and #Short 288. "+a[288-1];}
 else if(q=="cod"){"COD "+s+"s selected by "+u+" 5. "+a[5-1]+" and 106. "+a[106-1];}
 else if(q=="cyberpunk"){"Cyberpunk "+s+"s selected by "+u+" 25. "+a[25-1]+" and 75. "+a[75-1];}
 else if(q=="beat"||q=="beating"){"Cap Bailey's beating then fixing you selected by "+u+" 208. "+a[208-1]+tag[Math.floor(Math.random()*tag.length)];}
@@ -103,6 +103,9 @@ else if(q=="i'm your idiot"||q=="i'm an idiot"){"I'm your idiot "+s+" selected b
 
 else if(q=="affirmation"){aff_r = Math.floor(Math.random()*aff.length); "Positive affirmation "+s+" suggestion for "+u+" "+aff[aff_r]+". "+a[aff[aff_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="affirmation list"){aff.reverse(); u+" --> Positive affirmation "+s+" list is: "+aff+" Total="+aff.length;}
+
+else if(q=="apache #"||q=="Apache #"){apache_r = Math.floor(Math.random()*apache.length); s+" featuring Apache suggested for "+u+" "+apache[apache_r]+". "+a[apache[apache_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
+else if(q=="apache list"||q=="Apache list"){apache.reverse(); u+" --> "+s+"s featuring Apache list is: "+apache+" Total="+apache.length;}
 
 else if(q=="bodyguard #"){ bg_r = Math.floor(Math.random()*bg.length); "Bodyguard "+s+" suggestion for "+u+" " +bg[bg_r]+ ". " +a[bg[bg_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="bodyguard"){"Bodyguard Videos selected by "+u+" 249. "+a[249-1]+" and 260. "+a[260-1];}
