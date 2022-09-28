@@ -1,5 +1,5 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v9h";
+rc_v ="v9i";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
@@ -126,6 +126,9 @@ else if(q=="boy list"){boy.reverse(); u+" --> The boy "+s+" list is: "+boy+" Tot
 
 else if(q=="cne"){cne_r = Math.floor(Math.random()*cne.length); "CNE "+s+" suggestion for "+u+" " +cne[cne_r]+ ". " +a[cne[cne_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="cne list"){cne.reverse(); u+" --> CNE ASMR video list is: "+cne+" Total="+cne.length;}
+
+else if(q=="coffee"||q=="Coffee"){coffee_r = Math.floor(Math.random()*coffee.length); "Coffee "+s+" suggestion for "+u+" "+coffee[coffee_r]+ ". " + a[coffee[coffee_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
+else if(q=="coffee list"||q=="Coffee list"){coffee.reverse();u+" --> Coffee "+s+" list is: "+coffee+" Total="+coffee.length;}
 
 else if(q=="collab"||q=="collaboration"){collab_r = Math.floor(Math.random()*collab.length); "Collaboration "+s+" suggestion for "+u+" " +collab[collab_r]+ ". " +a[collab[collab_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="collab list"||q=="collaboration list"){collab.reverse(); u+" --> Collaboration ASMR video list is: "+collab+" Total="+collab.length;}
