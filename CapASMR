@@ -1,11 +1,11 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v9j";
+rc_v ="v9k";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
 tag =[" - Don't forget to like the video!", " - What are you waiting for? Share, share, share!", " - Go comment to feed the YouTube algorithm!", " - Have you subscribed to Cap Bailey ASMR?", " - Don't miss another video, hit that notification bell!"];
 
-options ="affirmation, apache, bodyguard, binaural, boy, coffee, collab, cne, cod, dr frantic, ears, eyes, face, gaming, guns, hair, hands, joker, keyboard, lights, lumberjack, mafia, medical, movies, non roleplay, nose, personal attention, pirate, q&a, shave, shorts, sports, starwars, tarkov, tattoo, throat, typing, western, whispered, ww2";
+options ="affirmation, apache, bodyguard, binaural, boy, coffee, collab, cne, cod, dr frantic, ears, eyes, face, food, gaming, guns, hair, hands, joker, keyboard, lights, lumberjack, mafia, medical, military, movies, non roleplay, non verbal, nose, personal attention, pirate, q&a, shave, shorts, sports, starwars, tarkov, tattoo, throat, typing, western, whispered, ww2";
 
 shorts = [298,295,288,277,266,193,182,178,175,158,141,139,137,135,133,131,129,127,125,123,121,119,117,91,66];
 
@@ -146,6 +146,9 @@ else if(q=="eye list"||q=="eyes list"){eye.reverse(); u+" --> Eyes "+s+" list is
 else if(q=="face"){face_r = Math.floor(Math.random()*face.length); "Face touching "+s+" suggestion for "+u+" " +face[face_r]+ ". " +a[face[face_r]-1]+" - Many thanks to winchester in wonderland for suggesting this option";}
 else if(q=="face list"){face.reverse(); u+" --> Face touching "+s+" list is: "+face+" Total="+face.length;}
 
+else if(q=="food"||q=="Food"){food_r = Math.floor(Math.random()*food.length); "Food "+s+" suggestion for "+u+" "+food[food_r]+ ". " + a[food[food_r]-1]+tag[Math.floor(Math.random()*tag.length)]+" - Many thanks to Vera_1107 for suggesting this option";}
+else if(q=="food list"||q=="Food list"){food.reverse();u+" --> Food "+s+" list is: "+food+" Total="+food.length;}
+
 else if(q=="gaming"||q=="video game"){game_r = Math.floor(Math.random()*game.length); "Gaming "+s+" suggestion for "+u+" " +game[game_r]+ ". " +a[game[game_r]-1]+" - Many thanks to Vera_1107 for suggesting this option";}
 else if(q=="gaming list"||q=="video gaming list"){game.reverse(); u+" --> Gaming "+s+" list is: "+game+" Total="+game.length;}
 else if(q=="game list"||q=="video game list"){game.reverse(); u+" --> Gaming "+s+" list is: "+game+" Total="+game.length;}
@@ -155,6 +158,9 @@ else if(q=="guns list"||q=="gun list"){gun.reverse(); u+" --> Gun "+s+" list is:
 
 else if(q=="hair"){hair_r = Math.floor(Math.random()*hair.length); "Hair "+s+" suggestion for "+u+" " +hair[hair_r]+ ". " +a[hair[hair_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="hair list"){hair.reverse(); u+" --> Hair ASMR video list is: "+hair+" Total="+hair.length;}
+
+else if(q=="halloween"||q=="Halloween"){halloween_r = Math.floor(Math.random()*halloween.length); "Halloween "+s+" suggestion for "+u+" "+halloween[halloween_r]+ ". " + a[halloween[halloween_r]-1]+tag[Math.floor(Math.random()*tag.length)]+" - Many thanks to Vera_1107 for suggesting this option";}
+else if(q=="halloween list"||q=="Halloween list"){military.reverse();u+" --> Halloween "+s+" list is: "+halloween+" Total="+halloween.length;}
 
 else if(q=="hands"||q=="hand"){hand_r = Math.floor(Math.random()*hand.length); "Hands "+s+" suggestion for "+u+" " +hand[hand_r]+ ". " +a[hand[hand_r]-1]+" - Many thanks to winchester in wonderland for selecting the video list for this option";}
 else if(q=="hand list"||q=="hands list"){hand.reverse(); u+" --> Hands ASMR video list is: "+hand+" Total="+hand.length+" - Many thanks to winchester in wonderland for selecting this video list";}
@@ -176,11 +182,17 @@ else if(q=="mafia list"||q=="mob list"){mafia.reverse(); u+" --> Mafia mob trigg
 else if(q=="medical"||q=="med"){med_r = Math.floor(Math.random()*med.length); "Medical "+s+" suggestion for "+u+" " +med[med_r]+ ". " +a[med[med_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="medical list"||q=="med list"){u+" --> Medical "+s+" list: https://raw.githubusercontent.com/Scaligi/Remote-Code/main/MedicalList Total="+med.length;}
 
+else if(q=="military"||q=="Military"){military_r = Math.floor(Math.random()*military.length); "Military "+s+" suggestion for "+u+" "+military[military_r]+ ". " + a[military[military_r]-1]+tag[Math.floor(Math.random()*tag.length)]+" - Many thanks to Vera_1107 for suggesting this option";}
+else if(q=="military list"||q=="Military list"){military.reverse();u+" --> Military "+s+" list is: "+military+" Total="+military.length;}
+
 else if(q=="movie"||q=="movies"){movie_r = Math.floor(Math.random()*movie.length); "Movie inspired "+s+" suggestion for "+u+" " +movie[movie_r]+ ". " +a[movie[movie_r]-1]+" - Many thanks to Vera_1107 for suggesting this option";}
 else if(q=="movie list"||q=="movies list"){movie.reverse(); u+" --> Movie inspired "+s+" list is: "+movie+" Total="+movie.length;}
 
 else if(q=="non roleplay"||q=="non rp"){nonrp_r = Math.floor(Math.random()*nonrp.length); "Non Roleplay "+s+" suggestion for "+u+" " +nonrp[nonrp_r]+ ". " +a[nonrp[nonrp_r]-1]+" - Thanks to Vera_1107 for suggesting this option and putting together the list along with winchester in wonderland for further suggestions";}
 else if(q=="non roleplay list"||q=="non rp list"){nonrp.reverse(); u+" --> Non Roleplay "+s+" list is: "+nonrp+" Total="+nonrp.length;}
+
+else if(q=="non verbal"||q=="nonverbal"){nonverbal_r = Math.floor(Math.random()*nonverbal.length); "Non Verbal "+s+" suggestion for "+u+" "+nonverbal[nonverbal_r]+ ". " + a[nonverbal[nonverbal_r]-1]+tag[Math.floor(Math.random()*tag.length)]+" - Many thanks to Vera_1107 for suggesting this option";}
+else if(q=="non verbal list"||q=="nonverbal list"){nonverbal.reverse();u+" --> Non Verbal "+s+" list is: "+nonverbal+" Total="+nonverbal.length;}
 
 else if(q=="nose"||q=="Nose"){nose_r = Math.floor(Math.random()*nose.length); "Nose "+s+" suggestion for "+u+" "+nose[nose_r]+ ". " + a[nose[nose_r]-1]+tag[Math.floor(Math.random()*tag.length)]+" - Many thanks to Vera_1107 for suggesting this option";}
 else if(q=="nose list"||q=="Nose list"){nose.reverse();u+" --> Nose "+s+" list is: "+nose+" Total="+nose.length;}
