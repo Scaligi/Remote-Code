@@ -1,5 +1,5 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v9.1";
+rc_v ="v9.1a";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
@@ -158,6 +158,8 @@ else if(q=="game list"||q=="video game list"){game.reverse(); u+" --> Gaming "+s
 
 else if(q=="guns"||q=="gun"){gun_r = Math.floor(Math.random()*gun.length); "Gun "+s+" suggestion for "+u+" " +gun[gun_r]+ ". " +a[gun[gun_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="guns list"||q=="gun list"){gun.reverse(); u+" --> Gun "+s+" list is: "+gun+" Total="+gun.length;}
+else if(q=="pew pew pew"||q=="pew"){gun_r = Math.floor(Math.random()*gun.length); "Gun "+s+" suggestion for "+u+" " +gun[gun_r]+ ". " +a[gun[gun_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
+else if(q=="pew pew pew list"||q=="pew list"){gun.reverse(); u+" --> Gun "+s+" list is: "+gun+" Total="+gun.length;}
 
 else if(q=="hair"){hair_r = Math.floor(Math.random()*hair.length); "Hair "+s+" suggestion for "+u+" " +hair[hair_r]+ ". " +a[hair[hair_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="hair list"){hair.reverse(); u+" --> Hair ASMR video list is: "+hair+" Total="+hair.length;}
