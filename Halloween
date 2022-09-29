@@ -1,8 +1,8 @@
 title ="New Halloween Command";
-rc_v ="v1.1";
+rc_v ="v1.1a";
 rc_url ="/Scaligi/Remote-Code/main/Halloween";
 
-help ="<Help Copy Text Here>";
+help ="User Guide can be found here on Discord: https://discordapp.com/channels/744238012606709872/1013552348892762182/1024750508285624391";
 
 
 if (q[0]=="test"){title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Halloween_cd="+h_cd.join(" ")+", Start_cd="+s_cd.join(" ")+", End_cd="+e_cd.join(" ")+", URLfetch Successful: Database:"+db+" Remote_Code:"+rc_url;}
