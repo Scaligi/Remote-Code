@@ -1,5 +1,5 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v9.1a";
+rc_v ="v9.1b";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
@@ -49,6 +49,8 @@ ww2 =[252,237,199,152,124,101,79,18];
 
 rev =["Forbidden"];
 
+f = short.includes(r);
+
 other =[
 "James Matthew ASMR - DARK ASMR - THE RITUAL (Featuring CAP BAILEY!) HALLOWEEN ROLE PLAY! https://youtu.be/wz4tvVyZxcI",
 "Atlas ASMR: The Gentlemen 2 | Male ASMR Collab https://www.youtu.be/CXO8GeDLiR0",
@@ -67,6 +69,7 @@ else if(q=="list"){"The video list database used by this command is available he
 else if(q=="options"||q=="option"){"**Category Options:** "+options;}
 else if(q=="total"){"Cap Bailey has "+n+" ASMR videos on his YouTube channel, including "+[n-shorts.length]+" Full length videos and "+[shorts.length]+" #Shorts, including one announcement.";}
 else if(q=="rev"){rev.reverse(); u+" --> Reverse Array list: "+rev+" Total="+rev.length;}
+else if(q=="f"){u+" --> Found: "+f;}
 
 else if(t=="Scaligi"){"Scaligi's favourite Cap Bailey "+s+" 61. "+a[61-1];}
 else if(t=="scaligi"){"Scaligi's second favourite Cap Bailey "+s+" 2. "+a[2-1];}
