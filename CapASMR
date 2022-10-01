@@ -49,7 +49,7 @@ ww2 =[252,237,199,152,124,101,79,18];
 
 rev =["Forbidden"];
 
-f = short.includes(r);
+f = shorts.includes(r);
 
 other =[
 "James Matthew ASMR - DARK ASMR - THE RITUAL (Featuring CAP BAILEY!) HALLOWEEN ROLE PLAY! https://youtu.be/wz4tvVyZxcI",
