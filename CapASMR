@@ -1,5 +1,5 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v9.1g";
+rc_v ="v9.1h";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
@@ -26,7 +26,7 @@ food =[265,262,256,241,239,211,209,183,160,101,90];
 game =[211,146,130,129,128,127,94,92,65,11,5];
 gun =[284,283,270,234,229,224,215,185,169,151,148,146,144,143,142];
 hair =[281,249,239,233,213,138,112,97,84,50,44];
-halloween =[300,248,194,192,159,62,57,54,34];
+halloween =[300,248,196,194,192,159,62,57,54,34];
 hand =[271,267,265,261,251,246,227,218,202,198,186,181,173,171,157,153,143,122,118,116,114,84,83,63,53,17];
 jk =[54,99,159,194,248];
 key =[284,280,273,269,126,125,45,35];
@@ -118,8 +118,8 @@ else if(q=="i'm your idiot"||q=="i'm an idiot"){"I'm your idiot "+s+" selected b
 else if(q=="affirmation"){affirmation_r = Math.floor(Math.random()*affirmation.length); "Positive affirmation "+s+" suggestion for "+u+" "+affirmation[affirmation_r]+". "+a[affirmation[affirmation_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="affirmation list"){affirmation.reverse(); u+" --> Positive affirmation "+s+" list is: "+affirmation+" Total="+affirmation.length;}
 
-else if(q=="ambient"||q=="background"){ambient_r = Math.floor(Math.random()*ambient.length); "Ambient background nosie "+s+" suggestion for "+u+" "+ambient[ambient_r]+ ". " + a[ambient[ambient_r]-1]+tag[Math.floor(Math.random()*tag.length)]+" - Many thanks to Vera_1107 for suggesting this option";}
-else if(q=="ambient list"||q=="background list"){ambient.reverse();u+" --> Ambient background nosie "+s+" list is: "+ambient+" Total="+ambient.length;}
+else if(q=="ambient"||q=="background"){ambient_r = Math.floor(Math.random()*ambient.length); "Ambient background noise "+s+" suggestion for "+u+" "+ambient[ambient_r]+ ". " + a[ambient[ambient_r]-1]+tag[Math.floor(Math.random()*tag.length)]+" - Many thanks to Vera_1107 for suggesting this option";}
+else if(q=="ambient list"||q=="background list"){ambient.reverse();u+" --> Ambient background noise "+s+" list is: "+ambient+" Total="+ambient.length;}
 
 else if(q=="apache #"||q=="Apache #"){apache_r = Math.floor(Math.random()*apache.length); s+" featuring Apache suggested for "+u+" "+apache[apache_r]+". "+a[apache[apache_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="apache list"||q=="Apache list"){apache.reverse(); u+" --> "+s+"s featuring Apache list is: "+apache+" Total="+apache.length;}
