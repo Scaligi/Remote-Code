@@ -1,5 +1,5 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v9.1e";
+rc_v ="v9.1f";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
@@ -171,8 +171,8 @@ else if(q=="pew pew pew list"||q=="pew list"){gun.reverse(); u+" --> Gun "+s+" l
 else if(q=="hair"){hair_r = Math.floor(Math.random()*hair.length); "Hair "+s+" suggestion for "+u+" " +hair[hair_r]+ ". " +a[hair[hair_r]-1]+tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="hair list"){hair.reverse(); u+" --> Hair ASMR video list is: "+hair+" Total="+hair.length;}
 
-else if(q=="halloween"||q=="Halloween"){halloween_r = Math.floor(Math.random()*halloween.length); "Halloween "+s+" suggestion for "+u+" "+halloween[halloween_r]+ ". " + a[halloween[halloween_r]-1]+tag[Math.floor(Math.random()*tag.length)]+" - Many thanks to Vera_1107 for suggesting this option";}
-else if(q=="halloween list"||q=="Halloween list"){halloween.reverse();u+" --> Halloween "+s+" list is: "+halloween+" Total="+halloween.length;}
+else if(q=="halloween"||q=="Halloween"){halloween_r = Math.floor(Math.random()*halloween.length); "🎃🎃🎃 Halloween "+s+" suggestion for "+u+" "+halloween[halloween_r]+ ". " + a[halloween[halloween_r]-1]+tag[Math.floor(Math.random()*tag.length)]+" - Many thanks to Vera_1107 for suggesting this option";}
+else if(q=="halloween list"||q=="Halloween list"){halloween.reverse();u+" --> 🎃🎃🎃 Halloween "+s+" list is: "+halloween+" Total="+halloween.length;}
 
 else if(q=="hands"||q=="hand"){hand_r = Math.floor(Math.random()*hand.length); "Hands "+s+" suggestion for "+u+" " +hand[hand_r]+ ". " +a[hand[hand_r]-1]+" - Many thanks to winchester in wonderland for selecting the video list for this option";}
 else if(q=="hand list"||q=="hands list"){hand.reverse(); u+" --> Hands ASMR video list is: "+hand+" Total="+hand.length+" - Many thanks to winchester in wonderland for selecting this video list";}
