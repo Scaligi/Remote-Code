@@ -1,5 +1,5 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v9.1p";
+rc_v ="v9.1q";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
@@ -48,7 +48,7 @@ west =[220,186,150,128,127,103,72,51,11];
 whisp =[301,299,290,287,270,265,263,262,260,259,250,246,243,226,225,217,185,179,173,140,124,122,108,106,105,99,61];
 ww2 =[252,237,199,152,124,101,79,18];
 
-rev =["Forbidden"];
+rev =[71,99,100,101,102,104,105,106,107,108,112,116,118,120,122,124,136,138,140,142,144,145,146,148,154,157,180,183,185,189,198,201,202,207,208,216,217,219,222,225,226,227,230];
 
 f = shorts.includes(r);
 
@@ -129,7 +129,7 @@ else if(q=="bodyguard"){"Bodyguard Videos selected by "+u+" 249. "+a[249-1]+" an
 else if(q=="bodyguard list"){bg.reverse(); u+" --> Bodyguard "+s+" list is: "+bg+" Total="+bg.length;}
 
 else if(q=="binaural"||q=="bi"){bi_r = Math.floor(Math.random()*bi.length); "Binaural "+s+" suggestion for "+u+" " +bi[bi_r]+ ". " +a[bi[bi_r]-1]+" - Many thanks to Vera_1107 for suggesting this option";}
-else if(q=="binaural list"||q=="bi list"){bi.reverse(); u+" --> Binaural "+s+" list is: "+bi+" Total="+bi.length;}
+else if(q=="binaural list"||q=="bi list"){u+" --> Binaural "+s+" list: https://raw.githubusercontent.com/Scaligi/Remote-Code/main/BinauralList Total="+med.length;}
 
 else if(q=="boy"){boy_r = Math.floor(Math.random()*boy.length); "The boy "+s+" suggestion for "+u+" " +boy[boy_r]+ ". " +a[boy[boy_r]-1] +tag[Math.floor(Math.random()*tag.length)];}
 else if(q=="boy list"){boy.reverse(); u+" --> The boy "+s+" list is: "+boy+" Total="+boy.length;}
