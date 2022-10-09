@@ -1,5 +1,5 @@
 title ="Cap Bailey's ASMR Command";
-rc_v ="v9.2";
+rc_v ="v9.2a";
 rc_url ="/Scaligi/Remote-Code/main/CapASMR";
 
 s ="ASMR Video";
@@ -48,7 +48,7 @@ west =[220,186,150,128,103,72,51,11];
 whisp =[301,299,290,287,270,265,263,262,260,259,250,246,243,226,225,217,185,179,173,140,124,122,108,106,105,99,61];
 ww2 =[252,237,199,152,124,101,79,18];
 
-rev =["No Data to Reverse"];
+rev =[75,79,81,92,95];
 
 f = shorts.includes(r);
 
