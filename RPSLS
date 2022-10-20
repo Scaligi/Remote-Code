@@ -16,14 +16,14 @@ if(q=="test"){title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Calling 
 else if(q=="v"){"Version: NC_"+nc_v+"/RC_"+rc_v;}
 else if(q=="help"||q=="?"){"/me "+help+" "+sk_url+s;}
 
-else if (i="rock" && q=="sk"){rock[Math.floor(Math.random()*5)]+s;}
-else if (i="rock"){rock[Math.floor(Math.random()*3)];}
-else if (i="paper" && q=="sk"){paper[Math.floor(Math.random()*5)]+s;}
-else if (i="paper"){paper[Math.floor(Math.random()*3)];}
-else if (i="scissors" && q=="sk"){scissors[Math.floor(Math.random()*5)]+s;}
-else if (i="scissors"){scissors[Math.floor(Math.random()*3)];}
+else if (i=="rock" && q=="sk"){rock[Math.floor(Math.random()*5)]+s;}
+else if (i=="rock"){rock[Math.floor(Math.random()*3)];}
+else if (i=="paper" && q=="sk"){paper[Math.floor(Math.random()*5)]+s;}
+else if (i=="paper"){paper[Math.floor(Math.random()*3)];}
+else if (i=="scissors" && q=="sk"){scissors[Math.floor(Math.random()*5)]+s;}
+else if (i=="scissors"){scissors[Math.floor(Math.random()*3)];}
 
-else if (i="lizard"){lizard[Math.floor(Math.random()*5)]+s;}
-else if (i="spock"){"test"+spock[Math.floor(Math.random()*5)]+s;}
+else if (i=="lizard"){lizard[Math.floor(Math.random()*5)]+s;}
+else if (i=="spock"){"test"+spock[Math.floor(Math.random()*5)]+s;}
 
 else{" --> Command Error - Scaligi Please Help!";}
