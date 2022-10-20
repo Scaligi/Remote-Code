@@ -12,7 +12,7 @@ lizard =['🦎 Lizard - Tie ❗', '🪨 Rock - You lose ❌ Rock crushes lizard'
 spock =['🖖 Spock - Tie ❗', '🦎 Lizard - You lose ❌ Lizard poisons Spock', '📄 Paper - You lose ❌ Paper disproves Spock', '✂️ Scissors - You win ✅ Spock smashes scissors', '🪨 Rock - You win ✅ Spock vaporises rock'];
 
 
-if(q=="test"){title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", URLfetch Successful: Database:"+db+" Remote_Code:"+rc_url;}
+if(q=="test"){title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Calling Command="+i+", URLfetch Successful: Database:"+db+" Remote_Code:"+rc_url;}
 else if(q=="v"){"Version: NC_"+nc_v+"/RC_"+rc_v;}
 else if(q=="help"||q=="?"){"/me "+help+" "+sk_url+s;}
 
