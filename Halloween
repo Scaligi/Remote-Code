@@ -1,5 +1,5 @@
 title ="New Halloween Command";
-rc_v ="v1.1a";
+rc_v ="v1.2";
 rc_url ="/Scaligi/Remote-Code/main/Halloween";
 
 help ="User Guide can be found here on Discord: https://discordapp.com/channels/744238012606709872/1013552348892762182/1024750508285624391";
@@ -16,7 +16,7 @@ else if (q[0]=="cd"||q[0]=="countdown"){"Halloween Countdown: "+h_cd.join(" ");}
 else if (e_cd[e_cd.length-1] == "ago" ) {"Halloween is over "+u+", try again in 2023!";}
 else if (s_cd[s_cd.length-1] != "ago" ) {s_cd.join(" ")+" left till the Halloween command is activated "+u+", or as soon as "+c+" releases a Halloween video!";}
 
-else if(q[0]=="list") {"List available here:pastebin.com/tHwEV4tf";}
+else if(q[0]=="list") {"List available here: https://pastebin.com/tHwEV4tf";}
 
 
 else if(t=="mxryumm" && h_cd[h_cd.length-1]=="ago"){"It's Halloween Maryum, "+a[Math.floor(Math.random()*4)];}
