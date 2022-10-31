@@ -1,5 +1,5 @@
 title ="New Halloween Command";
-rc_v ="v1.2";
+rc_v ="v1.3";
 rc_url ="/Scaligi/Remote-Code/main/Halloween";
 
 help ="User Guide can be found here on Discord: https://discordapp.com/channels/744238012606709872/1013552348892762182/1024750508285624391";
@@ -21,6 +21,7 @@ else if(q[0]=="list") {"List available here: https://pastebin.com/tHwEV4tf";}
 
 else if(t=="mxryumm" && h_cd[h_cd.length-1]=="ago"){"It's Halloween Maryum, "+a[Math.floor(Math.random()*4)];}
 else if(t=="_mxryumm" && h_cd[h_cd.length-1]=="ago"){"It's Halloween Maryum, "+a[Math.floor(Math.random()*4)];}
+else if(t=="@_mxryumm" && h_cd[h_cd.length-1]=="ago"){"It's Halloween Maryum, "+a[Math.floor(Math.random()*4)];}
 else if(t=="mxryumm"||t=="_mxryumm"){"Maryum, "+h_cd.join(" ")+" till Halloween - "+a[Math.floor(Math.random()*4)];}
 
 
