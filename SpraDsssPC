@@ -1,8 +1,8 @@
 title= "SpraDsss's Promo Cycle Command";
-version= "v2.2a";
+version= "v2.2b";
 rc_url= "/Scaligi/Remote-Code/main/SpraDssPC";
 
-Notification= "🔔 Subscribe to the channel and turn on notifications so you don't miss the next stream";
+notification= "🔔 Subscribe to the channel and turn on notifications so you don't miss the next stream";
 twitter= "🐦 Follow me on Twitter for updates https://www.Twitter.com/SpraDsss";
 instagram= "📷 Follow me on Instagram for highlights, and family photos https://www.Instagram.com/SpraDsss";
 tiktok= "📱 Follow me on TikTok - @spradsss https://www.tiktok.com/@spradsss";
