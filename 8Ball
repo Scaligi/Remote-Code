@@ -1,0 +1,32 @@
+title= "8 Ball Command";
+version= "v1.1";
+rc_url= "/Scaligi/Cap/main/8ball";
+
+r = ['It is Certain',
+'My reply is no',
+'It is decidedly so',
+'Ask again later',
+'Without a doubt',
+'Don\'t count on it',
+'Yes definitely',
+'My sources say no',
+'Reply hazy, try again',
+'You may rely on it',
+'Concentrate and ask again',
+'As I see it, yes',
+'Most likely',
+'Cannot predict now',
+'Outlook good',
+'Very doubtful',
+'Yes',
+'Signs point to yes',
+'Better not tell you now',
+'Outlook not so good'];
+ 
+if(q=="test"){title+" "+version+" User="+u+", Query="+q+", URLfetch Successful: Remote_Code:"+rc_url;}
+else if(q=="v"){"Version:"+version;}
+else if(q=="list"){r;}
+
+else if(q=="XXX") {"TEST RESPONSE ONLY";}
+
+else{u+ ", The Magic 🎱 ball says: "+ r[Math.floor(Math.random()*r.length)];}
