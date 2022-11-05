@@ -1,43 +1,37 @@
 title= "SpraDsss's Promo Cycle Command";
-version= "v1.2";
+version= "v2";
 rc_url= "/Scaligi/Remote-Code/main/SpraDssPC";
 
-twitch= "🔔 Drop a follow and turn on notifications so you don't miss the next stream";
+Notification= "🔔 Subscribe to the channel and turn on notifications so you don't miss the next stream";
 twitter= "🐦 Follow me on Twitter for updates https://www.Twitter.com/SpraDsss";
-prime= "🅿 Subscribe with Amazon Prime for free! Link your accounts here https://gaming.amazon.com/intro then subscribe";
 instagram= "📷 Follow me on Instagram for highlights, and family photos www.Instagram.com/SpraDsss";
-bits= "💎 You can support streamers by cheering with bits https://www.twitch.tv/bits";
 tiktok= "📱 Follow me on TikTok - @spradsss www.tiktok.com/@spradsss";
-subscribe= "✅ Click here to subscribe to the channel and get ad free viewing https://www.twitch.tv/subs/spradsss";
-youtube= "🎥 Subscribe to my YouTube channel - Coming soon";
+subscribe= "✅ Click to subscribe to the channel https://www.youtube/@spradsss";
 discord= "👉 Come Join the discord: https://discord.gg/A749rqHkmG";
 facebook= "🎮 Follow me on Facebook www.facebook.com/gaming/SpraDsss";
 
 
-if(q=="test"){title+" "+version+" User="+u+", Query="+q+", Command Count="+cc+", Promo Number="+pn+", URLfetch Successful: Remote_Code:"+rc_url;}
+if(q=="test"){title+" "+version+" User="+u+", Query="+q+", Command Count="+cc+", Promo Number="+pn+", URLfetch Successful: Remote_Code:"+rc_url +" - Next in cycle is No."+[(pn*1)+1];}
 
-else if(q=="list"){"Promo Messages are: 1🔔follow | 2🐦twitter | 3🅿prime | 4📷instagram | 5💎bits | 6📱tiktiok | 7✅subscribe | 8🎥youtube | 9👉discord | 10🎮facebook - Next in cycle is No."+[(pn*1)+1];}
+else if(q=="list"){"Promo Messages are: 1🔔Notification | 2🐦twitter | 3📷instagram | 4📱tiktiok | 5✅subscribe | 6👉discord | 7🎮facebook - Next in cycle is No."+[(pn*1)+1];}
 
-else if(q=="1"||q=="twitch"){twitch;}
+else if(q=="1"||q=="notification"){notification;}
 else if(q=="2"||q=="twitter"){twitter;}
-else if(q=="3"||q=="prime"){prime;}
-else if(q=="4"||q=="instagram"){instagram;}
-else if(q=="5"||q=="bits"){bits;}
-else if(q=="6"||q=="tiktok"){tiktok;}
-else if(q=="7"||q=="subscribe"){subscribe;}
-else if(q=="8"||q=="youtube"){youtube;}
-else if(q=="9"||q=="discord"){discord;}
-else if(q=="10"||q=="facebook"){facebook;}
+else if(q=="3"||q=="instagram"){instagram;}
+else if(q=="4"||q=="tiktok"){tiktok;}
+else if(q=="5"||q=="subscribe"){subscribe;}
+else if(q=="6"||q=="discord"){discord;}
+else if(q=="7"||q=="facebook"){facebook;}
 
-else if(pn=="1"){twitch;}
+else if(pn=="1"){notification;}
 else if(pn=="2"){twitter;}
-else if(pn=="3"){prime;}
-else if(pn=="4"){instagram;}
-else if(pn=="5"){bits;}
-else if(pn=="6"){tiktok;}
-else if(pn=="7"){subscribe;}
-else if(pn=="8"){youtube;}
-else if(pn=="9"){discord;}
-else if(pn=="0"){facebook;}
+else if(pn=="3"){instagram;}
+else if(pn=="4"){tiktok;}
+else if(pn=="5"){subscribe;}
+else if(pn=="6"){discord;}
+else if(pn=="7"){facebook;}
+else if(pn=="8"){notification;}
+else if(pn=="9"){tiktok;}
+else if(pn=="x"){subscribe;}
  
 else{" --> Command Error - Scaligi Please Help!";}
