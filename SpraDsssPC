@@ -1,5 +1,5 @@
 title= "SpraDsss's Promo Cycle Command";
-version= "v2.2b";
+version= "v2.3";
 rc_url= "/Scaligi/Remote-Code/main/SpraDssPC";
 
 notification= "🔔 Subscribe to the channel and turn on notifications so you don't miss the next stream";
@@ -9,11 +9,13 @@ tiktok= "📱 Follow me on TikTok - @spradsss https://www.tiktok.com/@spradsss";
 subscribe= "✅ Click to subscribe to the channel https://www.youtube.com/@spradsss?sub_confirmation=1";
 discord= "👉 Come Join the discord: https://discord.gg/A749rqHkmG";
 facebook= "🎮 Follow me on Facebook https://www.facebook.com/gaming/SpraDsss";
+tweet= "🐦 Click here to tweet! Please promote SpraDsss YouTube Gaming Channel https://bit.ly/3fD7xWp";
 
 
-if(q=="test"){title+" "+version+" User="+u+", Query="+q+", Command Count="+cc+", Promo Number="+pn+", URLfetch Successful: Remote_Code:"+rc_url +" - Next in cycle is No."+[(pn*1)+1];}
 
-else if(q=="list"){"Promo Messages are: 1🔔Notification | 2🐦twitter | 3📷instagram | 4📱tiktiok | 5✅subscribe | 6👉discord | 7🎮facebook - Next in cycle is No."+[(pn*1)+1];}
+if(q=="test"){title+" "+version+" User="+u+", Query="+q+", Command Count="+cc+", Promo Number="+pn+" - Next in cycle is No."+[(pn*1)+1]+", URLfetch Successful: Remote_Code:"+rc_url;}
+
+else if(q=="list"){"Promo Messages are: 1🔔Notification | 2🐦twitter | 3📷instagram | 4📱tiktiok | 5✅subscribe | 6👉discord | 7🎮facebook | 8🐦twitter - Next in cycle is No."+[(pn*1)+1];}
 
 else if(q=="1"||q=="notification"){notification;}
 else if(q=="2"||q=="twitter"){twitter;}
@@ -22,6 +24,7 @@ else if(q=="4"||q=="tiktok"){tiktok;}
 else if(q=="5"||q=="subscribe"){subscribe;}
 else if(q=="6"||q=="discord"){discord;}
 else if(q=="7"||q=="facebook"){facebook;}
+else if(q=="8"||q=="tweet"){tweet;}
 
 else if(pn=="1"){notification;}
 else if(pn=="2"){twitter;}
@@ -30,7 +33,7 @@ else if(pn=="4"){tiktok;}
 else if(pn=="5"){subscribe;}
 else if(pn=="6"){discord;}
 else if(pn=="7"){facebook;}
-else if(pn=="8"){notification;}
+else if(pn=="8"){tweet;}
 else if(pn=="9"){tiktok;}
 else if(pn=="x"){subscribe;}
  
