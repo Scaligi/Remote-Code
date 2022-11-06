@@ -1,5 +1,5 @@
 title= "SpraDsss's Promo Cycle Command";
-version= "v2.3";
+version= "v2.4";
 rc_url= "/Scaligi/Remote-Code/main/SpraDssPC";
 
 notification= "🔔 Subscribe to the channel and turn on notifications so you don't miss the next stream";
@@ -13,7 +13,7 @@ tweet= "🐦 Click here to tweet! Please promote SpraDsss YouTube Gaming Channel
 
 
 
-if(q=="test"){title+" "+version+" User="+u+", Query="+q+", Command Count="+cc+", Promo Number="+pn+" - Next in cycle is No."+[(pn*1)+1]+", URLfetch Successful: Remote_Code:"+rc_url;}
+if(q=="test"){title+" "+version+" User="+u+", Query="+q+", Command Count="+cc+", Promo Number="+pn+", Next in cycle="+[(pn*1)+1]+", URLfetch Successful: Remote_Code:"+rc_url;}
 
 else if(q=="list"){"Promo Messages are: 1🔔Notification | 2🐦twitter | 3📷instagram | 4📱tiktiok | 5✅subscribe | 6👉discord | 7🎮facebook | 8🐦twitter - Next in cycle is No."+[(pn*1)+1];}
 
