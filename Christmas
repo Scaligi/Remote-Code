@@ -1,11 +1,11 @@
 title ="New Christmas Command";
-rc_v ="v1.0-Beta";
+rc_v ="v1.1-Beta";
 rc_url ="/Scaligi/Remote-Code/main/Christmas";
 
 help ="User Guide can be found here on Discord: TBA";
 
 
-if (q[0]=="test"){title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Christmas_cd="+c_cd.join(" ")+", End_cd="+e_cd.join(" ")+", URLfetch Successful: Database:"+db+" Remote_Code:"+rc_url;}
+if (q[0]=="test"){title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Eve_cd="+ce_cd.join(" ")+", Christmas_cd="+c_cd.join(" ")+", End_cd="+e_cd.join(" ")+", URLfetch Successful: Database:"+db+" Remote_Code:"+rc_url;}
 else if(q[0]=="v"){"Version: NC_"+nc_v+"/RC_"+rc_v;}
 else if(q[0]=="help"||q=="?"){help;}
 
