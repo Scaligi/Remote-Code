@@ -1,5 +1,5 @@
 title ="New Christmas Command";
-rc_v ="v1.1-Beta";
+rc_v ="v1.2-Beta";
 rc_url ="/Scaligi/Remote-Code/main/Christmas";
 
 help ="User Guide can be found here on Discord: TBA";
@@ -15,7 +15,7 @@ else if (q[0]=="cd"||q[0]=="countdown"){"Christmas Countdown: "+c_cd.join(" ");}
 
 else if (e_cd[e_cd.length-1] == "ago" ) {"Christmas is over "+u+", try again in 2023!";}
 
-else if(q[0]=="list") {"List available here: https://pastebin.com/raw/zC9B7v61";}
+else if(q[0]=="list") {"List available here: https://pastebin.com/zC9B7v61";}
 
 
 else if(t=="mxryumm" && c_cd[c_cd.length-1]=="ago"){"It's Christmas Maryum, "+a[Math.floor(Math.random()*4)];}
