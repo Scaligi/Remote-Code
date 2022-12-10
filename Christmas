@@ -1,0 +1,38 @@
+title ="New Christmas Command";
+rc_v ="v1.0-Beta";
+rc_url ="/Scaligi/Remote-Code/main/Christmas";
+
+help ="User Guide can be found here on Discord: TBA";
+
+
+if (q[0]=="test"){title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Christmas_cd="+h_cd.join(" ")+", Start_cd="+s_cd.join(" ")+", End_cd="+e_cd.join(" ")+", URLfetch Successful: Database:"+db+" Remote_Code:"+rc_url;}
+else if(q[0]=="v"){"Version: NC_"+nc_v+"/RC_"+rc_v;}
+else if(q[0]=="help"||q=="?"){help;}
+
+else if (q[0]=="start"){"Command Start: "+s_cd.join(" ");}
+else if (q[0]=="end"){"Command End: "+e_cd.join(" ");}
+else if (q[0]=="cd"||q[0]=="countdown"){"Halloween Countdown: "+h_cd.join(" ");}
+
+else if (e_cd[e_cd.length-1] == "ago" ) {"Halloween is over "+u+", try again in 2023!";}
+else if (s_cd[s_cd.length-1] != "ago" ) {s_cd.join(" ")+" left till the Halloween command is activated "+u+", or as soon as "+c+" releases a Halloween video!";}
+
+else if(q[0]=="list") {"List available here: https://pastebin.com/raw/zC9B7v61";}
+
+
+else if(t=="mxryumm" && h_cd[h_cd.length-1]=="ago"){"It's Halloween Maryum, "+a[Math.floor(Math.random()*4)];}
+else if(t=="_mxryumm" && h_cd[h_cd.length-1]=="ago"){"It's Halloween Maryum, "+a[Math.floor(Math.random()*4)];}
+else if(t=="@_mxryumm" && h_cd[h_cd.length-1]=="ago"){"It's Halloween Maryum, "+a[Math.floor(Math.random()*4)];}
+else if(t=="mxryumm"||t=="_mxryumm"){"Maryum, "+h_cd.join(" ")+" till Halloween - "+a[Math.floor(Math.random()*4)];}
+
+
+else if(q[0]=="" && h_cd[h_cd.length-1]=="ago"){"It's Halloween "+u+", "+a[Math.floor(Math.random()*n)];}
+else if(q[0]=="") {u+", "+h_cd.join(" ")+" till Halloween - "+a[Math.floor(Math.random()*n)];}
+
+else if(x>0 && x<=n) {u+", "+a[x-1];}
+else if(x>n) {"/me "+u+" --> When specifying a number please select between 1 and "+n;}
+
+else if(y>0 && y<=n){t+", "+a[y-1];}
+else if(y>n) {"/me "+u+" --> When specifying a number please select between 1 and "+n;}
+
+else if(h_cd[h_cd.length-1]=="ago"){"It's Halloween "+t+", "+a[Math.floor(Math.random()*n)];}
+else {t+", "+h_cd.join(" ")+" till Halloween - "+a[Math.floor(Math.random()*n)];}
