@@ -1,5 +1,5 @@
 title ="New Christmas Command";
-rc_v ="v1.6-Beta";
+rc_v ="v1.7-Beta";
 rc_url ="/Scaligi/Remote-Code/main/Christmas";
 
 help ="User Guide can be found here on Discord: https://discord.com/channels/744238012606709872/1013552348892762182/1051202605524734032";
@@ -22,9 +22,9 @@ else if(t=="mxryumm" && c_cd[c_cd.length-1]=="ago"){"It's Christmas Maryum, "+a[
 else if(t=="_mxryumm" && c_cd[c_cd.length-1]=="ago"){"It's Christmas Maryum, "+a[Math.floor(Math.random()*4)];}
 else if(t=="@_mxryumm" && c_cd[c_cd.length-1]=="ago"){"It's Christmas Maryum, "+a[Math.floor(Math.random()*4)];}
 
-else if(t=="mxryumm" && ce_cd[ce_cd.length-1]=="ago"){"It's Christmas Eve Maryum, "+a[Math.floor(Math.random()*4)];}
-else if(t=="_mxryumm" && ce_cd[ce_cd.length-1]=="ago"){"It's Christmas Eve Maryum, "+a[Math.floor(Math.random()*4)];}
-else if(t=="@_mxryumm" && ce_cd[ce_cd.length-1]=="ago"){"It's Christmas Eve Maryum, "+a[Math.floor(Math.random()*4)];}
+else if(t=="mxryumm" && ce_cd[ce_cd.length-1]=="ago"){"It's Christmas Eve Maryum, "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*4)];}
+else if(t=="_mxryumm" && ce_cd[ce_cd.length-1]=="ago"){"It's Christmas Eve Maryum, "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*4)];}
+else if(t=="@_mxryumm" && ce_cd[ce_cd.length-1]=="ago"){"It's Christmas Eve Maryum, "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*4)];}
 
 else if(t=="mxryumm"||t=="_mxryumm"){"Maryum, "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*4)];}
 else if(t=="@_mxryumm"||t=="maryum"){"Maryum, "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*4)];}
