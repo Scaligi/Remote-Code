@@ -1,5 +1,5 @@
 title ="New Christmas Command";
-rc_v ="v1.4-Beta";
+rc_v ="v1.5-Beta";
 rc_url ="/Scaligi/Remote-Code/main/Christmas";
 
 help ="User Guide can be found here on Discord: https://discord.com/channels/744238012606709872/1013552348892762182/1051202605524734032";
@@ -37,9 +37,9 @@ else if(q[0]=="") {u+", "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.
 else if(x>0 && x<=n) {u+", "+a[x-1];}
 else if(x>n) {"/me "+u+" --> When specifying a number please select between 1 and "+n;}
 
-else if(y>0 && y<=n){q+", "+a[y-1];}
+else if(y>0 && y<=n){q.join(" ")+", "+a[y-1];}
 else if(y>n) {"/me "+u+" --> When specifying a number please select between 1 and "+n;}
 
-else if(c_cd[c_cd.length-1]=="ago"){"It's Christmas "+q+", "+a[Math.floor(Math.random()*n)];}
-else if(ce_cd[ce_cd.length-1]=="ago"){"It's Christmas Eve "+q+", "+a[Math.floor(Math.random()*n)];}
-else {q+", "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*n)];}
+else if(c_cd[c_cd.length-1]=="ago"){"It's Christmas "+q.join(" ")+", "+a[Math.floor(Math.random()*n)];}
+else if(ce_cd[ce_cd.length-1]=="ago"){"It's Christmas Eve "+q.join(" ")+", "+a[Math.floor(Math.random()*n)];}
+else {q.join(" ")+", "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*n)];}
