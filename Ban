@@ -1,5 +1,7 @@
 title ="Fake Ban Command";
-version ="1.0Beta";
+rc_v ="1.0Beta";
+rc_url ="/Scaligi/Remote-Code/main/Ban";
+
 warn ="⚠️ Please be respectful of Cap Bailey and the community ";
 
 
