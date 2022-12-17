@@ -10,7 +10,7 @@ else if(q=="v"){"Version: NC_"+nc_v+"/RC_"+rc_v;}
 else if(u=="capbailey.eth" && t=="Scaligi"){"Cap Bailey has ultimate power and can ban anyone, including Scaligi";}
 else if(u=="capbailey.eth" && q==""){"Cap Bailey has ultimate power and has banned everyone";}
 else if(u=="capbailey.eth"){"Cap Bailey has ultimate power and has banned "+q;}
-else if(q=="capbailey" && u=="Scaligi"){"Cap Bailey is invincible and cannot be banned by anyone, including Scaligi 🤔";}
+else if(q=="capbailey.eth" && u=="Scaligi"){"Cap Bailey is invincible and cannot be banned by anyone, including Scaligi 🤔";}
 else if(q=="capbailey.eth"){"Cap Bailey is invincible and cannot be banned "+u;}
 
 
