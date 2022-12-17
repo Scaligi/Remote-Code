@@ -1,10 +1,10 @@
 title ="Fake Ban Command";
-rc_v ="1.9Beta";
+rc_v ="2.0Beta";
 rc_url ="/Scaligi/Remote-Code/main/Ban";
 ban =" has now been banned by ";
 
 
-if(q=="test"){title+": NC_"+nc_v+"/RC_"+rc_v+", User="+u+", User_Level="+ul+", Query="+q+", URLfetch Successful, Remote_Code:"+rc_url;}
+if(q=="test"){title+": NC_"+nc_v+"/RC_"+rc_v+", User="+u+", ToUser="+t+", User_Level="+ul+", Query="+q+", URLfetch Successful, Remote_Code:"+rc_url;}
 else if(q=="v"){"Version: NC_"+nc_v+"/RC_"+rc_v;}
 
 else if(q==""){"You need to specify a user "+u;}
