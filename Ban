@@ -1,32 +1,23 @@
 title ="Fake Ban Command";
 rc_v ="1.0Beta";
 rc_url ="/Scaligi/Remote-Code/main/Ban";
+ban =" has now been banned by ";
 
-warn ="⚠️ Please be respectful of Cap Bailey and the community ";
+
+if(t=="test"){title+": NC_"+nc_v+"/RC_"+rc_v+", User="+u+", User_Level="+ul+", Query="+q+", URLfetch Successful, Remote_Code:"+rc_url;}
+
+else if(u=="capbailey.eth" && t="Scaligi){"Cap Bailey has ultimate power and can ban anyone, including Scaligi";}
+else if(u=="capbailey.eth"){"Cap Bailey has ultimate power and has banned "+t;}
+
+else if(u=="Scaligi" && t="_mxryumm"){"Scaligi is the Modfather and can ban anyone, including Maryum 🕸️🕷️🕸️🕷️🕸️🕷️🕸️🕷️🕸️🕷️";}
+else if(t=="Scaligi"){"Scaligi is the Modfather and cannot be banned "+u;}
+
+else if(ban=="_mxryumm" && q==""){warn;}
+else if(ban=="_mxryumm"){warn + t + " " + m;}
+
+else if(ban=="s5g" && q==""){warn;}
+else if(ban=="s5g"){warn + t + " " + m;}
 
 
-if(t=="test"){"Respect Warning Command v1.2 User="+u+", User_Level="+ul+", Query="+q+", Message="+m+", URLfetch Successful, Remote_Code:rCCUbm2h Authorised_Users: Owner, Moderator, Twitch_VIPs";}
 
-else if(ul=="owner" && q==""){warn;}
-else if(ul=="owner"){warn + t + " " + m;}
-else if(ul=="moderator" && q==""){warn;}
-else if(ul=="moderator"){warn + t + " " + m;}
-else if(ul=="twitch_vip" && q==""){warn;}
-else if(ul=="twitch_vip"){warn + t + " " + m;}
-
-else if(u=="capbailey.eth" && q==""){warn;}
-else if(u=="capbailey.eth"){warn + t + " " + m;}
-
-else if(u=="_mxryumm" && q==""){warn;}
-else if(u=="_mxryumm"){warn + t + " " + m;}
-
-else if(u=="s5g" && q==""){warn;}
-else if(u=="s5g"){warn + t + " " + m;}
-
-else if(u=="joni." && q==""){warn;}
-else if(u=="joni."){warn + t + " " + m;}
-
-else if(u=="Kieekaa" && q==""){warn;}
-else if(u=="Kieekaa"){warn + t + " " + m;}
-
-else{" --> You are not authorised to use this command "+u;}
+else{q+ban+u;}
