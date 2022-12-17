@@ -1,5 +1,5 @@
 title ="Fake Ban Command";
-rc_v ="1.4Beta";
+rc_v ="1.5eta";
 rc_url ="/Scaligi/Remote-Code/main/Ban";
 ban =" has now been banned by ";
 
@@ -7,7 +7,12 @@ ban =" has now been banned by ";
 if(q=="test"){title+": NC_"+nc_v+"/RC_"+rc_v+", User="+u+", User_Level="+ul+", Query="+q+", URLfetch Successful, Remote_Code:"+rc_url;}
 else if(q=="v"){"Version: NC_"+nc_v+"/RC_"+rc_v;}
 
-else if(u=="Scaligi"){"Scaligi has ultimate power and can ban anyone, including "+q;}
+else if(q==""){"You need to specify a user "+u;}
+
+else if(u=="Scaligi"){"Scaligi ias the modfather and can ban anyone, including "+q;}
+else if(u=="_mxryumm"){"Maryum has ultimate power and can ban anyone, including "+q;}
+
+
 
 
 else{q+ban+u;}
