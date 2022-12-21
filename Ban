@@ -1,5 +1,5 @@
 title ="Fake Ban Command";
-rc_v ="2.6eta";
+rc_v ="2.7Beta";
 rc_url ="/Scaligi/Remote-Code/main/Ban";
 ban =" has now been banned by ";
 
@@ -14,8 +14,8 @@ else if(t=="cap" || t=="Cap"){u+" is now banned for trying to ban Cap Bailey - W
 else if(t=="capbailey" || t=="CapBailey"){u+" is now banned for trying to ban Cap Bailey - What were you thinking?";}
 else if(t=="bailey" || t=="Bailey"){u+" is now banned for trying to ban Cap Bailey - What were you thinking?";}
 
-else if(t=="<@827356116958052363>" || t=="Apache"){u+" is now banned for trying to ban Cap Bailey - What were you thinking?";}
-
+else if(t=="<@827356116958052363>" || t=="Apache"){"Woof! Woof! Woof! Woof! - You cannot ban Apache you mean Trash Panda "+u;}
+else if(t=="<@827356116958052363>" || t=="Nightbot"){"🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u" 🤖Ban "+u" 🤖Ban "+u" 🤖Ban "+u;}
 
 else if(t=="Scaligi" && u=="_mxryumm"){"Scaligi has modfather immunity and cannot be ban, even by Maryum";}
 else if(t=="<@848025900720848896>" && u=="_mxryumm"){"Scaligi has modfather immunity and cannot be ban, even by Maryum";}
