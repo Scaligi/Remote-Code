@@ -1,5 +1,5 @@
 title ="Fake Ban Command";
-rc_v ="2.7Beta";
+rc_v ="2.8Beta";
 rc_url ="/Scaligi/Remote-Code/main/Ban";
 ban =" has now been banned by ";
 
@@ -14,6 +14,8 @@ else if(t=="cap" || t=="Cap"){u+" is now banned for trying to ban Cap Bailey - W
 else if(t=="capbailey" || t=="CapBailey"){u+" is now banned for trying to ban Cap Bailey - What were you thinking?";}
 else if(t=="bailey" || t=="Bailey"){u+" is now banned for trying to ban Cap Bailey - What were you thinking?";}
 
+else if(t=="@everyone" || t=="everyone"){"⚠️ DO NOT TRY AND BAN EVERYONE! "+u;}
+else if(t=="@Everyone" || t=="Everyone"){"⚠️ DO NOT TRY AND BAN EVERYONE! "+u;}
 else if(t=="<@827356116958052363>" || t=="Apache"){"Woof! Woof! Woof! Woof! - You cannot ban Apache you mean Trash Panda "+u;}
 else if(t=="<@83010416610906112>" || t=="Nightbot"){"🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u;}
 
