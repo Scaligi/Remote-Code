@@ -15,7 +15,7 @@ else if(t=="capbailey" || t=="CapBailey"){u+" is now banned for trying to ban Ca
 else if(t=="bailey" || t=="Bailey"){u+" is now banned for trying to ban Cap Bailey - What were you thinking?";}
 
 else if(t=="<@827356116958052363>" || t=="Apache"){"Woof! Woof! Woof! Woof! - You cannot ban Apache you mean Trash Panda "+u;}
-else if(t=="<@827356116958052363>" || t=="Nightbot"){"🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u" 🤖Ban "+u" 🤖Ban "+u" 🤖Ban "+u;}
+else if(t=="<@827356116958052363>" || t=="Nightbot"){"🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u;}
 
 else if(t=="Scaligi" && u=="_mxryumm"){"Scaligi has modfather immunity and cannot be ban, even by Maryum";}
 else if(t=="<@848025900720848896>" && u=="_mxryumm"){"Scaligi has modfather immunity and cannot be ban, even by Maryum";}
