@@ -1,5 +1,5 @@
 title ="Fake Ban Command";
-rc_v ="2.9-Beta";
+rc_v ="3.0-Beta";
 rc_url ="/Scaligi/Remote-Code/main/Ban";
 ban =" has now been banned by ";
 
@@ -8,6 +8,8 @@ if(q=="test" || q=="@test"){title+": NC_"+nc_v+"/RC_"+rc_v+", User="+u+", ToUser
 else if(q=="v"){"Version: NC_"+nc_v+"/RC_"+rc_v;}
 
 else if(q==""){"You need to specify a user "+u;}
+
+else if(u=="s5g"){"s5g will not ban anyone, here's a hug "+q+" 🫂💜🫂💜🫂";}
 
 else if(t=="Cap" && u=="Scaligi"){"Cap Bailey cannot be banned, even by Scaligi";}
 else if(t=="cap" || t=="Cap"){u+" is now banned for trying to ban Cap Bailey - What were you thinking?";}
