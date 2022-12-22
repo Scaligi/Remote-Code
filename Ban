@@ -1,5 +1,5 @@
 title ="Fake Ban Command";
-rc_v ="3.0-Beta";
+rc_v ="3.1-Beta";
 rc_url ="/Scaligi/Remote-Code/main/Ban";
 ban =" has now been banned by ";
 
@@ -24,10 +24,12 @@ else if(t=="<@83010416610906112>" || t=="Nightbot"){"🤖Ban "+u+" 🤖Ban "+u+"
 else if(t=="Scaligi" && u=="_mxryumm"){"Scaligi has modfather immunity and cannot be ban, even by Maryum";}
 else if(t=="<@848025900720848896>" && u=="_mxryumm"){"Scaligi has modfather immunity and cannot be ban, even by Maryum";}
 else if(t=="Scaligi" || t=="<@848025900720848896>"){"Scaligi has modfather immunity and cannot be ban "+u;}
+else if(t=="Scali" || t=="scali"){"Scaligi has modfather immunity and cannot be ban "+u;}
 
 else if(u=="Scaligi"){"Scaligi is the modfather and can ban anyone, "+q+" is now banned!";}
 
-else if(t=="_mxryumm"){"Maryum has ultimate mod power and cannot be ban by anyone "+u;}
+else if(t=="_mxryumm" || t=="mxryumm"){"Maryum has ultimate mod power and cannot be ban by anyone "+u;}
+else if(t=="maryum" || t=="Maryum"){"Maryum has ultimate mod power and cannot be ban right now "+u;}
 else if(t=="<@686429036632604692>"){"Maryum has ultimate mod power and cannot be ban right now "+u;}
 else if(u=="_mxryumm"){"Maryum has ultimate mod power and can ban anyone, "+q+" is now banned!";}
 
