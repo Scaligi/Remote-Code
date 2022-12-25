@@ -2,7 +2,7 @@ title ="Fake Ban Command";
 rc_v ="3.4-Beta";
 rc_url ="/Scaligi/Remote-Code/main/Ban";
 ban =" has now been banned by ";
-x = (Math.floor(Math.random()*5);
+x =Math.floor(Math.random()*5);
 
 
 if(q=="test" || q=="@test"){title+": NC_"+nc_v+"/RC_"+rc_v+", User="+u+", ToUser="+t+", User_Level="+ul+", Query="+q+", Xmas_Fail="+x+", URLfetch Successful, Remote_Code:"+rc_url;}
