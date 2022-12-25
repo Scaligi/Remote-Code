@@ -1,10 +1,11 @@
 title ="Fake Ban Command";
-rc_v ="3.3-Beta";
+rc_v ="3.4-Beta";
 rc_url ="/Scaligi/Remote-Code/main/Ban";
 ban =" has now been banned by ";
+x = Math.floor(Math.random()*5;
 
 
-if(q=="test" || q=="@test"){title+": NC_"+nc_v+"/RC_"+rc_v+", User="+u+", ToUser="+t+", User_Level="+ul+", Query="+q+", URLfetch Successful, Remote_Code:"+rc_url;}
+if(q=="test" || q=="@test"){title+": NC_"+nc_v+"/RC_"+rc_v+", User="+u+", ToUser="+t+", User_Level="+ul+", Query="+q+", Xmas_Fail="+x+", URLfetch Successful, Remote_Code:"+rc_url;}
 else if(q=="v"){"Version: NC_"+nc_v+"/RC_"+rc_v;}
 
 else if(q==""){"You need to specify a user "+u;}
@@ -28,7 +29,7 @@ else if(t=="Scali" || t=="scali"){"Scaligi has modfather immunity and cannot be 
 
 else if(u=="Scaligi"){"Scaligi is the modfather and can ban anyone, "+q+" is now banned!";}
 
-else if(1==1){"🎅🎅🎅 It's Christmas "+u+", stop trying to ban people homie 🎄🎄🎄";}
+else if(x>1){"🎅🎅🎅 It's Christmas "+u+", stop trying to ban people homie 🎄🎄🎄";}
 
 else if(t=="maryumm" || t=="Maryumm"){"Maryum has ultimate mod power and cannot be ban right now "+u;}
 else if(t=="_mxryumm" || t=="mxryumm"){"Maryum has ultimate mod power and cannot be ban right now "+u;}
