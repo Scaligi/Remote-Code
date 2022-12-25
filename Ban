@@ -29,7 +29,7 @@ else if(t=="Scali" || t=="scali"){"Scaligi has modfather immunity and cannot be 
 
 else if(u=="Scaligi"){"Scaligi is the modfather and can ban anyone, "+q+" is now banned!";}
 
-else if(x>1){"🎅🎅🎅 It's Christmas "+u+", stop trying to ban people homie 🎄🎄🎄";}
+else if(x>0){"🎅🎅🎅 It's Christmas "+u+", stop trying to ban people homie 🎄🎄🎄";}
 
 else if(t=="maryumm" || t=="Maryumm"){"Maryum has ultimate mod power and cannot be ban right now "+u;}
 else if(t=="_mxryumm" || t=="mxryumm"){"Maryum has ultimate mod power and cannot be ban right now "+u;}
