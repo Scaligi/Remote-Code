@@ -1,6 +1,6 @@
 title ="Variables Testing";
-rc_v ="2-Beta";
-rc_url ="https://pastebin.com/QCFswFze";
+rc_v ="1.0GH";
+rc_url ="/Scaligi/Remote-Code/main/Variable-Testing";
 ban =" has now been banned by ";
 n= t.replace("@",""); 
 nq= q.replace("@","");
