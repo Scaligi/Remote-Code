@@ -1,5 +1,5 @@
 title ="Variables Testing";
-rc_v ="1.0GH";
+rc_v ="1.1GH";
 rc_url ="/Scaligi/Remote-Code/main/Variable-Testing";
 ban =" has now been banned by ";
 n= t.replace("@",""); 
@@ -7,22 +7,27 @@ nq= q.replace("@","");
 
 uc = t.toLowerCase();
 uc = uc[0].toUpperCase() + uc.substring(1);
-
+ 
+inc ="Not Included";
 NewToUser = "No Match";
 dump ="NO";
-
+ 
 IDs = [["ScaligiX", "Scaligi", "<@848025900720848896>", "scaligi", "scali", "Scali"], ["s5gX", "<@774849390505885737>", "s5g", "sfiveg"], ["MaryumX", "<@686429036632604692>", "Maryumm", "maryum"]];
-
+ 
 for(i =0; i < IDs.length; i++) {if (IDs[i].includes(t)){NewToUser = IDs[i][0];}}
-
-mods =["Scaligi","<@848025900720848896>","Invincible"];
+ 
+for(i =0; i < IDs.length; i++) {for(j =1; j < IDs[i].length; j++) {if (q.includes(IDs[i][j])){inc =IDs[i][0];}}}
+ 
+ 
+ 
+mods =["Scaligi","<@848025900720848896>","Invincible","s5g"];
 f = mods.includes(t);
-
+ 
 if (mods.includes(t)){dump="YES";}
-
+ 
 if(q=="test" || q=="@test"){title+": NC_"+nc_v+"/RC_"+rc_v+", User="+u+", ToUser="+t+", User_Level="+ul+", Query="+q+", Invincibility="+f+", URLfetch Successful, Remote_Code:"+rc_url;}
 else if(q=="v"){"Version: NC_"+nc_v+"/RC_"+rc_v;}
-
+ 
 else if(q=="a"){"!apache test";}
-
-else{title+": User="+u+", ToUser="+t+", ToUserUC="+uc+", ToUserID="+n+", NewToUser="+NewToUser+", User_Level="+ul+", Query="+q+", NewQuery="+nq+", Invincibility="+f+", ID_Length="+IDs.length+", ID0_Length="+IDs[0].length+", ID1_Length="+IDs[1].length+", ID2_Length="+IDs[2].length+", Dump="+dump;}
+ 
+else{title+": User="+u+", ToUser="+t+", ToUserUC="+uc+", ToUserID="+n+", NewToUser="+NewToUser+", User_Level="+ul+", Query="+q+", NewQuery="+nq+", Invincibility="+f+", ID_Length="+IDs.length+", ID0_Length="+IDs[0].length+", ID1_Length="+IDs[1].length+", ID2_Length="+IDs[2].length+", Dump="+dump+", Includes="+inc;}
