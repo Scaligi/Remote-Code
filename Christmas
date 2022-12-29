@@ -1,5 +1,5 @@
 title ="New Christmas Command";
-rc_v ="v2-Beta";
+rc_v ="v2.1-Beta";
 rc_url ="/Scaligi/Remote-Code/main/Christmas";
 
 help ="User Guide can be found here on Discord: https://discord.com/channels/744238012606709872/1013552348892762182/1051202605524734032";
@@ -30,7 +30,7 @@ else if(t=="mxryumm"||t=="_mxryumm"){"Maryum, "+c_cd.join(" ")+" till Christmas 
 else if(t=="@_mxryumm"||t=="maryum"){"Maryum, "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*4)];}
 
 
-else if(q[0]=="" && c_cd[c_cd.length-1]=="ago"){"It's the "+[c_cd[0]+1]+"th day of Christmas "+u+", "+a[Math.floor(Math.random()*n)];}
+else if(q[0]=="" && c_cd[c_cd.length-1]=="ago"){"It's the "+[[c_cd[0]*1]+1]+"th day of Christmas "+u+", "+a[Math.floor(Math.random()*n)];}
 else if(q[0]=="" && ce_cd[ce_cd.length-1]=="ago"){"It's Christmas Eve "+u+", "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*n)];}
 else if(q[0]=="") {u+", "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*n)];}
 
