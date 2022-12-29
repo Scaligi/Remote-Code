@@ -1,5 +1,5 @@
 title ="New Christmas Command";
-rc_v ="v2.2-Beta";
+rc_v ="v2.3-Beta";
 rc_url ="/Scaligi/Remote-Code/main/Christmas";
 
 help ="User Guide can be found here on Discord: https://discord.com/channels/744238012606709872/1013552348892762182/1051202605524734032";
@@ -18,9 +18,9 @@ else if (e_cd[e_cd.length-1] == "ago" ) {"Christmas is over "+u+", try again in 
 else if(q[0]=="list") {"List available here: https://pastebin.com/zC9B7v61";}
 
 
-else if(t=="mxryumm" && c_cd[c_cd.length-1]=="ago"){"It's Christmas Maryum, "+a[Math.floor(Math.random()*4)];}
-else if(t=="_mxryumm" && c_cd[c_cd.length-1]=="ago"){"It's Christmas Maryum, "+a[Math.floor(Math.random()*4)];}
-else if(t=="@_mxryumm" && c_cd[c_cd.length-1]=="ago"){"It's Christmas Maryum, "+a[Math.floor(Math.random()*4)];}
+else if(t=="mxryumm" && c_cd[c_cd.length-1]=="ago"){"It's the "+[(c_cd[0]*1)+1]+"ᵗʰ day of Christmas Maryum, "+a[Math.floor(Math.random()*4)];}
+else if(t=="_mxryumm" && c_cd[c_cd.length-1]=="ago"){"It's the "+[(c_cd[0]*1)+1]+"ᵗʰ day of Christmas Maryum, "+a[Math.floor(Math.random()*4)];}
+else if(t=="@_mxryumm" && c_cd[c_cd.length-1]=="ago"){"It's the "+[(c_cd[0]*1)+1]+"ᵗʰ day of Christmas Maryum, "+a[Math.floor(Math.random()*4)];}
 
 else if(t=="mxryumm" && ce_cd[ce_cd.length-1]=="ago"){"It's Christmas Eve Maryum, "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*4)];}
 else if(t=="_mxryumm" && ce_cd[ce_cd.length-1]=="ago"){"It's Christmas Eve Maryum, "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*4)];}
@@ -40,6 +40,6 @@ else if(x>n) {"/me "+u+" --> When specifying a number please select between 1 an
 else if(y>0 && y<=n){q.join(" ")+", "+a[y-1];}
 else if(y>n) {"/me "+u+" --> When specifying a number please select between 1 and "+n;}
 
-else if(c_cd[c_cd.length-1]=="ago"){"It's Christmas "+q.join(" ")+", "+a[Math.floor(Math.random()*n)];}
+else if(c_cd[c_cd.length-1]=="ago"){"It's the "+[(c_cd[0]*1)+1]+"ᵗʰ day of Christmas "+q.join(" ")+", "+a[Math.floor(Math.random()*n)];}
 else if(ce_cd[ce_cd.length-1]=="ago"){"It's Christmas Eve "+q.join(" ")+", "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*n)];}
 else {q.join(" ")+", "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*n)];}
