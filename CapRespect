@@ -6,8 +6,8 @@ else if(ul=="owner" && q==""){warn;}
 else if(ul=="owner"){warn + t + " " + m;}
 else if(ul=="moderator" && q==""){warn;}
 else if(ul=="moderator"){warn + t + " " + m;}
-else if(ul=="twitch_vip" && q==""){warn;}
-else if(ul=="twitch_vip"){warn + t + " " + m;}
+else if(ul=="regular" && q==""){warn;}
+else if(ul=="regular"){warn + t + " " + m;}
 
 else if(u=="capbailey.eth" && q==""){warn;}
 else if(u=="capbailey.eth"){warn + t + " " + m;}
