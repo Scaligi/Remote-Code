@@ -1,0 +1,68 @@
+title ="Ban Update";
+rc_v ="1.0-Beta";
+rc_url ="/QCFswFze";
+debug =true;
+
+ban =" has now been banned by ";
+x =Math.floor(Math.random()*10);
+b_fail =Math.floor(Math.random()*20);
+m_fail =Math.floor(Math.random()*5);
+
+warn =["What are trying to do?", "Stop being sus!", "What witchcraft are you attempting?", "What was that about?", "Try a bit harder", "Your payment was declined", "You could type more clearly", "Alert! Alert! Alert!"];
+
+ban_fail =[" jumped to avoid your ban!", " ducked in time and your ban missed", " just walked right past your ban homie!", " tucked and rolled with lightning reflexes", " did't even notice your ban", " says your ban is too feeble to count", " deflected your ban with a spoon", " is hiding and your ban can't find them"];
+
+q_ans = q.replace(/[^a-zA-Z0-9 _!@<>-]/g, "");
+q_lc = q_ans.toLowerCase();
+q_id = q_lc.replace(/[^a-z0-9]/g, "");
+
+t_id = "No Match";
+
+IDs = [
+["CapBaileyX", "341247175860420609", "cap", "bailey"],
+["ApacheX", "827356116958052363", "apache"],
+["ScaligiX", "848025900720848896", "scali"],
+["NightbotX", "83010416610906112", "nightbot"],
+["BunsX", "175018714108919808", "buns"],
+["MaryumX", "686429036632604692", "maryum", "mxryum"],
+["s5gX", "774849390505885737", "s5g", "sfiveg"]
+];
+
+for(i =0; i < IDs.length; i++) {for(j =1; j < IDs[i].length; j++) {if (q_id.includes(IDs[i][j])){t_id =IDs[i][0];}}}
+
+debug_data =" ```Debug Data: User="+u+", ToUser="+t+", User_Level="+ul+", Query="+q+", Q_ANS="+q_ans+", Q_LC="+q_lc+", Q_ID="+q_id+", ID_Length="+IDs.length+", ID0_Length="+IDs[0].length+", ID1_Length="+IDs[1].length+", ID2_Length="+IDs[2].length+", Target_ID="+t_id+", X="+x+", B_Fail="+b_fail+", M_Fail="+m_fail+"```";
+if (debug == false){debug_data ="";}
+
+if(q==""){"You need to specify a user "+u;}
+else if (q_lc.includes("@everyone")){"🚫 DO NOT @ Everyone "+u+"!";}
+else if (q_lc.includes("everyone")){"⚠️ DO NOT Try and BAN everyone "+u+"!";}
+
+else if(q_lc =="test"){"```"+title+": NC_"+nc_v+"/RC_"+rc_v+", User="+u+", To_User="+t+", User_Level="+ul+", Query="+q+", Target_ID="+t_id+", Debug="+debug+", URLfetch Successful, Remote_Code:"+rc_url+", X="+x+", B_Fail="+b_fail+", M_Fail="+m_fail+"```";}
+else if(q=="v"){"`Version: NC_"+nc_v+"/RC_"+rc_v+"`";}
+
+else if(q_ans.length < q.length){"🚫 "+warn[Math.floor(Math.random()*warn.length)]+" "+u+debug_data;}
+
+else if(u=="s5g" || u=="sfiveg"){"s5g will not ban anyone, here's a hug "+q+" 🫂💜🫂💜🫂"+debug_data;}
+else if(t_id=="s5gX"){"🪄 s5g magically converted your ban into a hug "+u+" 🫂🪄🫂🪄🫂"+debug_data;}
+
+else if(t_id=="CapBaileyX" && u=="Scaligi"){"Cap Bailey cannot be banned, even by Scaligi"+debug_data;}
+else if(t_id=="CapBaileyX"){u+" is now banned for trying to ban Cap Bailey - What were you thinking?"+debug_data;}
+
+else if(t_id=="ApacheX"){"Woof! Woof! Woof! Woof! - You cannot ban Apache you mean Trash Panda "+u+debug_data;}
+else if(t_id=="NightbotX"){"🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u+debug_data;}
+
+else if(t_id=="ScaligiX"){"Scaligi has modfather immunity and cannot be ban "+u+debug_data;}
+
+else if(t_id=="ScaligiX" && u=="_mxryumm"){"Scaligi has modfather immunity and cannot be ban, even by Maryum"+debug_data;}
+else if(u=="Scaligi" && t_id=="MaryumX"){"Scaligi is the modfather and can even ban "+q+" - You Are Banned!"+debug_data;}
+else if(u=="Scaligi"){"Scaligi is the modfather and can ban anyone, "+q+" is now banned!"+debug_data;}
+
+else if(x==0){"🎅🎅🎅 It's Christmas "+u+", stop trying to ban people homie 🎄🎄🎄"+debug_data;}
+
+else if(t_id=="MaryumX"){"Maryum has ultimate mod power and cannot be banned right now "+u+debug_data;}
+else if(u=="_mxryumm" && m_fail==0){"Maryum's mod powers have faltered, "+q+ban_fail[Math.floor(Math.random()*ban_fail.length)]+debug_data;}
+else if(u=="_mxryumm"){"Maryum has ultimate mod power and can ban anyone, "+q+" is now banned!";}
+
+else if(b_fail==0){q+" reflected the ban back "+u+" is now banned!"+debug_data;}
+else if(b_fail<=2){q+ban_fail[Math.floor(Math.random()*ban_fail.length)]+debug_data;}
+else{q+ban+u+debug_data;}
