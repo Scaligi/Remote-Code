@@ -1,0 +1,25 @@
+title ="Includes Search Testing";
+rc_v ="I_Test_2-Beta";
+rc_url ="https://pastebin.com/QCFswFze";
+
+warn =["What are trying to do?", "Stop being sus!", "What witchcraft are you attempting?", "What was that about?", "Try a bit harder", "Your payment was declined", "You could type more clearly", "Alert! Alert! Alert!"];
+
+NewQ_an = q.replace(/[^a-zA-Z0-9 _!@<>-]/g, "");
+NewQ_lc = NewQ_an.toLowerCase();
+NewQ = NewQ_lc.replace(/[^a-z0-9]/g, "");
+
+Inc_ID = "No Match";
+
+IDs = [["CapBaileyX", "341247175860420609", "cap", "bailey"],["ScaligiX", "848025900720848896", "scali"], ["s5gX", "774849390505885737", "s5g", "sfiveg"], ["MaryumX", "686429036632604692", "maryum", "mxryum"]];
+
+for(i =0; i < IDs.length; i++) {for(j =1; j < IDs[i].length; j++) {if (NewQ.includes(IDs[i][j])){Inc_ID =IDs[i][0];}}}
+
+if (NewQ_lc.includes("@everyone")){"⚠️⚠️⚠️ DO NOT @Mention EVERYONE!!! ⚠️⚠️⚠️";}
+
+else if(q=="test"){title+": NC_"+nc_v+"/RC_"+rc_v+", User="+u+", To_User="+t+", User_Level="+ul+", Query="+q+", Inc_ID="+Inc_ID+", URLfetch Successful, Remote_Code:"+rc_url;}
+else if(q=="v"){"Version: NC_"+nc_v+"/RC_"+rc_v;}
+
+else if(q==""){"You need to specify a user "+u;}
+else if(NewQ_an.length < q.length){"🚫 "+warn[Math.floor(Math.random()*warn.length)]+" "+u+" 🚫";}
+
+else{"```"+title+": User="+u+", ToUser="+t+", User_Level="+ul+", Query="+q+", Q_San="+NewQ_an+", Q_LowerCase="+NewQ_lc+", Q_NoSpace="+NewQ+", ID_Length="+IDs.length+", ID0_Length="+IDs[0].length+", ID1_Length="+IDs[1].length+", ID2_Length="+IDs[2].length+", Include_ID="+Inc_ID+"```";}
