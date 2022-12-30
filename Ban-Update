@@ -1,5 +1,5 @@
 title ="Ban Update";
-rc_v ="1.2-Beta";
+rc_v ="1.2a-Beta";
 rc_url ="/Scaligi/Remote-Code/main/Ban-Update";
 debug =true;
 
@@ -51,7 +51,7 @@ else if(t_id=="CapBaileyX"){u+" is now banned for trying to ban Cap Bailey - Wha
 else if(t_id=="ApacheX"){"Woof! Woof! Woof! Woof! - You cannot ban Apache you mean Trash Panda "+u+debug_data;}
 else if(t_id=="NightbotX"){"🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u+debug_data;}
 
-else if(t_id=="ScaligiX"){"Scaligi has modfather immunity and cannot be ban "+u+debug_data;}
+else if(t_id=="ScaligiX"){"Scaligi has modfather immunity and cannot be banned "+u+debug_data;}
 
 else if(t_id=="ScaligiX" && u=="_mxryumm"){"Scaligi has modfather immunity and cannot be ban, even by Maryum"+debug_data;}
 else if(u=="Scaligi" && t_id=="MaryumX"){"Scaligi is the modfather and can even ban "+q+" - You Are Banned!"+debug_data;}
