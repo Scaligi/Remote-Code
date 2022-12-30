@@ -1,6 +1,6 @@
 title ="Ban Update";
 rc_v ="1.0-Beta";
-rc_url ="/QCFswFze";
+rc_url ="/Scaligi/Remote-Code/main/Ban-Update";
 debug =true;
 
 ban =" has now been banned by ";
