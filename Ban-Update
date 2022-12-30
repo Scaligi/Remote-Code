@@ -30,7 +30,7 @@ IDs = [
 
 for(i =0; i < IDs.length; i++) {for(j =1; j < IDs[i].length; j++) {if (q_id.includes(IDs[i][j])){t_id =IDs[i][0];}}}
 
-debug_data =" ```Debug Data: User="+u+", ToUser="+t+", User_Level="+ul+", Query="+q+", Q_ANS="+q_ans+", Q_LC="+q_lc+", Q_ID="+q_id+", ID_Length="+IDs.length+", ID0_Length="+IDs[0].length+", ID1_Length="+IDs[1].length+", ID2_Length="+IDs[2].length+", Target_ID="+t_id+", X="+x+", B_Fail="+b_fail+", M_Fail="+m_fail+"```";
+debug_data =" ```Debug Data: User="+u+", User_Level="+ul+", Q="+q+", Q_ANS="+q_ans+", Q_LC="+q_lc+", Q_ID="+q_id+", ID_Length="+IDs.length+", Target_ID="+t_id+", X="+x+", B_Fail="+b_fail+", M_Fail="+m_fail+"```";
 if (debug == false){debug_data ="";}
 
 if(q==""){"You need to specify a user "+u;}
