@@ -1,7 +1,7 @@
 title ="Ban Update";
-rc_v ="1.1-Beta";
+rc_v ="1.2-Beta";
 rc_url ="/Scaligi/Remote-Code/main/Ban-Update";
-debug =false;
+debug =true;
 
 ban =" has now been banned by ";
 x =Math.floor(Math.random()*10);
