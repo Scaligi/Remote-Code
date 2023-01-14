@@ -1,6 +1,6 @@
-title ="Fake Ban Update Testing";
+title ="Fake Ban GH";
 rc_v ="LIVE from v1.8d-Beta";
-rc_url ="/QCFswFze";
+rc_url ="/Scaligi/Remote-Code/main/Ban";
 debug = debug;
 debug_data ="";
 
