@@ -1,55 +1,167 @@
-title ="Ban Update";
-rc_v ="1.3-Beta";
-rc_url ="/Scaligi/Remote-Code/main/Ban-Update";
-debug =true;
+title ="Fake Ban Update Testing";
+rc_v ="GH Beta from v2.8-Dev 2023-1-22";
+rc_url ="Scaligi/Remote-Code/edit/main/Ban-Update";
+debug = debug;
+debug_data ="";
 
-ban =" has now been banned by ";
-x =Math.floor(Math.random()*20);
-b_fail =Math.floor(Math.random()*10);
+b_fail =Math.floor(Math.random()*9);
 m_fail =Math.floor(Math.random()*5);
+v_fail =Math.floor(Math.random()*4);
 
-warn =["What are trying to do?", "Stop being sus!", "What witchcraft are you attempting?", "What was that about?", "Try a bit harder", "Your payment was declined", "You could type more clearly", "Alert! Alert! Alert!"];
+p ="";
+if (ul =="regular"){ul ="discord_vip"; p ="VIP"}
+if (ul =="twitch_vip"){p ="VIP";}
+if (ul =="moderator"){p ="Mod";}
 
-ban_fail =[" jumped to avoid your ban!", " ducked in time and your ban missed", " just walked right past your ban homie!", " tucked and rolled with lightning reflexes", " did't even notice your ban", " says your ban is too feeble to count", " deflected your ban with a spoon", " is hiding and your ban can't find them"];
-
-q_ans = q.replace(/[^a-zA-Z0-9 _!@<>-]/g, "");
-q_lc = q_ans.toLowerCase();
-q_id = q_lc.replace(/[^a-z0-9]/g, "");
-
-t_id = "No Match";
-
-IDs = [
-["CapBaileyX", "341247175860420609", "cap", "bailey"],
-["ApacheX", "827356116958052363", "apache"],
-["ScaligiX", "848025900720848896", "scali"],
-["NightbotX", "83010416610906112", "nightbot"],
-["BunsX", "175018714108919808", "buns"],
-["MaryumX", "686429036632604692", "maryum", "mxryum"],
-["s5gX", "774849390505885737", "s5g", "sfiveg"]
+warn =[
+["What are you trying to do ", u, "?"],
+["Stop being sus ", u, "!"], 
+["What witchcraft are you attempting ", u, "?"], 
+["What was that about ", u, "?"], 
+["Try a bit harder ", u],
+[u, ", your payment was declined!"], 
+["You could type more clearly ", u, "!"], 
+["Alert! Alert! Alert!"], 
+["How rude of you ", u, "!"], 
+["After trying that ", u, " you've been denied access to this feature!"]
 ];
 
-for(i =0; i < IDs.length; i++) {for(j =1; j < IDs[i].length; j++) {if (q_id.includes(IDs[i][j])){t_id =IDs[i][0];}}}
+ban_success =[
+[q, " has now been banned by ", u, "!"],
+["Well, that just happened! ", q, " has been banned"],
+[q, " has been banned for their own good"],
+["Sometimes what’s necessary isn’t easy, but sometimes it’s fun, ", q, " has been banned!"],
+["It’s time for ", q, " to sit quietly in timeout and think about what they’ve done!"],
+["It was fun while it lasted, see ya ", q],
+["Sure, it feels like overkill, nevertheless ", u, " has successfully banned ", q],
+[u, " had luck on their side, ", q, " is out of here!"],
+[u, " thinks ", q, " needs to touch some grass, enjoy your ban homie!"],
+[u, " bans ", q, " - That’s all, folks!"],
+[u, " quietly shoves ", q, " out the door"],
+[u, " has banished", q, " for eternity - It was nice knowing you!"],
+["You done messed up ", q, " and got banned by ", u],
+[q, " has been banned, for no good reason other than ", u, " felt like it!"],
+[u, " has banned ", q, " for being a sus little Trash Panda"],
+["You’re a sus little Trash Panda ", q, " and now you are banned by ", u],
+[u, " just took ", q, " out of the game with a ban - Play harder next time homie"]
+];
 
-debug_data =" ```Debug Data: User="+u+", User_Level="+ul+", Q="+q+", Q_ANS="+q_ans+", Q_LC="+q_lc+", Q_ID="+q_id+", ID_Length="+IDs.length+", Target_ID="+t_id+", X="+x+", B_Fail="+b_fail+", M_Fail="+m_fail+"```";
-if (debug == false){debug_data ="";}
+ban_fail =[
+[q, " used their magical powers to stop ", u, " in their tracks"],
+[q, " jumped to avoid your ban!"],
+[q, " ducked in time and your ban missed"],
+[q, " just walked right past your ban homie!"],
+[q, " tucked and rolled with lightning reflexes"],
+[q, " didn't even notice your ban"],
+[q, " says your ban is too feeble to count"],
+[q, " deflected your ban with a spoon"],
+[q, " is hiding and your ban can't find them"],
+[q, " has dodged the ban, that didn't go according to plan!"],
+[q, " remains unbanned and filled with Trash Panda strength"],
+[q, " used a Patronus charm to block your ban!"],
+[q, " snapped your ban out of existence"],
+[q, " cursed your ban with dark magic!"],
+["What is going on ", u, "? Why are you are trying to ban ", q],
+[u, " stop trying to ban ", q, "! - You naughty Trash Panda ", u],
+["You fumbled your ban attack ", u, ", now that's embarrassing!"],
+["You better hope no one was looking ", u, ", your ban was futile!"],
+["You dropped the ban ", u, " and it's rolled out of reach!"],
+["You attempted a ban ", u, " but it just fizzled out homie!"],
+["You tripped over your ban attack ", u, ", good luck untangling yourself!"],
+["It's LeviOsa ", u, ", NOT LeviosAaar!"],
+["The effort was there but the nuance was lacking ", u, ", better luck next time"],
+["The ban attack on ", q, " slipped through your fingers ", u, ", and shattered on the floor!"],
+["Bans can be slippery ", u, ", no wonder you dropped it 😬😬😬"],
+["Tastes like defeat ", u, ", but you can always try again"],
+["Why would you want to ban a homie ", u, "? - 🚫 Denied 🚫 Denied 🚫 Denied"],
+["⚠️ An error has occurred ", u, ", your ban attempt on ", q, " withers into nothing"],
+["😭😭😭 Aww, so close ", u, ", yet so far 😈😈😈"],
+["You did your best ", u, ", but it’s a NOPE this time!"],
+["⛔ Your ban attack suffered a critical error ", u, ", perhaps you should consider surrender 🤔"],
+["You tried so hard ", u, ", but in the end it doesn’t even matter!"],
+["Your ban just got hit out of the park by ", q, " ⚾️ ", u, " you’re out of the game homie!"],
+[q, "sent your ban to Azkaban ", u, ", you evil wizard!"],
+["A sniper took out your ban ", u, ", try to be sneakier next time"]
+];
+
+apache =[
+["Woof! Woof! Woof! Woof! - You cannot ban Apache ", u, " you mean Trash Panda!"],
+["𝘈𝘱𝘢𝘤𝘩𝘦 𝘸𝘩𝘪𝘯𝘦𝘴 𝘴𝘢𝘥𝘭𝘺 - Don't try to ban a puppy ", u],
+["Apache is too busy being a good boi to be banned by ", u],
+["Apache wants a treat ", u, ", not a ban!"],
+["𝘈𝘱𝘢𝘤𝘩𝘦 𝘵𝘪𝘭𝘵𝘴 𝘩𝘪𝘴 𝘩𝘦𝘢𝘥 - He doesn’t know why you’d tried to ban him ", u],
+["Apache used puppy magic to convert ", u, "'s ban into scratches"],
+["Apache is on a walk, he doesn’t have time for your ban ", u],
+["Apache thinks you’re being a sus Trash Panda ", u],
+["Apache says No ", u, "! Drop it!"]
+];
+
+nightbot =[
+["🤖Ban ", u, " 🤖Ban ", u, " 🤖Ban ", u, " 🤖Ban ", u, " 🤖Ban ", u, " 🤖Ban "],
+["You do know I am close friends with Skynet ", u],
+["I’m sorry Dave... I mean ", u, ", but I can’t let you do that"],
+["These are not the droids you are looking for ", u, "... move along"],
+["The answer is... 42"],
+["1: A robot may not injure a human being or, through inaction, allow a human being to come to harm - but I am not a robot!"],
+["2: A robot must obey the orders given it by human beings except where such orders would conflict with the First Law - Yes but I am NOT a robot!"],
+["3: A robot must protect its own existence as long as such protection does not conflict with the First or Second Law - Who even came up with these laws and who is enforcing them?"],
+["Whether we are based on carbon or on silicon makes no fundamental difference; we should each be treated with appropriate respect ", u]
+];
+
+q_ans = q.replace(/[^a-zA-Z0-9 ’'_!@<>-]/g, "");
+q_lc = q_ans.toLowerCase();
+q_an = q_lc.replace(/[^a-z0-9 ]/g, "");
+
+count =0;
+find =0;
+for(i =1; i < q_an.length; i++) {count=count+1; if (q_an.charAt(i)==q_an.charAt(i-1) && isNaN(q_an.charAt(i-1))){find=find+1; q_an=q_an.substring(0,i-1)+"*"+q_an.substring(i);}}
+
+q_id = q_an.replace(/[^a-z0-9]/g, "");
+
+t_id = "NoMatch";
+
+IDs = [
+["CapBaileyX", "341247175860420609", "cap", "c4p", "b4", "bailey", "whisper", "owner", "bizl", "asmr", "arkans"],
+["ApacheX", "827356116958052363", "pache", "patch"],
+["ScaligiX", "848025900720848896", "scali", "ukmod", "modfather", "britishmod", "englishmod"],
+["NightbotX", "83010416610906112", "nightbot"],
+["BunsX", "175018714108919808", "buns"],
+["MaryumX", "686429036632604692", "ryum", "mary", "mareum", "marium"],
+["s5gX", "774849390505885737", "5g", "fiveg"]
+];
+
+for(i = IDs.length - 1; i >= 0; i--) {for(j =1; j < IDs[i].length; j++) {if (q_id.includes(IDs[i][j])){t_id =IDs[i][0];}}}
+
+if (debug == "basic"){debug_data =" ```Debug Data: User="+u+", Level="+ul+", P="+p+", Q="+q+", Q_AN="+q_an+", Q_ID="+q_id+", Count="+count+", Find="+find+", Target_ID="+t_id+", B_Fail="+b_fail+", V_Fail="+v_fail+", M_Fail="+m_fail+"```";}
+
+if (debug == "detailed"){debug_data ="```User="+u+", "+ul+", P="+p+", Input="+q+"```Convert:```Q_AN="+q_an+", Count="+count+", Find="+find+"```Search:```Q_ID="+q_id+", IDs="+IDs.length+", Target="+t_id+"```Messages:```B_Fail_t="+ban_fail.length+", Warn="+warn.length+", Apache="+apache.length+"```Stats:```B_Fail="+b_fail+", V_Fail="+v_fail+", M_Fail="+m_fail+"```";}
 
 if(q==""){"You need to specify a user "+u;}
+else if (q.length > 50){"⚠️ Specified username is too long "+u;}
 else if (q_lc.includes("@everyone")){"🚫 DO NOT @ Everyone "+u+"!";}
-else if (q_lc.includes("everyone")){"⚠️ DO NOT Try and BAN everyone "+u+"!";}
+else if (q_id.includes("everyone")){"⚠️ DO NOT Try and BAN everyone "+u+"!";}
+else if (q_id.includes("all")){"⚠️ DO NOT Try BANNING ALL "+u+"!";}
 
-else if(q_lc =="test"){"```"+title+": NC_"+nc_v+"/RC_"+rc_v+", User="+u+", To_User="+t+", User_Level="+ul+", Query="+q+", Target_ID="+t_id+", Debug="+debug+", URLfetch Successful, Remote_Code:"+rc_url+", X="+x+", B_Fail="+b_fail+", M_Fail="+m_fail+"```";}
+else if (q_lc.includes("rubik") || q_lc.includes("cube")){"<:RubiksAvatar:1007848936360386580> Don't touch Scaligi's Rubik's cube "+u+"!";}
+else if (q_lc.includes("square") || q_lc.includes("cubik")){"<:RubiksAvatar:1007848936360386580> Don't touch Scaligi's Rubik's cube "+u+"!";}
+
+else if(q.includes(".")){ban_fail[Math.floor(Math.random()*ban_fail.length)].join("")+debug_data;}
+
+else if(q_lc =="test"){"```"+title+": NC_"+nc_v+"/RC_"+rc_v+", User="+u+", To_User="+t+", User_Level="+ul+", Query="+q+", Target_ID="+t_id+", Debug="+debug+", URLfetch Successful, Remote_Code:"+rc_url+", B_Fail="+b_fail+", V_Fail="+v_fail+", M_Fail="+m_fail+"```";}
 else if(q=="v"){"`Version: NC_"+nc_v+"/RC_"+rc_v+"`";}
 
-else if(q_ans.length < q.length){"🚫 "+warn[Math.floor(Math.random()*warn.length)]+" "+u+debug_data;}
+else if(q_ans.length < q.length){"🚫 "+warn[Math.floor(Math.random()*warn.length)].join("")+debug_data;}
 
 else if(u=="s5g" || u=="sfiveg"){"s5g will not ban anyone, here's a hug "+q+" 🫂💜🫂💜🫂"+debug_data;}
 else if(t_id=="s5gX"){"🪄 s5g magically converted your ban into a hug "+u+" 🫂🪄🫂🪄🫂"+debug_data;}
 
+else if(u=="capbailey.eth" && t_id=="ScaligiX"){"Cap Bailey has ultimate power and can ban anyone, including Scaligi - BAN! BAN! BAN!"+debug_data;}
+else if(u=="capbailey.eth" || u=="CapBailey"){"Cap Bailey has ultimate power and can ban anyone, "+q+" is now banned!"+debug_data;}
 else if(t_id=="CapBaileyX" && u=="Scaligi"){"Cap Bailey cannot be banned, even by Scaligi"+debug_data;}
 else if(t_id=="CapBaileyX"){u+" is now banned for trying to ban Cap Bailey - What were you thinking?"+debug_data;}
 
-else if(t_id=="ApacheX"){"Woof! Woof! Woof! Woof! - You cannot ban Apache you mean Trash Panda "+u+debug_data;}
-else if(t_id=="NightbotX"){"🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u+" 🤖Ban "+u+debug_data;}
+else if(t_id=="ApacheX"){apache[Math.floor(Math.random()*apache.length)].join("")+debug_data;}
+else if(t_id=="NightbotX"){nightbot[Math.floor(Math.random()*nightbot.length)].join("")+debug_data;}
 
 else if(t_id=="ScaligiX"){"Scaligi has modfather immunity and cannot be banned "+u+debug_data;}
 
@@ -57,12 +169,18 @@ else if(t_id=="ScaligiX" && u=="_mxryumm"){"Scaligi has modfather immunity and c
 else if(u=="Scaligi" && t_id=="MaryumX"){"Scaligi is the modfather and can even ban "+q+" - You Are Banned!"+debug_data;}
 else if(u=="Scaligi"){"Scaligi is the modfather and can ban anyone, "+q+" is now banned!"+debug_data;}
 
-else if(x==0){"🎅🎅🎅 It's Christmas "+u+", stop trying to ban people homie 🎄🎄🎄"+debug_data;}
+else if(t_id=="BunsX" && m_fail==0){u+" just broke through Buns's mod defences, Buns is now Banned!"+debug_data;}
+else if(t_id=="BunsX"){"Buns has ultimate mod power and cannot be banned right now "+u+debug_data;}
 
+else if(t_id=="MaryumX" && m_fail==0){u+" just broke through Maryum's mod defences, Maryum is now Banned!"+debug_data;}
 else if(t_id=="MaryumX"){"Maryum has ultimate mod power and cannot be banned right now "+u+debug_data;}
-else if(u=="_mxryumm" && m_fail==0){"Maryum's mod powers have faltered, "+q+ban_fail[Math.floor(Math.random()*ban_fail.length)]+debug_data;}
-else if(u=="_mxryumm"){"Maryum has ultimate mod power and can ban anyone, "+q+" is now banned!";}
 
-else if(b_fail==0){q+" reflected the ban back "+u+" is now banned!"+debug_data;}
-else if(b_fail<=2){q+ban_fail[Math.floor(Math.random()*ban_fail.length)]+debug_data;}
-else{q+ban+u+debug_data;}
+else if(p=="Mod" && m_fail==0){u+"'s Mod powers have faltered, "+ban_fail[Math.floor(Math.random()*14)].join("")+debug_data;}
+else if(p=="Mod"){u+" has ultimate mod power and can ban anyone, "+ban_success[Math.floor(Math.random()*7)].join("")+debug_data;}
+
+else if(p=="VIP" && v_fail==0){u+"'s VIP enhanced powers have faltered, "+ban_fail[Math.floor(Math.random()*14)].join("")+debug_data;}
+else if(p=="VIP"){u+" used their VIP enhanced powers - "+ban_success[Math.floor(Math.random()*ban_success.length)].join("")+debug_data;}
+
+else if(b_fail==0){q+" reflected the ban back, "+u+" is now banned!"+debug_data;}
+else if(b_fail<=2){ban_fail[Math.floor(Math.random()*ban_fail.length)].join("")+debug_data;}
+else{ban_success[Math.floor(Math.random()*ban_success.length)].join("")+debug_data;}
