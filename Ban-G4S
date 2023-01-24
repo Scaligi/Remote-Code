@@ -1,6 +1,6 @@
 title ="G4S Fake Ban Update Testing";
-rc_v ="G4S v1.0 from v2.8-Dev";
-rc_url ="/QCFswFze";
+rc_v ="G4S v1.0-GH from v2.8-Dev";
+rc_url ="Scaligi/Remote-Code/main/Ban-G4S";
 debug = debug;
 debug_data ="";
 
