@@ -1,5 +1,5 @@
 title ="G4S Fake Ban Update Testing";
-rc_v ="G4S v1.0-GH from v2.8-Dev";
+rc_v ="G4S v1.1-GH from v2.8-Dev";
 rc_url ="Scaligi/Remote-Code/main/Ban-G4S";
 debug = debug;
 debug_data ="";
@@ -127,6 +127,7 @@ IDs = [
 ["MaddiebaeX", "maddi"],
 ["KurtX", "kurt", "lunsford"],
 ["CubsmamaX", "cubsm"],
+["EmilyX", "emily"],
 ["CapBaileyX", "341247175860420609", "cap", "c4p", "b4", "bailey", "whisper", "owner", "bizl", "asmr", "arkans"],
 ["NightbotX", "83010416610906112", "nightbot"],
 ["BunsX", "175018714108919808", "buns"],
@@ -179,15 +180,17 @@ else if(u=="Scaligi" && t_id=="MaryumX"){"Scaligi is the modfather and can even 
 else if(u=="Scaligi" && m_fail==0){"Scaligi's Modfather powers have faltered, "+ban_fail[Math.floor(Math.random()*14)].join("")+debug_data;}
 else if(u=="Scaligi"){"Scaligi is the modfather and can ban anyone, "+q+" is now banned!"+debug_data;}
 
+else if(t_id=="EmilyX" && m_fail==0){u+" just broke through Emily's Mod defences, Emily is now Banned!"+debug_data;}
+else if(t_id=="EmilyX"){"Emily has ultimate Mod powers and cannot be banned right now "+u+debug_data;}
 
-else if(t_id=="MaddiebaeX" && m_fail==0){u+" just broke through Maddiebae's Mod defences, Maddiebae is now Banned!"+debug_data;}
-else if(t_id=="MaddiebaeX"){"Maddiebae has ultimate Mod powers and cannot be banned right now "+u+debug_data;}
+else if(t_id=="MaddiebaeX" && m_fail==0){u+" just broke through Maddiebae's VIP defences, Maddiebae is now Banned!"+debug_data;}
+else if(t_id=="MaddiebaeX"){"Maddiebae has ultimate VIP powers and cannot be banned right now "+u+debug_data;}
 
 else if(t_id=="KurtX" && m_fail==0){u+" just broke through Kurt's Mod defences, Kurt is now Banned!"+debug_data;}
 else if(t_id=="KurtX"){"Kurt has ultimate Mod powers and cannot be banned right now "+u+debug_data;}
 
-else if(t_id=="CubsmamaX" && m_fail==0){u+" just broke through Cubsmama's Mod defences, Cubsmama is now Banned!"+debug_data;}
-else if(t_id=="CubsmamaX"){"Cubsmama has ultimate Mod powers and cannot be banned right now "+u+debug_data;}
+else if(t_id=="CubsmamaX" && m_fail==0){u+" just broke through Cubsmama's defences, Cubsmama is now Banned!"+debug_data;}
+else if(t_id=="CubsmamaX"){"Cubsmama is protected and cannot be banned right now "+u+debug_data;}
 
 
 else if(t_id=="BunsX" && m_fail==0){u+" just broke through Buns's defences, Buns is now Banned!"+debug_data;}
