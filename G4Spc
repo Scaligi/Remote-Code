@@ -1,14 +1,43 @@
-if(q=="test"){"Go4Spencer's Promo Cycle Command v1.0 User="+u+", Query="+q+", Command Count="+cc+", Promo Number="+pn+", URLfetch Successful: Remote_Code:/Scaligi/rc/main/g4sPC";}
+title= "Go4Spencer's Twitch Promo Cycle Command";
+version= "v1.0";
+rc_url= "/Scaligi/Remote-Code/main/G4Spc";
 
-else if(pn=="1"){"Enjoying the stream? Subscribe and hit that notification bell 🔔";}
-else if(pn=="2"){"🐦 Follow me on Twitter https://twitter.com/goforspencer";}
-else if(pn=="3"){"📷 Follow me on Instagram www.instagram.com/go4spencer";}
-else if(pn=="4"){"📱 Follow me on TikTok https://tiktok.com/@go4spencer";}
-else if(pn=="5"){"👉 Come Join the discord: https://discord.gg/rqffM9kGV9";}
-else if(pn=="6"){"Enjoying the stream? Subscribe and hit that notification bell 🔔";}
-else if(pn=="7"){"🐦 Follow me on Twitter https://twitter.com/goforspencer";}
-else if(pn=="8"){"📷 Follow me on Instagram www.instagram.com/go4spencer";}
-else if(pn=="9"){"📱 Follow me on TikTok https://tiktok.com/@go4spencer";}
-else if(pn=="0"){"👉 Come Join the discord: https://discord.gg/rqffM9kGV9";}
+twitch= "🔔 Drop a follow and turn on notifications so you don't miss the next stream";
+twitter= "🐦 Follow me on Twitter https://twitter.com/goforspencer";
+prime= "🅿 Subscribe with Amazon Prime for free! Link your accounts here https://gaming.amazon.com/intro then subscribe";
+instagram= "📷 Follow me on Instagram www.instagram.com/go4spencer";
+bits= "💎 You can support streamers by cheering with bits www.twitch.tv/bits";
+tiktok= "📱 Follow me on TikTok https://tiktok.com/@go4spencer";
+subscribe= "✅ Click here to subscribe to the channel and get ad free viewing www.twitch.tv/subs/go4spencer";
+youtube= "🎥 Subscribe to my YouTube channel https://www.youtube.com/@go4spencer?sub_confirmation=1";
+discord= "👉 Come Join the discord: https://discord.gg/rqffM9kGV9";
+rewards= "🪙 Check out my new Channel Point Rewards ⬇️";
+
+
+if(q=="test"){title+" "+version+" User="+u+", Query="+q+", Command Count="+cc+", Promo Number="+pn+", URLfetch Successful: Remote_Code:"+rc_url;}
+
+else if(q=="list"){"Promo Messages are: 1🔔follow | 2🐦twitter | 3🅿prime | 4📷instagram | 5💎bits | 6📱tiktiok | 7✅subscribe | 8🎥ytsub | 9👉discord | 10🪙rewards - Next in cycle is No."+[(pn*1)+1];}
+
+else if(q=="1"||q=="twitch"){twitch;}
+else if(q=="2"||q=="twitter"){twitter;}
+else if(q=="3"||q=="prime"){prime;}
+else if(q=="4"||q=="instagram"){instagram;}
+else if(q=="5"||q=="bits"){bits;}
+else if(q=="6"||q=="tiktok"){tiktok;}
+else if(q=="7"||q=="subscribe"){subscribe;}
+else if(q=="8"||q=="youtube"){youtube;}
+else if(q=="9"||q=="discord"){discord;}
+else if(q=="10"||q=="rewards"){rewards;}
+
+else if(pn=="1"){twitch;}
+else if(pn=="2"){twitter;}
+else if(pn=="3"){prime;}
+else if(pn=="4"){instagram;}
+else if(pn=="5"){bits;}
+else if(pn=="6"){tiktok;}
+else if(pn=="7"){subscribe;}
+else if(pn=="8"){youtube;}
+else if(pn=="9"){discord;}
+else if(pn=="0"){rewards;}
  
 else{" --> Command Error - Scaligi Please Help!";}
