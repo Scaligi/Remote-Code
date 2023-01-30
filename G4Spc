@@ -1,5 +1,5 @@
 title= "Go4Spencer's Twitch Promo Cycle Command";
-version= "v1.0";
+version= "v1.1";
 rc_url= "/Scaligi/Remote-Code/main/G4Spc";
 
 twitch= "🔔 Drop a follow and turn on notifications so you don't miss the next stream";
@@ -16,7 +16,7 @@ rewards= "🪙 Check out my new Channel Point Rewards ⬇️";
 
 if(q=="test"){title+" "+version+" User="+u+", Query="+q+", Command Count="+cc+", Promo Number="+pn+", URLfetch Successful: Remote_Code:"+rc_url;}
 
-else if(q=="list"){"Promo Messages are: 1🔔follow | 2🐦twitter | 3🅿prime | 4📷instagram | 5💎bits | 6📱tiktiok | 7✅subscribe | 8🎥ytsub | 9👉discord | 10🪙rewards - Next in cycle is No."+[(pn*1)+1];}
+else if(q=="list"){"Promo Messages are: 1🔔follow | 2🐦twitter | 3🅿prime | 4📷instagram | 5💎bits | 6📱tiktiok | 7✅subscribe | 8🎥youtube | 9👉discord | 10🪙rewards - Next in cycle is No."+[(pn*1)+1];}
 
 else if(q=="1"||q=="twitch"){twitch;}
 else if(q=="2"||q=="twitter"){twitter;}
