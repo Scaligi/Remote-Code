@@ -94,7 +94,7 @@ ban_success =[
 [q, " is no longer welcome here, thanks to ", u, "!"],
 [u, " banned ", q, " to the moon and back!"],
 [u, " showed ", q, " who's boss with this ban"],
-[q, " has been banned and exiled by", u, "!"],
+[q, " has been banned and exiled by ", u, "!"],
 [u, " banned ", q, " without mercy"],
 [u, " successfully banned ", q, " into oblivion"],
 [u, " banned ", q, " with the power of their mind"],
