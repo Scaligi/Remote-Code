@@ -1,5 +1,5 @@
 title ="Fake Ban Update Testing";
-rc_v ="GH Beta v2.3 - v3.9-Dev";
+rc_v ="GH Beta v2.4 - v3.9-Dev";
 rc_url ="/Scaligi/Remote-Code/main/Ban";
 debug = debug;
 debug_data ="";
@@ -64,7 +64,11 @@ warn =[
 ["Your input does not make sense ", u],
 ["I require a proper command ", u],
 ["Incorrect input received from ", u, ", try again"],
-["I cannot process your request ", u]
+["I cannot process your request ", u],
+["Slow down,", u],
+["Whoops, wrong button ", u],
+["Stop spamming ", u],
+["No one likes a smart aleck,", u]
 ];
 
 ban_success =[
