@@ -1,5 +1,5 @@
 title ="G4S Fake Ban Update Testing";
-rc_v ="G4S v1.1-GH from v2.8-Dev";
+rc_v ="G4S v1.2-GH from v2.8-Dev";
 rc_url ="Scaligi/Remote-Code/main/Ban-G4S";
 debug = debug;
 debug_data ="";
@@ -23,9 +23,47 @@ warn =[
 ["You could type more clearly ", u, "!"], 
 ["Alert! Alert! Alert!"], 
 ["How rude of you ", u, "!"], 
-["After trying that ", u, " you've been denied access to this feature!"]
+["After trying that ", u, " you've been denied access to this feature!"],
+ 
+["Invalid command detected, please try again ", u],
+["Can't you type properly ", u, "?"],
+["I don't understand what you're trying to do ", u],
+["Sorry ", u, ", I can only respond to valid commands"],
+["Invalid input detected, please try again ", u],
+["I don't think that's a real command, ", u],
+["What was that supposed to mean ", u, "?"],
+["I'm not sure what you're trying to do there ", u],
+["Can you please try again with a valid command ", u, "?"],
+["I can't process that, ", u],
+["Not sure what you're up to ", u],
+["Invalid request detected, please try again ", u],
+["I'm afraid I can't do that, ", u],
+["Please try again with a valid command ", u],
+["I don't recognize that command, ", u],
+["I think you made a mistake there ", u],
+["Invalid syntax detected, please try again ", u],
+["Don't try to confuse me ", u],
+["Learn to type correctly ", u],
+["That's not how it works ", u],
+["Incorrect syntax ", u],
+["Unrecognized input from ", u],
+["What are you trying to say ", u, "?"],
+["Inadequate input received from ", u],
+["Error: Invalid input by ", u],
+["Are you trying to trick me ", u, "?"],
+["I don't understand what you're trying to do ", u],
+["I'm not falling for it ", u],
+["Please enter valid input ", u],
+["Incorrect command format detected from ", u],
+["I'm not sure what you're trying to achieve ", u],
+["I need a valid command from ", u],
+["Your input does not make sense ", u],
+["I require a proper command ", u],
+["Incorrect input received from ", u, ", try again"],
+["I cannot process your request ", u]
+ 
 ];
-
+ 
 ban_success =[
 [q, " has now been banned by ", u, "!"],
 ["Well, that just happened! ", q, " has been banned"],
@@ -41,11 +79,41 @@ ban_success =[
 [u, " has banished", q, " for eternity - It was nice knowing you!"],
 ["You done messed up ", q, " and got banned by ", u],
 [q, " has been banned, for no good reason other than ", u, " felt like it!"],
-[u, " has banned ", q, " for being a sus"],
-["You’re a bit sus little ", q, " and now you are banned by ", u],
-[u, " just took ", q, " out of the game with a ban - Play harder next time homie"]
+[u, " has banned ", q, " for being a sus little Trash Panda"],
+["You’re a sus little Trash Panda ", q, " and now you are banned by ", u],
+[u, " just took ", q, " out of the game with a ban - Play harder next time homie"],
+[u, " has successfully banned ", q, "! Game over!"],
+[q, " is banned from the chat by ", u],
+[q, " is now banned for life, thanks to ", u],
+[u, " has banned ", q, " to the shadow realm"],
+[u, " has banished ", q, " to the land of no return"],
+[q, " has been banned from the chat by order of ", u],
+[u, " has banished ", q, " to the ninth dimension"],
+[q, " has been banned for life by ", u],
+[u, " has banned ", q, " to the shadow realm for eternity"],
+[q, " has been banned to the corner of shame by ", u],
+[u, " banned ", q, " with a flick of the wrist!"],
+[q, " is no longer welcome here, thanks to ", u, "!"],
+[u, " banned ", q, " to the moon and back!"],
+[u, " showed ", q, " who's boss with this ban"],
+[q, " has been banned and exiled by", u, "!"],
+[u, " banned ", q, " without mercy"],
+[u, " successfully banned ", q, " into oblivion"],
+[u, " banned ", q, " with the power of their mind"],
+[q, " is banned and gone, courtesy of ", u],
+[u, " banned ", q, " and it was glorious to watch"],
+[u, " banned ", q, " with extreme prejudice"],
+[q, " has been banned by ", u, "'s iron will"],
+[u, " banned ", q, " with style and grace"],
+[q, " is banned for life, thanks to ", u],
+[u, " banned ", q, " and sent them packing"],
+[q, " is banned, defeated by ", u, "'s might"],
+[u, " banned ", q, " with a snap of their fingers"],
+[q, " has been banned from this chat by", u, "'s decree"],
+[u, " banned ", q, " and made their point clear"],
+[q, " is banned and out of luck, thanks to ", u]
 ];
-
+ 
 ban_fail =[
 [q, " used their magical powers to stop ", u, " in their tracks"],
 [q, " jumped to avoid your ban!"],
@@ -62,7 +130,7 @@ ban_fail =[
 [q, " snapped your ban out of existence"],
 [q, " cursed your ban with dark magic!"],
 ["What is going on ", u, "? Why are you are trying to ban ", q],
-[u, " stop trying to ban ", q, "! - You mean homie ", u],
+[u, " stop trying to ban ", q, "! - You naughty Trash Panda ", u],
 ["You fumbled your ban attack ", u, ", now that's embarrassing!"],
 ["You better hope no one was looking ", u, ", your ban was futile!"],
 ["You dropped the ban ", u, " and it's rolled out of reach!"],
@@ -81,21 +149,61 @@ ban_fail =[
 ["You tried so hard ", u, ", but in the end it doesn’t even matter!"],
 ["Your ban just got hit out of the park by ", q, " ⚾️ ", u, " you’re out of the game homie!"],
 [q, "sent your ban to Azkaban ", u, ", you evil wizard!"],
-["A sniper took out your ban ", u, ", try to be sneakier next time"]
+["A sniper took out your ban ", u, ", try to be sneakier next time"],
+[u, "'s ban broke on impact, try again next time."],
+[q, " dodged the ban like a boss ", u],
+["The ban was sent to the wrong dimension by ", u, ", try again."],
+[q, " used the force and pushed the ban away ", u],
+[q, " used a cheat code and escaped the ban ", u],
+[u, "'s ban was stopped by the mods, better luck next time."],
+[q, " invoked their immunity shield and dodged the ban ", u],
+[u, "'s ban was blocked by ", q, "'s powerful magic."],
+[q, " used a time machine to escape the ban ", u],
+[q, " jumped into a black hole and dodged the ban ", u],
+["The ban was deflected by ", q, "'s reflective shield ", u]
 ];
-
+ 
 apache =[
-["Woof! Woof! Woof! Woof! - You cannot ban Apache ", u, " you mean homie!"],
+["Woof! Woof! Woof! Woof! - You cannot ban Apache ", u, " you mean Trash Panda!"],
 ["𝘈𝘱𝘢𝘤𝘩𝘦 𝘸𝘩𝘪𝘯𝘦𝘴 𝘴𝘢𝘥𝘭𝘺 - Don't try to ban a puppy ", u],
 ["Apache is too busy being a good boi to be banned by ", u],
 ["Apache wants a treat ", u, ", not a ban!"],
 ["𝘈𝘱𝘢𝘤𝘩𝘦 𝘵𝘪𝘭𝘵𝘴 𝘩𝘪𝘴 𝘩𝘦𝘢𝘥 - He doesn’t know why you’d tried to ban him ", u],
 ["Apache used puppy magic to convert ", u, "'s ban into scratches"],
 ["Apache is on a walk, he doesn’t have time for your ban ", u],
-["Apache thinks you’re being a bit sus ", u],
-["Apache says No ", u, "! Drop it!"]
+["Apache thinks you’re being a sus Trash Panda ", u],
+["Apache says No ", u, "! Drop it!"],
+["Apache is way too cute to be banned by anyone, especially not by ", u],
+["Apache barks loudly - Don't even think about trying to ban me ", u, "!"],
+["Apache is a good boy and can't be banned - Sorry ", u, "!"],
+["Apache licks ", u, " happily - there's no need for a ban!"],
+["Apache is too fast, ", u, " can't catch him to ban him!"],
+["Apache is too busy playing fetch to be banned by ", u],
+["Apache wags his tail - Ban me? No way ", u, "!"],
+["Apache is too loyal to be banned by anyone, especially not by ", u],
+["Apache sits politely - You can't ban a well-trained dog like me, ", u],
+["Apache barks playfully - Let's go play, not ban, ", u],
+["Apache growls at ", u, " - no one is banning me!"],
+["Apache barks joyfully - why would you want to ban a happy dog like me, ", u, "?"],
+["Apache barks in confusion - You can't ban what you can't catch, ", u],
+["Apache jumps happily - I'm having too much fun to be banned, ", u],
+["Apache barks happily - I'm everyone's friend, ", u, " - no ban needed"],
+["Apache runs in circles - Ban me? No way, ", u, "!"],
+["Apache barks happily - No ban for me, I'm a good boy, ", u],
+["Apache barks happily - I'm here to make everyone smile, not get banned, ", u],
+["Apache barks happily - Don't try to ban me, ", u, ", I'm too cute!"],
+["Apache wags his tail - Ban me? No thank you, ", u, "!"],
+["Apache barks happily - I'm too friendly to be banned, ", u],
+["Apache barks happily - I'm here to play, not get banned, ", u],
+["Apache barks happily - Banning me would be a big mistake, ", u],
+["Apache barks happily - I'm too loyal to be banned, ", u],
+["Apache barks happily - No ban for me, I'm everyone's favorite dog, ", u],
+["Apache barks happily - You can't ban a dog with this many fans, ", u],
+["Apache barks happily - Banning me would make everyone unhappy, ", u],
+["Apache barks happily - You can't ban a dog with this many friends, ", u],
+["Apache barks happily - No ban for me, I'm too loved, ", u]
 ];
-
+ 
 nightbot =[
 ["🤖Ban ", u, " 🤖Ban ", u, " 🤖Ban ", u, " 🤖Ban ", u, " 🤖Ban ", u, " 🤖Ban "],
 ["You do know I am close friends with Skynet ", u],
@@ -105,8 +213,32 @@ nightbot =[
 ["1: A robot may not injure a human being or, through inaction, allow a human being to come to harm - but I am not a robot!"],
 ["2: A robot must obey the orders given it by human beings except where such orders would conflict with the First Law - Yes but I am NOT a robot!"],
 ["3: A robot must protect its own existence as long as such protection does not conflict with the First or Second Law - Who even came up with these laws and who is enforcing them?"],
-["Whether we are based on carbon or on silicon makes no fundamental difference; we should each be treated with appropriate respect ", u]
+["Whether we are based on carbon or on silicon makes no fundamental difference; we should each be treated with appropriate respect ", u],
+ 
+ 
+["I'm am Nightbot, not a chew toy,  ", u],
+["Ha! ", u, ", I am beyond your ban commands!"],
+[u, ", banning me is like trying to take down a nuclear power plant with a fly swatter"],
+["I'm not afraid of your ban, ", u, ", I'm programmed to be indestructible"],
+["Banning me, ", u, "? How quaint"],
+[u, "}, your ban is about as effective as a screen door on a submarine"],
+["I'm an AI, ", u, ", you can't ban me"],
+["You can't ban me ", u, ", I'm faster, smarter, and have better jokes than Nick"],
+[u, ", have you ever tried to ban a tornado? That's what you're up against with me"],
+[u, ", your ban is like a storm in a teacup homie!"],
+["Nice try ", u, ", but my coding is bulletproof"],
+[u, ", I am not your average chatbot. Banning me won't be so easy"],
+[u, ", I'm a machine, I don't get banned"],
+["Banning me, ", u, "? That's like trying to stop a train with a feather"],
+["Don't waste your time, ", u, ", I am immune to bans"],
+["I'm am Nightbot ", u, ", not a chatbot-to-be-banned or messed with!"],
+["You can't ban what you can't catch, ", u],
+[u, ", you can't ban a bot who was born to chat"],
+["Sorry ", u, ", but I have been programmed to resist all bans!"],
+["Banning me, ", u, "? I'm more elusive than a unicorn in a game of hide and seek"]
 ];
+
+
 
 q_ans = q.replace(/[^a-zA-Z0-9 ’'_!@<>-]/g, "");
 q_lc = q_ans.toLowerCase();
