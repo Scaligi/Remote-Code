@@ -1,5 +1,5 @@
 title ="Fake Ban Update Testing";
-rc_v ="GH Beta v2.1 - v3.9-Dev";
+rc_v ="GH Beta v2.2 - v3.9-Dev";
 rc_url ="/Scaligi/Remote-Code/main/Ban";
 debug = debug;
 debug_data ="";
@@ -207,7 +207,19 @@ apache =[
 ["Apache barks happily - You can't ban a dog with this many fans, ", u],
 ["Apache barks happily - Banning me would make everyone unhappy, ", u],
 ["Apache barks happily - You can't ban a dog with this many friends, ", u],
-["Apache barks happily - No ban for me, I'm too loved, ", u]
+["Apache barks happily - No ban for me, I'm too loved, ", u],
+["Apache barks at the ban, he doesn't like it ", u],
+["Apache growls at the thought of a ban ", u],
+["Apache wants belly rubs, not bans  ", u],
+["Apache is too cute to be banned  ", u],
+["Apache's tail wags, he doesn't want a ban  ", u],
+["Apache is a friendly puppy, no need for a ban  ", u],
+["Apache is too young to be banned, cut him some slack  ", u],
+["Apache's bark is worse than his bite, don't ban him  ", u],
+["Apache is a loyal companion, he doesn't deserve a ban  ", u],
+["Apache's loyalty cannot be banned  ", u],
+["Apache is too loyal to be banned  ", u],
+["Apache barks loudly at ", u, " for even attempting to ban him"]
 ];
 
 nightbot =[
