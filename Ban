@@ -1,5 +1,5 @@
 title ="Fake Ban Update Testing";
-rc_v ="GH Beta v2.4 - v3.9-Dev";
+rc_v ="GH Beta v2.5 - v3.9-Dev";
 rc_url ="/Scaligi/Remote-Code/main/Ban";
 debug = debug;
 debug_data ="";
@@ -170,7 +170,11 @@ ban_fail =[
 [u, "'s ban was blocked by ", q, "'s powerful magic."],
 [q, " used a time machine to escape the ban ", u],
 [q, " jumped into a black hole and dodged the ban ", u],
-["The ban was deflected by ", q, "'s reflective shield ", u]
+["The ban was deflected by ", q, "'s reflective shield ", u],
+[q, " is a slippery character and escaped your ban, try harder next time ", u],
+["Oh no! The ban gun jammed ", u, ", ", q, " is off the hook"],
+["Looks like ", q, " is a ninja, they dodged your ban ", u],
+["You missed the target ", u, ", ", q, " is still free"]
 ];
 
 apache =[
