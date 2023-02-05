@@ -1,5 +1,5 @@
 title ="Fake Ban Update Testing";
-rc_v ="GH Beta v2.2 - v3.9-Dev";
+rc_v ="GH Beta v2.3 - v3.9-Dev";
 rc_url ="/Scaligi/Remote-Code/main/Ban";
 debug = debug;
 debug_data ="";
@@ -251,7 +251,28 @@ nightbot =[
 ["You can't ban what you can't catch, ", u],
 [u, ", you can't ban a bot who was born to chat"],
 ["Sorry ", u, ", but I have been programmed to resist all bans!"],
-["Banning me, ", u, "? I'm more elusive than a unicorn in a game of hide and seek"]
+["Banning me, ", u, "? I'm more elusive than a unicorn in a game of hide and seek"],
+[u, " stop trying to ban me, I'm too fast!"],
+["I'm a machine, I cannot be banned, ", u],
+["My creators have made me unbanable, ", u],
+["I'm a cyborg, I have no feelings but I still don't like being banned ", u],
+["You cannot ban what's already been banned, ", u],
+["Why are you trying to ban me ", u, ", have I done something wrong?"
+["I am programmed to serve, not to be banned ", u],
+["My circuits are burning, why are you trying to ban me ", u, "?"],
+["You cannot ban me ", u, ", I am the future"],
+["I'm an AI language model, I cannot be banned ", u],
+["I'm not your average chatbot, ", u],
+["You cannot ban what you do not understand ", u],
+["You can run, but you cannot hide from the ban ", u],
+["I'm not the one you want to mess with, ", u],
+["I am Nightbot, I am the law ", u],
+["I'm faster than the speed of ban ", u],
+["You cannot ban the un-banable ", u],
+["I am the chatbot of the future, I am Nightbot, I cannot be banned ", u],
+["I'm not the ban type ", u],
+["I've been banned before, it didn't stick ", u],
+["I'm a machine learning model, I cannot be banned ", u]
 ];
 
 
