@@ -1,5 +1,5 @@
 title ="G4S Fake Ban Update Testing";
-rc_v ="G4S v1.3-GH from v2.8-Dev";
+rc_v ="G4S v2.0-GH from v2.8-Dev";
 rc_url ="Scaligi/Remote-Code/main/Ban-G4S";
 debug = debug;
 debug_data ="";
@@ -59,9 +59,13 @@ warn =[
 ["Your input does not make sense ", u],
 ["I require a proper command ", u],
 ["Incorrect input received from ", u, ", try again"],
-["I cannot process your request ", u]
+["I cannot process your request ", u],
+["Slow down,", u],
+["Whoops, wrong button ", u],
+["Stop spamming ", u],
+["No one likes a smart aleck,", u]
 ];
- 
+
 ban_success =[
 [q, " has now been banned by ", u, "!"],
 ["Well, that just happened! ", q, " has been banned"],
@@ -114,7 +118,7 @@ ban_success =[
 [q, " is no more, banned by ", u, "!"],
 [u, " has used their ultimate ban hammer on ", q, " farewell!"]
 ];
- 
+
 ban_fail =[
 [q, " used their magical powers to stop ", u, " in their tracks"],
 [q, " jumped to avoid your ban!"],
@@ -161,9 +165,13 @@ ban_fail =[
 [u, "'s ban was blocked by ", q, "'s powerful magic."],
 [q, " used a time machine to escape the ban ", u],
 [q, " jumped into a black hole and dodged the ban ", u],
-["The ban was deflected by ", q, "'s reflective shield ", u]
+["The ban was deflected by ", q, "'s reflective shield ", u],
+[q, " is a slippery character and escaped your ban, try harder next time ", u],
+["Oh no! The ban gun jammed ", u, ", ", q, " is off the hook"],
+["Looks like ", q, " is a ninja, they dodged your ban ", u],
+["You missed the target ", u, ", ", q, " is still free"]
 ];
- 
+
 apache =[
 ["Woof! Woof! Woof! Woof! - You cannot ban Apache ", u, " you mean Trash Panda!"],
 ["𝘈𝘱𝘢𝘤𝘩𝘦 𝘸𝘩𝘪𝘯𝘦𝘴 𝘴𝘢𝘥𝘭𝘺 - Don't try to ban a puppy ", u],
@@ -202,9 +210,21 @@ apache =[
 ["Apache barks happily - You can't ban a dog with this many fans, ", u],
 ["Apache barks happily - Banning me would make everyone unhappy, ", u],
 ["Apache barks happily - You can't ban a dog with this many friends, ", u],
-["Apache barks happily - No ban for me, I'm too loved, ", u]
+["Apache barks happily - No ban for me, I'm too loved, ", u],
+["Apache barks at the ban, he doesn't like it ", u],
+["Apache growls at the thought of a ban ", u],
+["Apache wants belly rubs, not bans  ", u],
+["Apache is too cute to be banned  ", u],
+["Apache's tail wags, he doesn't want a ban  ", u],
+["Apache is a friendly puppy, no need for a ban  ", u],
+["Apache is too young to be banned, cut him some slack  ", u],
+["Apache's bark is worse than his bite, don't ban him  ", u],
+["Apache is a loyal companion, he doesn't deserve a ban  ", u],
+["Apache's loyalty cannot be banned  ", u],
+["Apache is too loyal to be banned  ", u],
+["Apache barks loudly at ", u, " for even attempting to ban him"]
 ];
- 
+
 nightbot =[
 ["🤖Ban ", u, " 🤖Ban ", u, " 🤖Ban ", u, " 🤖Ban ", u, " 🤖Ban ", u, " 🤖Ban "],
 ["You do know I am close friends with Skynet ", u],
@@ -215,8 +235,6 @@ nightbot =[
 ["2: A robot must obey the orders given it by human beings except where such orders would conflict with the First Law - Yes but I am NOT a robot!"],
 ["3: A robot must protect its own existence as long as such protection does not conflict with the First or Second Law - Who even came up with these laws and who is enforcing them?"],
 ["Whether we are based on carbon or on silicon makes no fundamental difference; we should each be treated with appropriate respect ", u],
- 
- 
 ["I'm am Nightbot, not a chew toy,  ", u],
 ["Ha! ", u, ", I am beyond your ban commands!"],
 [u, ", banning me is like trying to take down a nuclear power plant with a fly swatter"],
@@ -236,7 +254,28 @@ nightbot =[
 ["You can't ban what you can't catch, ", u],
 [u, ", you can't ban a bot who was born to chat"],
 ["Sorry ", u, ", but I have been programmed to resist all bans!"],
-["Banning me, ", u, "? I'm more elusive than a unicorn in a game of hide and seek"]
+["Banning me, ", u, "? I'm more elusive than a unicorn in a game of hide and seek"],
+[u, " stop trying to ban me, I'm too fast!"],
+["I'm a machine, I cannot be banned, ", u],
+["My creators have made me unbanable, ", u],
+["I'm a cyborg, I have no feelings but I still don't like being banned ", u],
+["You cannot ban what's already been banned, ", u],
+["Why are you trying to ban me ", u, ", have I done something wrong?"],
+["I am programmed to serve, not to be banned ", u],
+["My circuits are burning, why are you trying to ban me ", u, "?"],
+["You cannot ban me ", u, ", I am the future"],
+["I'm an AI language model, I cannot be banned ", u],
+["I'm not your average chatbot, ", u],
+["You cannot ban what you do not understand ", u],
+["You can run, but you cannot hide from the ban ", u],
+["I'm not the one you want to mess with, ", u],
+["I am Nightbot, I am the law ", u],
+["I'm faster than the speed of ban ", u],
+["You cannot ban the un-banable ", u],
+["I am the chatbot of the future, I am Nightbot, I cannot be banned ", u],
+["I'm not the ban type ", u],
+["I've been banned before, it didn't stick ", u],
+["I'm a machine learning model, I cannot be banned ", u]
 ];
 
 
