@@ -1,5 +1,5 @@
 title ="G4S Fake Ban Update Testing";
-rc_v ="G4S v1.2-GH from v2.8-Dev";
+rc_v ="G4S v1.3-GH from v2.8-Dev";
 rc_url ="Scaligi/Remote-Code/main/Ban-G4S";
 debug = debug;
 debug_data ="";
@@ -24,7 +24,6 @@ warn =[
 ["Alert! Alert! Alert!"], 
 ["How rude of you ", u, "!"], 
 ["After trying that ", u, " you've been denied access to this feature!"],
- 
 ["Invalid command detected, please try again ", u],
 ["Can't you type properly ", u, "?"],
 ["I don't understand what you're trying to do ", u],
@@ -61,7 +60,6 @@ warn =[
 ["I require a proper command ", u],
 ["Incorrect input received from ", u, ", try again"],
 ["I cannot process your request ", u]
- 
 ];
  
 ban_success =[
@@ -111,7 +109,10 @@ ban_success =[
 [u, " banned ", q, " with a snap of their fingers"],
 [q, " has been banned from this chat by", u, "'s decree"],
 [u, " banned ", q, " and made their point clear"],
-[q, " is banned and out of luck, thanks to ", u]
+[q, " is banned and out of luck, thanks to ", u],
+[q, " has been banned by the ultimate power of ", u, "!"],
+[q, " is no more, banned by ", u, "!"],
+[u, " has used their ultimate ban hammer on ", q, " farewell!"]
 ];
  
 ban_fail =[
