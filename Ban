@@ -257,7 +257,7 @@ nightbot =[
 ["My creators have made me unbanable, ", u],
 ["I'm a cyborg, I have no feelings but I still don't like being banned ", u],
 ["You cannot ban what's already been banned, ", u],
-["Why are you trying to ban me ", u, ", have I done something wrong?"
+["Why are you trying to ban me ", u, ", have I done something wrong?"],
 ["I am programmed to serve, not to be banned ", u],
 ["My circuits are burning, why are you trying to ban me ", u, "?"],
 ["You cannot ban me ", u, ", I am the future"],
