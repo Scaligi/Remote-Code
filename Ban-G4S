@@ -1,5 +1,5 @@
 title ="G4S Fake Ban Update Testing";
-rc_v ="G4S v2.1-GH from v2.8-Dev";
+rc_v ="G4S v2.3-GH from v2.8-Dev";
 rc_url ="Scaligi/Remote-Code/main/Ban-G4S";
 debug = debug;
 debug_data ="";
@@ -13,7 +13,8 @@ if (ul =="regular"){p ="Regular";}
 if (ul =="twitch_vip"){p ="VIP";}
 if (ul =="moderator"){p ="Mod";}
 
-q_split = q.split(" ");
+q_to_split_lc = q.toLowerCase();
+q_split = q_to_split_lc.split(" ");
 n = q_split[2]*1;
 mu = "";
 if (q_split[1]=="message"){mu=u; q="𝘛𝘢𝘳𝘨𝘦𝘵_𝘜𝘴𝘦𝘳"; u="𝘜𝘴𝘦𝘳";}
@@ -322,7 +323,7 @@ if(q==""){"You need to specify a user "+u;}
 
 
 
-else if (q_split[0]=="messages"){"```Message Databases: Ban_Success="+ban_success.length+", Ban_Fail="+ban_fail.length+", Warn="+warn.length+", Nightbot="+nightbot.length+", Apache="+apache.length+"```";}
+else if (q_split[0]=="messages"){"```Ban Message Databases: success="+ban_success.length+", fail="+ban_fail.length+", warn="+warn.length+", nightbot="+nightbot.length+", apache="+apache.length+"```";}
 
 else if (q_split[0]=="warn" && q_split[1]=="message"){
 	if (n>0 && n<=warn.length) {"🚫 "+warn[n-1].join("");}
@@ -336,17 +337,17 @@ else if (q_split[0]=="apache" && q_split[1]=="message"){
 	if (n>0 && n<=apache.length) {apache[n-1].join("");}
 	else {"/me "+mu+" --> When specifying an Apache message number, please select between 1 and "+apache.length;}
 	;}
-else if (q_split[0]=="ban_fail" && q_split[1]=="message"){
+else if (q_split[0]=="fail" && q_split[1]=="message"){
 	if (n>0 && n<=ban_fail.length) {ban_fail[n-1].join("");}
 	else {"/me "+mu+" --> When specifying a ban fail number, please select between 1 and "+ban_fail.length;}
 	;}
-else if (q_split[0]=="ban_success" && q_split[1]=="message"){
+else if (q_split[0]=="success" && q_split[1]=="message"){
 	if (n>0 && n<=ban_success.length) {ban_success[n-1].join("");}
 	else {"/me "+mu+" --> When specifying a ban success number, please select between 1 and "+ban_success.length;}
 	;}
-else if (q_split[0]=="message"){"⚠️ Message Database Not Specified! - Command syntax should be: `!ban 𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦 message 𝘯𝘶𝘮𝘣𝘦𝘳` ```Message Databases: Ban_Success="+ban_success.length+", Ban_Fail="+ban_fail.length+", Warn="+warn.length+", Nightbot="+nightbot.length+", Apache="+apache.length+"```";}
+else if (q_split[0]=="message"){"⚠️ Message Database Not Specified! - Command syntax should be: `!ban 𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦 message 𝘯𝘶𝘮𝘣𝘦𝘳` ```Ban Message Databases: success="+ban_success.length+", fail="+ban_fail.length+", warn="+warn.length+", iightbot="+nightbot.length+", apache="+apache.length+"```";}
  
-else if (q_split[1]=="message"){"⚠️ Message Database Not Valid! - Command syntax should be: `!ban 𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦 message 𝘯𝘶𝘮𝘣𝘦𝘳` ```Message Databases: Ban_Success="+ban_success.length+", Ban_Fail="+ban_fail.length+", Warn="+warn.length+", Nightbot="+nightbot.length+", Apache="+apache.length+"```";}
+else if (q_split[1]=="message"){"⚠️ Message Database Not Valid! - Command syntax should be: `!ban 𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦 message 𝘯𝘶𝘮𝘣𝘦𝘳` ```Ban Message Databases: success="+ban_success.length+", fail="+ban_fail.length+", warn="+warn.length+", nightbot="+nightbot.length+", apache="+apache.length+"```";}
 
 
 
