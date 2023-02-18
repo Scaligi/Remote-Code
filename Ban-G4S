@@ -1,5 +1,5 @@
 title ="G4S Fake Ban Update Testing";
-rc_v ="G4S v2.3-GH from v2.8-Dev";
+rc_v ="G4S v2.4-GH from v2.8-Dev";
 rc_url ="Scaligi/Remote-Code/main/Ban-G4S";
 debug = debug;
 debug_data ="";
@@ -323,7 +323,7 @@ if(q==""){"You need to specify a user "+u;}
 
 
 
-else if (q_split[0]=="messages"){"```Ban Message Databases: success="+ban_success.length+", fail="+ban_fail.length+", warn="+warn.length+", nightbot="+nightbot.length+", apache="+apache.length+"```";}
+else if (q_split[0]=="messages"){"```Ban Message Databases: Success="+ban_success.length+", Fail="+ban_fail.length+", Warn="+warn.length+", Nightbot="+nightbot.length+", Apache="+apache.length+"```";}
 
 else if (q_split[0]=="warn" && q_split[1]=="message"){
 	if (n>0 && n<=warn.length) {"🚫 "+warn[n-1].join("");}
@@ -345,9 +345,9 @@ else if (q_split[0]=="success" && q_split[1]=="message"){
 	if (n>0 && n<=ban_success.length) {ban_success[n-1].join("");}
 	else {"/me "+mu+" --> When specifying a ban success number, please select between 1 and "+ban_success.length;}
 	;}
-else if (q_split[0]=="message"){"⚠️ Message Database Not Specified! - Command syntax should be: `!ban 𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦 message 𝘯𝘶𝘮𝘣𝘦𝘳` ```Ban Message Databases: success="+ban_success.length+", fail="+ban_fail.length+", warn="+warn.length+", iightbot="+nightbot.length+", apache="+apache.length+"```";}
+else if (q_split[0]=="message"){"⚠️ Ban Message Database Not Specified! - Command syntax should be: `!ban 𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦 message 𝘯𝘶𝘮𝘣𝘦𝘳` ```Ban Message Databases: Success="+ban_success.length+", Fail="+ban_fail.length+", Warn="+warn.length+", Nightbot="+nightbot.length+", Apache="+apache.length+"```";}
  
-else if (q_split[1]=="message"){"⚠️ Message Database Not Valid! - Command syntax should be: `!ban 𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦 message 𝘯𝘶𝘮𝘣𝘦𝘳` ```Ban Message Databases: success="+ban_success.length+", fail="+ban_fail.length+", warn="+warn.length+", nightbot="+nightbot.length+", apache="+apache.length+"```";}
+else if (q_split[1]=="message"){"⚠️ Ban Message Database Not Valid! - Command syntax should be: `!ban 𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦 message 𝘯𝘶𝘮𝘣𝘦𝘳` ```Ban Message Databases: Success="+ban_success.length+", Fail="+ban_fail.length+", Warn="+warn.length+", Nightbot="+nightbot.length+", Apache="+apache.length+"```";}
 
 
 
