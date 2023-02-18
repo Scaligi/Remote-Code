@@ -330,19 +330,19 @@ else if (q_split[0]=="warn" && q_split[1]=="message"){
 	else {"/me "+mu+" --> When specifying a warn message number, please select between 1 and "+warn.length;}
 	;}
 else if (q_split[0]=="nightbot" && q_split[1]=="message"){
-	if (n>0 && n<=nightbot.length) {"Nightbot Message Number "+n+":```nightbot[n-1].join("")+"```";}
+	if (n>0 && n<=nightbot.length) {"Nightbot Message Number "+n+":```"+nightbot[n-1].join("")+"```";}
 	else {"/me "+mu+" --> When specifying a Nightbot message number, please select between 1 and "+nightbot.length;}
 	;}
 else if (q_split[0]=="apache" && q_split[1]=="message"){
-	if (n>0 && n<=apache.length) {"Apache Message Number "+n+":```apache[n-1].join("")+"```";}
+	if (n>0 && n<=apache.length) {"Apache Message Number "+n+":```"+apache[n-1].join("")+"```";}
 	else {"/me "+mu+" --> When specifying an Apache message number, please select between 1 and "+apache.length;}
 	;}
 else if (q_split[0]=="fail" && q_split[1]=="message"){
-	if (n>0 && n<=ban_fail.length) {"Ban Fail Message Number "+n+":```ban_fail[n-1].join("")+"```";}
+	if (n>0 && n<=ban_fail.length) {"Ban Fail Message Number "+n+":```"+ban_fail[n-1].join("")+"```";}
 	else {"/me "+mu+" --> When specifying a ban fail number, please select between 1 and "+ban_fail.length;}
 	;}
 else if (q_split[0]=="success" && q_split[1]=="message"){
-	if (n>0 && n<=ban_success.length) {"Ban Success Message Number "+n+":```ban_success[n-1].join("")+"```";}
+	if (n>0 && n<=ban_success.length) {"Ban Success Message Number "+n+":```"+ban_success[n-1].join("")+"```";}
 	else {"/me "+mu+" --> When specifying a ban success number, please select between 1 and "+ban_success.length;}
 	;}
 else if (q_split[0]=="message"){"⚠️ Ban Message Database Not Specified! - Command syntax should be: `!ban 𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦 message 𝘯𝘶𝘮𝘣𝘦𝘳` ```Ban Message Databases: Success="+ban_success.length+", Fail="+ban_fail.length+", Warn="+warn.length+", Nightbot="+nightbot.length+", Apache="+apache.length+"```";}
