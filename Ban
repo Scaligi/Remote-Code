@@ -1,5 +1,5 @@
 title ="Fake Ban Update Testing";
-rc_v ="GH Beta v2.7 - v3.9-Dev";
+rc_v ="GH Beta v2.8 - v3.9-Dev";
 rc_url ="/Scaligi/Remote-Code/main/Ban";
 debug = debug;
 debug_data ="";
@@ -117,7 +117,7 @@ ban_success =[
 [u, " banned ", q, " and sent them packing"],
 [q, " is banned, defeated by ", u, "'s might"],
 [u, " banned ", q, " with a snap of their fingers"],
-[q, " has been banned from this chat by", u, "'s decree"],
+[q, " has been banned from this chat by ", u, "'s decree"],
 [u, " banned ", q, " and made their point clear"],
 [q, " is banned and out of luck, thanks to ", u],
 [q, " has been banned by the ultimate power of ", u, "!"],
