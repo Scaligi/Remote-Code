@@ -1,5 +1,5 @@
 title ="G4S Fake Ban Update Testing";
-rc_v ="G4S v2.7-GH from v2.8-Dev";
+rc_v ="G4S v2.8-GH from v2.8-Dev";
 rc_url ="Scaligi/Remote-Code/main/Ban-G4S";
 debug = debug;
 debug_data ="";
@@ -117,7 +117,7 @@ ban_success =[
 [u, " banned ", q, " and sent them packing"],
 [q, " is banned, defeated by ", u, "'s might"],
 [u, " banned ", q, " with a snap of their fingers"],
-[q, " has been banned from this chat by", u, "'s decree"],
+[q, " has been banned from this chat by ", u, "'s decree"],
 [u, " banned ", q, " and made their point clear"],
 [q, " is banned and out of luck, thanks to ", u],
 [q, " has been banned by the ultimate power of ", u, "!"],
@@ -178,57 +178,57 @@ ban_fail =[
 ["You missed the target ", u, ", ", q, " is still free"]
 ];
 
-apache =[
-["Woof! Woof! Woof! Woof! - You cannot ban Apache ", u, " you mean Trash Panda!"],
-["𝘈𝘱𝘢𝘤𝘩𝘦 𝘸𝘩𝘪𝘯𝘦𝘴 𝘴𝘢𝘥𝘭𝘺 - Don't try to ban a puppy ", u],
-["Apache is too busy being a good boi to be banned by ", u],
-["Apache wants a treat ", u, ", not a ban!"],
-["𝘈𝘱𝘢𝘤𝘩𝘦 𝘵𝘪𝘭𝘵𝘴 𝘩𝘪𝘴 𝘩𝘦𝘢𝘥 - He doesn’t know why you’d tried to ban him ", u],
-["Apache used puppy magic to convert ", u, "'s ban into scratches"],
-["Apache is on a walk, he doesn’t have time for your ban ", u],
-["Apache thinks you’re being a sus Trash Panda ", u],
-["Apache says No ", u, "! Drop it!"],
-["Apache is way too cute to be banned by anyone, especially not by ", u],
-["Apache barks loudly - Don't even think about trying to ban me ", u, "!"],
-["Apache is a good boy and can't be banned - Sorry ", u, "!"],
-["Apache licks ", u, " happily - there's no need for a ban!"],
-["Apache is too fast, ", u, " can't catch him to ban him!"],
-["Apache is too busy playing fetch to be banned by ", u],
-["Apache wags his tail - Ban me? No way ", u, "!"],
-["Apache is too loyal to be banned by anyone, especially not by ", u],
-["Apache sits politely - You can't ban a well-trained dog like me, ", u],
-["Apache barks playfully - Let's go play, not ban, ", u],
-["Apache growls at ", u, " - no one is banning me!"],
-["Apache barks joyfully - why would you want to ban a happy dog like me, ", u, "?"],
-["Apache barks in confusion - You can't ban what you can't catch, ", u],
-["Apache jumps happily - I'm having too much fun to be banned, ", u],
-["Apache barks happily - I'm everyone's friend, ", u, " - no ban needed"],
-["Apache runs in circles - Ban me? No way, ", u, "!"],
-["Apache barks happily - No ban for me, I'm a good boy, ", u],
-["Apache barks happily - I'm here to make everyone smile, not get banned, ", u],
-["Apache barks happily - Don't try to ban me, ", u, ", I'm too cute!"],
-["Apache wags his tail - Ban me? No thank you, ", u, "!"],
-["Apache barks happily - I'm too friendly to be banned, ", u],
-["Apache barks happily - I'm here to play, not get banned, ", u],
-["Apache barks happily - Banning me would be a big mistake, ", u],
-["Apache barks happily - I'm too loyal to be banned, ", u],
-["Apache barks happily - No ban for me, I'm everyone's favorite dog, ", u],
-["Apache barks happily - You can't ban a dog with this many fans, ", u],
-["Apache barks happily - Banning me would make everyone unhappy, ", u],
-["Apache barks happily - You can't ban a dog with this many friends, ", u],
-["Apache barks happily - No ban for me, I'm too loved, ", u],
-["Apache barks at the ban, he doesn't like it ", u],
-["Apache growls at the thought of a ban ", u],
-["Apache wants belly rubs, not bans  ", u],
-["Apache is too cute to be banned  ", u],
-["Apache's tail wags, he doesn't want a ban  ", u],
-["Apache is a friendly puppy, no need for a ban  ", u],
-["Apache is too young to be banned, cut him some slack  ", u],
-["Apache's bark is worse than his bite, don't ban him  ", u],
-["Apache is a loyal companion, he doesn't deserve a ban  ", u],
-["Apache's loyalty cannot be banned  ", u],
-["Apache is too loyal to be banned  ", u],
-["Apache barks loudly at ", u, " for even attempting to ban him"]
+coob =[
+["Woof! Woof! Woof! Woof! - You cannot ban Coob ", u, " you mean homie!"],
+["Coober whines sadly - Don't try to ban a puppy ", u],
+["Coob is too busy being a good boi to be banned by ", u],
+["Coob wants a treat ", u, ", not a ban!"],
+["Coober tilts his head - He doesn’t know why you’d tried to ban him ", u],
+["Coob used puppy magic to convert ", u, "'s ban into scratches"],
+["Coob is on a walk, he doesn’t have time for your ban ", u],
+["Coober thinks you’re being a sus homie ", u],
+["Coober says No ", u, "! Drop it!"],
+["Coob is way too cute to be banned by anyone, especially not by ", u],
+["Coob barks loudly - Don't even think about trying to ban me ", u, "!"],
+["Coob is a good boy and can't be banned - Sorry ", u, "!"],
+["Coober licks ", u, " happily - there's no need for a ban!"],
+["Coob is too fast, ", u, " can't catch him to ban him!"],
+["Coob is too busy playing fetch to be banned by ", u],
+["Coober wags his tail - Ban me? No way ", u, "!"],
+["Coob is too loyal to be banned by anyone, especially not by ", u],
+["Coob sits politely - You can't ban a well-trained dog like me, ", u],
+["Coober barks playfully - Let's go play, not ban, ", u],
+["Coob growls at ", u, " - no one is banning me!"],
+["Coober barks joyfully - why would you want to ban a happy dog like me, ", u, "?"],
+["Coob barks in confusion - You can't ban what you can't catch, ", u],
+["Coob jumps happily - I'm having too much fun to be banned, ", u],
+["Coober barks happily - I'm everyone's friend, ", u, " - no ban needed"],
+["Coob runs in circles - Ban me? No way, ", u, "!"],
+["Coob barks happily - No ban for me, I'm a good boy, ", u],
+["Coob barks happily - I'm here to make everyone smile, not get banned, ", u],
+["Coober barks happily - Don't try to ban me, ", u, ", I'm too cute!"],
+["Coob wags his tail - Ban me? No thank you, ", u, "!"],
+["Coob barks happily - I'm too friendly to be banned, ", u],
+["Coob barks happily - I'm here to play, not get banned, ", u],
+["Coob barks happily - Banning me would be a big mistake, ", u],
+["Coob barks happily - I'm too loyal to be banned, ", u],
+["Coob barks happily - No ban for me, I'm everyone's favorite dog, ", u],
+["Coob barks happily - You can't ban a dog with this many fans, ", u],
+["Coob barks happily - Banning me would make everyone unhappy, ", u],
+["Coob barks happily - You can't ban a dog with this many friends, ", u],
+["Coob barks happily - No ban for me, I'm too loved, ", u],
+["Coob barks at the ban, he doesn't like it ", u],
+["Coober growls at the thought of a ban ", u],
+["Coob wants belly rubs, not bans  ", u],
+["Coob is too cute to be banned  ", u],
+["Coober's tail wags, he doesn't want a ban  ", u],
+["Coober is a friendly puppy, no need for a ban  ", u],
+["Coob is too young to be banned, cut him some slack  ", u],
+["Coober's bark is worse than his bite, don't ban him  ", u],
+["Coob is a loyal companion, he doesn't deserve a ban  ", u],
+["Coober's loyalty cannot be banned  ", u],
+["Coob is too loyal to be banned  ", u],
+["Coob barks loudly at ", u, " for even attempting to ban him"]
 ];
 
 nightbot =[
@@ -301,6 +301,7 @@ t_id = "NoMatch";
 IDs = [
 ["SpencerX", "spencer", "g4s", "go4s", "gofors"],
 ["ScaligiX", "848025900720848896", "scali", "ukmod", "modfather", "britishmod", "englishmod"],
+["CoobX", "", "cob"],
 ["ApacheX", "827356116958052363", "pache", "patch"],
 ["MaddiebaeX", "maddi"],
 ["KurtX", "kurt", "lunsford"],
@@ -317,13 +318,13 @@ for(i = IDs.length - 1; i >= 0; i--) {for(j =1; j < IDs[i].length; j++) {if (q_i
 
 if (debug == "basic"){debug_data =" ```Debug Data: User="+u+", Level="+ul+", P="+p+", Q="+q+", Q_AN="+q_an+", Q_ID="+q_id+", Count="+count+", Find="+find+", Target_ID="+t_id+", B_Fail="+b_fail+", V_Fail="+v_fail+", M_Fail="+m_fail+"```";}
 
-if (debug == "detailed"){debug_data ="```User="+u+", "+ul+", P="+p+", Input="+q+"```Convert:```Q_AN="+q_an+", Count="+count+", Find="+find+"```Search:```Q_ID="+q_id+", IDs="+IDs.length+", Target="+t_id+"```Messages:```B_Fail_t="+ban_fail.length+", Warn="+warn.length+", Apache="+apache.length+"```Stats:```B_Fail="+b_fail+", V_Fail="+v_fail+", M_Fail="+m_fail+"```";}
+if (debug == "detailed"){debug_data ="```User="+u+", "+ul+", P="+p+", Input="+q+"```Convert:```Q_AN="+q_an+", Count="+count+", Find="+find+"```Search:```Q_ID="+q_id+", IDs="+IDs.length+", Target="+t_id+"```Messages:```B_Fail_t="+ban_fail.length+", Warn="+warn.length+", Coober="+coob.length+"```Stats:```B_Fail="+b_fail+", V_Fail="+v_fail+", M_Fail="+m_fail+"```";}
 
 if(q==""){"You need to specify a user "+u;}
 
 
 
-else if (q_split[0]=="messages"){"```Ban Message Databases: Success="+ban_success.length+", Fail="+ban_fail.length+", Warn="+warn.length+", Nightbot="+nightbot.length+", Apache="+apache.length+"```";}
+else if (q_split[0]=="messages"){"```Ban Message Databases: Success="+ban_success.length+", Fail="+ban_fail.length+", Warn="+warn.length+", Nightbot="+nightbot.length+", Coober="+coob.length+"```";}
 
 else if (q_split[0]=="warn" && q_split[1]=="message"){
 	if (n>0 && n<=warn.length) {"Warn Message Number "+n+":```🚫 "+warn[n-1].join("")+"```";}
@@ -333,9 +334,9 @@ else if (q_split[0]=="nightbot" && q_split[1]=="message"){
 	if (n>0 && n<=nightbot.length) {"Nightbot Message Number "+n+":```"+nightbot[n-1].join("")+"```";}
 	else {"/me "+mu+" --> When specifying a Nightbot message number, please select between 1 and "+nightbot.length;}
 	;}
-else if (q_split[0]=="apache" && q_split[1]=="message"){
-	if (n>0 && n<=apache.length) {"Apache Message Number "+n+":```"+apache[n-1].join("")+"```";}
-	else {"/me "+mu+" --> When specifying an Apache message number, please select between 1 and "+apache.length;}
+else if (q_split[0]=="coob" && q_split[1]=="message"){
+	if (n>0 && n<=coob.length) {"Coober Message Number "+n+":```"+coob[n-1].join("")+"```";}
+	else {"/me "+mu+" --> When specifying an Apache message number, please select between 1 and "+coob.length;}
 	;}
 else if (q_split[0]=="fail" && q_split[1]=="message"){
 	if (n>0 && n<=ban_fail.length) {"Ban Fail Message Number "+n+":```"+ban_fail[n-1].join("")+"```";}
@@ -345,9 +346,9 @@ else if (q_split[0]=="success" && q_split[1]=="message"){
 	if (n>0 && n<=ban_success.length) {"Ban Success Message Number "+n+":```"+ban_success[n-1].join("")+"```";}
 	else {"/me "+mu+" --> When specifying a ban success number, please select between 1 and "+ban_success.length;}
 	;}
-else if (q_split[0]=="message"){"⚠️ Ban Message Database Not Specified! - Command syntax should be: `!ban 𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦 message 𝘯𝘶𝘮𝘣𝘦𝘳` ```Ban Message Databases: Success="+ban_success.length+", Fail="+ban_fail.length+", Warn="+warn.length+", Nightbot="+nightbot.length+", Apache="+apache.length+"```";}
+else if (q_split[0]=="message"){"⚠️ Ban Message Database Not Specified! - Command syntax should be: `!ban 𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦 message 𝘯𝘶𝘮𝘣𝘦𝘳` ```Ban Message Databases: Success="+ban_success.length+", Fail="+ban_fail.length+", Warn="+warn.length+", Nightbot="+nightbot.length+", Coober="+coob.length+"```";}
  
-else if (q_split[1]=="message"){"⚠️ Ban Message Database Not Valid! - Command syntax should be: `!ban 𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦 message 𝘯𝘶𝘮𝘣𝘦𝘳` ```Ban Message Databases: Success="+ban_success.length+", Fail="+ban_fail.length+", Warn="+warn.length+", Nightbot="+nightbot.length+", Apache="+apache.length+"```";}
+else if (q_split[1]=="message"){"⚠️ Ban Message Database Not Valid! - Command syntax should be: `!ban 𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦 message 𝘯𝘶𝘮𝘣𝘦𝘳` ```Ban Message Databases: Success="+ban_success.length+", Fail="+ban_fail.length+", Warn="+warn.length+", Nightbot="+nightbot.length+", Coober="+coob.length+"```";}
 
 
 
@@ -378,7 +379,8 @@ else if(u=="CapBailey" && t_id=="ScaligiX"){"Cap Bailey has ultimate power and c
 else if(t_id=="CapBaileyX" && u=="Scaligi"){"Cap Bailey cannot be banned, even by Scaligi"+debug_data;}
 else if(t_id=="CapBaileyX"){u+" is now banned for trying to ban Cap Bailey"+debug_data;}
 
-else if(t_id=="ApacheX"){apache[Math.floor(Math.random()*apache.length)].join("")+debug_data;}
+else if(t_id=="CoobX"){coob[Math.floor(Math.random()*coob.length)].join("")+debug_data;}
+else if(t_id=="ApacheX"){"Apache does not live here homie!"+debug_data;}
 else if(t_id=="NightbotX"){nightbot[Math.floor(Math.random()*nightbot.length)].join("")+debug_data;}
 
 else if(t_id=="ScaligiX" && u=="mxryumm"){"Scaligi has modfather immunity and cannot be ban, even by Maryum"+debug_data;}
