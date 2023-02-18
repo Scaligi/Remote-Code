@@ -1,5 +1,5 @@
 title ="G4S Fake Ban Update Testing";
-rc_v ="G4S v2.8a-GH from v2.8-Dev";
+rc_v ="G4S v2.8b-GH from v2.8-Dev";
 rc_url ="Scaligi/Remote-Code/main/Ban-G4S";
 debug = debug;
 debug_data ="";
@@ -334,7 +334,7 @@ else if (q_split[0]=="nightbot" && q_split[1]=="message"){
 	if (n>0 && n<=nightbot.length) {"Nightbot Message Number "+n+":```"+nightbot[n-1].join("")+"```";}
 	else {"/me "+mu+" --> When specifying a Nightbot message number, please select between 1 and "+nightbot.length;}
 	;}
-else if (q_split[0]=="coob" && q_split[1]=="message"){
+else if (q_split[0]=="coober" && q_split[1]=="message"){
 	if (n>0 && n<=coob.length) {"Coober Message Number "+n+":```"+coob[n-1].join("")+"```";}
 	else {"/me "+mu+" --> When specifying an Apache message number, please select between 1 and "+coob.length;}
 	;}
