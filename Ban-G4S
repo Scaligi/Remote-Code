@@ -1,5 +1,5 @@
 title ="G4S Fake Ban Update Testing";
-rc_v ="G4S v2.0-GH from v2.8-Dev";
+rc_v ="G4S v2.1-GH from v2.8-Dev";
 rc_url ="Scaligi/Remote-Code/main/Ban-G4S";
 debug = debug;
 debug_data ="";
@@ -12,6 +12,11 @@ p ="";
 if (ul =="regular"){p ="Regular";}
 if (ul =="twitch_vip"){p ="VIP";}
 if (ul =="moderator"){p ="Mod";}
+
+q_split = q.split(" ");
+n = q_split[2]*1;
+mu = "";
+if (q_split[1]=="message"){mu=u; q="𝘛𝘢𝘳𝘨𝘦𝘵_𝘜𝘴𝘦𝘳"; u="𝘜𝘴𝘦𝘳";}
 
 warn =[
 ["What are you trying to do ", u, "?"],
@@ -314,6 +319,37 @@ if (debug == "basic"){debug_data =" ```Debug Data: User="+u+", Level="+ul+", P="
 if (debug == "detailed"){debug_data ="```User="+u+", "+ul+", P="+p+", Input="+q+"```Convert:```Q_AN="+q_an+", Count="+count+", Find="+find+"```Search:```Q_ID="+q_id+", IDs="+IDs.length+", Target="+t_id+"```Messages:```B_Fail_t="+ban_fail.length+", Warn="+warn.length+", Apache="+apache.length+"```Stats:```B_Fail="+b_fail+", V_Fail="+v_fail+", M_Fail="+m_fail+"```";}
 
 if(q==""){"You need to specify a user "+u;}
+
+
+
+else if (q_split[0]=="messages"){"```Message Databases: Ban_Success="+ban_success.length+", Ban_Fail="+ban_fail.length+", Warn="+warn.length+", Nightbot="+nightbot.length+", Apache="+apache.length+"```";}
+
+else if (q_split[0]=="warn" && q_split[1]=="message"){
+	if (n>0 && n<=warn.length) {"🚫 "+warn[n-1].join("");}
+	else {"/me "+mu+" --> When specifying a warn message number, please select between 1 and "+warn.length;}
+	;}
+else if (q_split[0]=="nightbot" && q_split[1]=="message"){
+	if (n>0 && n<=nightbot.length) {nightbot[n-1].join("");}
+	else {"/me "+mu+" --> When specifying a Nightbot message number, please select between 1 and "+nightbot.length;}
+	;}
+else if (q_split[0]=="apache" && q_split[1]=="message"){
+	if (n>0 && n<=apache.length) {apache[n-1].join("");}
+	else {"/me "+mu+" --> When specifying an Apache message number, please select between 1 and "+apache.length;}
+	;}
+else if (q_split[0]=="ban_fail" && q_split[1]=="message"){
+	if (n>0 && n<=ban_fail.length) {ban_fail[n-1].join("");}
+	else {"/me "+mu+" --> When specifying a ban fail number, please select between 1 and "+ban_fail.length;}
+	;}
+else if (q_split[0]=="ban_success" && q_split[1]=="message"){
+	if (n>0 && n<=ban_success.length) {ban_success[n-1].join("");}
+	else {"/me "+mu+" --> When specifying a ban success number, please select between 1 and "+ban_success.length;}
+	;}
+else if (q_split[0]=="message"){"⚠️ Message Database Not Specified! - Command syntax should be: `!ban 𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦 message 𝘯𝘶𝘮𝘣𝘦𝘳` ```Message Databases: Ban_Success="+ban_success.length+", Ban_Fail="+ban_fail.length+", Warn="+warn.length+", Nightbot="+nightbot.length+", Apache="+apache.length+"```";}
+ 
+else if (q_split[1]=="message"){"⚠️ Message Database Not Valid! - Command syntax should be: `!ban 𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦 message 𝘯𝘶𝘮𝘣𝘦𝘳` ```Message Databases: Ban_Success="+ban_success.length+", Ban_Fail="+ban_fail.length+", Warn="+warn.length+", Nightbot="+nightbot.length+", Apache="+apache.length+"```";}
+
+
+
 else if (q.length > 50){"⚠️ Specified username is too long "+u;}
 else if (q_lc.includes("@everyone")){"🚫 DO NOT @ Everyone "+u+"!";}
 else if (q_id.includes("everyone")){"⚠️ DO NOT Try and BAN everyone "+u+"!";}
