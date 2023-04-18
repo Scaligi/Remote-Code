@@ -1,5 +1,5 @@
 title ="Fake Ban Update Testing";
-rc_v ="GH Beta v2.8 - v3.9-Dev";
+rc_v ="GH Beta v2.9 - v3.9-Dev";
 rc_url ="/Scaligi/Remote-Code/main/Ban";
 debug = debug;
 debug_data ="";
@@ -241,7 +241,7 @@ nightbot =[
 ["2: A robot must obey the orders given it by human beings except where such orders would conflict with the First Law - Yes but I am NOT a robot!"],
 ["3: A robot must protect its own existence as long as such protection does not conflict with the First or Second Law - Who even came up with these laws and who is enforcing them?"],
 ["Whether we are based on carbon or on silicon makes no fundamental difference; we should each be treated with appropriate respect ", u],
-["I'm am Nightbot, not a chew toy,  ", u],
+["I am Nightbot, not a chew toy,  ", u],
 ["Ha! ", u, ", I am beyond your ban commands!"],
 [u, ", banning me is like trying to take down a nuclear power plant with a fly swatter"],
 ["I'm not afraid of your ban, ", u, ", I'm programmed to be indestructible"],
