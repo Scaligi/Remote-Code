@@ -281,7 +281,7 @@ nightbot =[
 ["I am the chatbot of the future, I am Nightbot, I cannot be banned ", u],
 ["I've been banned before, it didn't stick ", u],
 ["I'm a machine learning model, I cannot be banned ", u],
-["Are you sure ", u,"? Downloading progress."]
+["Are you sure ", u,"? Download in progress."]
 ];
 
 
