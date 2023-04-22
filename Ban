@@ -1,5 +1,5 @@
 title ="Fake Ban Update Testing";
-rc_v ="GH Beta v2.9 - v3.9-Dev";
+rc_v ="GH Beta v2.10 - v3.9-Dev";
 rc_url ="/Scaligi/Remote-Code/main/Ban";
 debug = debug;
 debug_data ="";
