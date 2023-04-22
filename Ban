@@ -279,9 +279,9 @@ nightbot =[
 ["I'm faster than the speed of ban ", u],
 ["You cannot ban the un-banable ", u],
 ["I am the chatbot of the future, I am Nightbot, I cannot be banned ", u],
-["I'm not the ban type ", u],
 ["I've been banned before, it didn't stick ", u],
-["I'm a machine learning model, I cannot be banned ", u]
+["I'm a machine learning model, I cannot be banned ", u],
+["Are you sure ", u,"? Downloading progress."]
 ];
 
 
