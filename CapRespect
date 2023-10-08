@@ -1,6 +1,6 @@
 warn ="⚠️ Please be respectful of Cap Bailey and the community ";
 
-if(t=="test"){"Respect Warning Command v1.2 User="+u+", User_Level="+ul+", Query="+q+", Message="+m+", URLfetch Successful, Remote_Code:rCCUbm2h Authorised_Users: Owner, Moderator, Twitch_VIPs";}
+if(t=="test"){"Respect Warning Command v2 User="+u+", User_Level="+ul+", Query="+q+", Message="+m+", URLfetch Successful, Remote_Code:/Scaligi/Remote-Code/CapRespect Authorised_Users: Owner, Moderator, Twitch_VIPs";}
 
 else if(ul=="owner" && q==""){warn;}
 else if(ul=="owner"){warn + t + " " + m;}
@@ -13,9 +13,6 @@ else if(ul=="regular"){warn + t + " " + m;}
 
 else if(u=="capbailey.eth" && q==""){warn;}
 else if(u=="capbailey.eth"){warn + t + " " + m;}
-
-else if(u=="_mxryumm" && q==""){warn;}
-else if(u=="_mxryumm"){warn + t + " " + m;}
 
 else if(u=="s5g" && q==""){warn;}
 else if(u=="s5g"){warn + t + " " + m;}
