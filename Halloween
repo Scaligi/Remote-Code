@@ -13,7 +13,7 @@ else if (q[0]=="start"){"Command Start: "+s_cd.join(" ");}
 else if (q[0]=="end"){"Command End: "+e_cd.join(" ");}
 else if (q[0]=="cd"||q[0]=="countdown"){"Halloween Countdown: "+h_cd.join(" ");}
 
-else if (e_cd[e_cd.length-1] == "ago" ) {"Halloween is over "+u+", try again in 2023!";}
+else if (e_cd[e_cd.length-1] == "ago" ) {"Halloween is over "+u+", try again in 2024!";}
 else if (s_cd[s_cd.length-1] != "ago" ) {s_cd.join(" ")+" left till the Halloween command is activated "+u+", or as soon as "+c+" releases a Halloween video!";}
 
 else if(q[0]=="list") {"List available here: https://pastebin.com/tHwEV4tf";}
