@@ -13,21 +13,11 @@ else if (q[0]=="end"){"Command End: "+e_cd.join(" ");}
 else if (q[0]=="eve"){"Chritmas Eve: "+ce_cd.join(" ");}
 else if (q[0]=="cd"||q[0]=="countdown"){"Christmas Countdown: "+c_cd.join(" ");}
 
-else if (e_cd[e_cd.length-1] == "ago" ) {"Christmas is over "+u+", try again in 2023!";}
+else if (e_cd[e_cd.length-1] == "ago" ) {"Christmas is over "+u+", try again in 2024!";}
 
 else if(q[0]=="list") {"List available here: https://pastebin.com/zC9B7v61";}
 
 
-else if(t=="mxryumm" && c_cd[c_cd.length-1]=="ago"){"It's the "+[(c_cd[0]*1)+1]+"ᵗʰ day of Christmas Maryum, "+a[Math.floor(Math.random()*4)];}
-else if(t=="_mxryumm" && c_cd[c_cd.length-1]=="ago"){"It's the "+[(c_cd[0]*1)+1]+"ᵗʰ day of Christmas Maryum, "+a[Math.floor(Math.random()*4)];}
-else if(t=="<@686429036632604692>" && c_cd[c_cd.length-1]=="ago"){"It's the "+[(c_cd[0]*1)+1]+"ᵗʰ day of Christmas Maryum, "+a[Math.floor(Math.random()*4)];}
-
-else if(t=="mxryumm" && ce_cd[ce_cd.length-1]=="ago"){"It's Christmas Eve Maryum, "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*4)];}
-else if(t=="_mxryumm" && ce_cd[ce_cd.length-1]=="ago"){"It's Christmas Eve Maryum, "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*4)];}
-else if(t=="<@686429036632604692>" && ce_cd[ce_cd.length-1]=="ago"){"It's Christmas Eve Maryum, "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*4)];}
-
-else if(t=="mxryumm"||t=="_mxryumm"){"Maryum, "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*4)];}
-else if(t=="<@686429036632604692>"||t=="maryum"){"Maryum, "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*4)];}
 
 else if(q[0]=="" && c_cd[c_cd.length-1]=="ago"){"It's Christmas Day "+u+", "+a[Math.floor(Math.random()*n)];}
 else if(q[0]=="" && c_cd[c_cd.length-1]=="ago"){"It's the "+[(c_cd[0]*1)+0]+"ᵗʰ day of Christmas "+u+", "+a[Math.floor(Math.random()*n)];}
