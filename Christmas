@@ -29,7 +29,7 @@ else if(t=="<@686429036632604692>" && ce_cd[ce_cd.length-1]=="ago"){"It's Christ
 else if(t=="mxryumm"||t=="_mxryumm"){"Maryum, "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*4)];}
 else if(t=="<@686429036632604692>"||t=="maryum"){"Maryum, "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*4)];}
 
-
+else if(q[0]=="" && c_cd[c_cd.length-1]=="ago"){"It's Christmas Day "+u+", "+a[Math.floor(Math.random()*n)];}
 else if(q[0]=="" && c_cd[c_cd.length-1]=="ago"){"It's the "+[(c_cd[0]*1)+0]+"ᵗʰ day of Christmas "+u+", "+a[Math.floor(Math.random()*n)];}
 else if(q[0]=="" && ce_cd[ce_cd.length-1]=="ago"){"It's Christmas Eve "+u+", "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*n)];}
 else if(q[0]=="") {u+", "+c_cd.join(" ")+" till Christmas - "+a[Math.floor(Math.random()*n)];}
