@@ -360,8 +360,6 @@
 {{$x_t :=(add $t $log_exp_t)}}
 {{$usr :=joinStr "" .User.Globalname " - " ($n.Get "tl")}}
 {{$avt :=.User.AvatarURL "64"}}
-
-
 {{$des :=joinStr "" $dwm $d_t}}
 {{if $a_del}}
 {{$des =joinStr "" $des " - **Expires** <t:" $x_t ":R>"}}
