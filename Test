@@ -3,7 +3,7 @@
 {{ $mention_user := "<@748617194279272599> <@848025900720848896>" }}
 {{ $mention_role := "<@&864053948155035671>" }}
 {{ $mention_alert_on := true }}
-{{ $mention_everyone := true }}
+{{ $mention_everyone := false }}
 {{ $auto_delete := false }}
 {{ $interval := 86400 }}
 {{ $watchdog_grace :=30 }}
