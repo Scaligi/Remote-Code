@@ -1,190 +1,377 @@
-{{ $exp_time := 60 }}
-{{ $log_id := 870080747229306900 }}
-{{ $mention_user := "<@848025900720848896>" }}
-{{ $mention_role := "<@&1198821107541741618>" }}
-{{ $mention_alert_on := true }}
-{{ $mention_everyone := false }}
-{{ $auto_delete := true }}
-{{ $interval := 300 }}
-{{ $watchdog_grace :=30 }}
-
-{{ $exec_data := "watchdog" }}
-{{ scheduleUniqueCC 117 nil (add $interval $watchdog_grace) "question" $exec_data }}
-{{ $time := currentTime.UTC.Unix }}
-{{ $mention_id := 0 }}
-{{ $alert_mentions :=  joinStr " " "Alert Notification" $mention_user $mention_role }}
-
-{{/* Check for Question of the Day Database Entries */}}
-{{ $db_data := dbGet 1 "question" }}
-{{ $d := $db_data.Value }}
-
-{{ $wiz_id := index $d 0 }} {{/* $wiz_id 0 */}}
-{{ $wiz_ch := index $d 1 }} {{/* $wiz_ch 1 */}}
-{{ $wizard_access_time := index $d 2 }} {{/* $wiz_time 2 */}}
-{{ $current_wizard_page := index $d 3 }} {{/*$wiz_page 3 */}}
-{{ $question_channel := index $d 4 }} {{/*$q_ch 4 */}}
-{{ $q_time := index $d 5 }} {{/*$q_time 5 */}}
-{{ $q_db := index $d 6 }} {{/*$q_db 6 */}}
-
-{{ $post_ready := true }}
-{{ $warning_embed := true }}
-{{ $new_question_time := add $time $interval }}
-{{ $q_tot := sub (len $q_db) 1 }}
-{{ $q_1 := "" }}
-{{/* Add Question POST Time to database */}}
-{{ $d.Set 3 0 }}
-{{ $d.Set 5 $new_question_time }}
-
-{{/* Wizard Embed variables */}}
-{{$tn := "https://cdn.discordapp.com/attachments/965742497257119834/1195511234808774817/image.png"}}
-{{$tn_warn := "https://cdn.discordapp.com/attachments/965742497257119834/1193179564239769610/image.png"}}
-{{$tn_alert := "https://cdn.discordapp.com/attachments/965742497257119834/1195710286645170276/image.png"}}
-{{$w_msg :="💡 Question of the Day Posted"}}
-{{$ftr := "Question of the Day Posted | www.flaticon.com"}}
-{{$ftr_tn := $tn}}
-
-{{/* Warning shared EXP Emd variables */}}
-{{$unix_timestamp := (add $time $exp_time)}}
-{{$disp_t := joinStr "" "<t:" $unix_timestamp ":R>"}}
-{{$help := "**To add questions use:**\n`!question add <question?>`\n**For help use:**\n`!question help`"}}
-{{$embed_msg := "" }}
-{{$embed_tn := $tn_alert }}
-{{$mini_embed := "" }}
-
-{{/* Questions <1 - Do NOT Publish Qustion of Day */}}
-{{if lt $q_tot 1}}
-    {{$embed_msg = "❗There are No Questions in the database"}}
-    {{$w_msg = "❗Question of the Day NOT Posted"}}
-    {{$ftr = "Question of the Day NOT Posted | www.flaticon.com"}}
-    {{$tn = $tn_alert}}
-    {{$post_ready = false}}
-    {{$alert_mentions = joinStr " " "Alert Notification" $mention_user}}
-    {{if and $mention_alert_on $mention_user}}
-        {{ $mention_id = sendMessageNoEscapeRetID $log_id $alert_mentions}}
-    {{end}}
-
-{{/* No Questions Warning AFTER this POST */}}
-{{else if lt $q_tot 2}}
-    {{$embed_msg = "❗There are No Questions in the database"}}
-    {{$ftr = "No Questions in the database | www.flaticon.com"}}
-    {{$ftr_tn = $tn_alert}}
-    {{if $mention_alert_on }}
-        {{ $mention_id = sendMessageNoEscapeRetID $log_id $alert_mentions}}
-    {{end}}
-
-{{/* LAST Question Warning */}}
-{{else if lt $q_tot 3}}
-    {{$embed_msg = "❗There is ONLY 1 Question in the database"}}
-    {{$ftr = "Only 1 question left | www.flaticon.com"}}
-    {{$ftr_tn = $tn_alert}}
-    {{if $mention_alert_on }}
-        {{ $mention_id = sendMessageNoEscapeRetID $log_id $alert_mentions}}
-    {{end}}
-
-{{/* LOW Questions Warning */}}
-{{else if lt $q_tot 6}}
-    {{$embed_msg = "⚠️ Less than 5 Questions in the database"}}
-    {{$ftr = "Less than 5 questions | www.flaticon.com"}}
-    {{$ftr_tn = $tn_alert}}
-    {{$embed_tn = $tn_warn}}
-    {{$alert_mentions = joinStr " " "Alert Notification" $mention_role}}
-    {{if and $mention_alert_on $mention_role }}
-        {{ $mention_id = sendMessageNoEscapeRetID $log_id $alert_mentions}}
-    {{end}}
-
+{{deleteTrigger 0}}
+{{$log_exp_t :=600}}
+{{$a_del :=false}}
+{{$sid :=.Guild.ID}}
+{{$ch :=.Channel.ID}}
+{{$db_data :=dbGet 1 "question"}}
+{{$d :=$db_data.Value}}
+{{$db_q_arc :=dbGet 1 "archive"}}
+{{$q_arc :=$db_q_arc.Value}}
+{{$a_tot :=sub (len $q_arc) 1}}
+{{$w_id :=index $d 0}}
+{{$w_ch :=index $d 1}}
+{{$w_tm :=index $d 2}}
+{{$w_pg :=index $d 3}}
+{{$q_ch :=index $d 4}}
+{{$q_tm :=index $d 5}}
+{{$q_db :=index $d 6}}
+{{$n :=index $q_db 0}}
+{{$log_c_id :=$n.Get "lc"}}
+{{$ar :=$n.Get "au"}}
+{{$q_tot :=sub (len $q_db) 1}}
+{{$hi :=$n.Get "hi"}}
+{{$lo :=$n.Get "lo"}}
+{{$t :=currentTime.UTC.Unix}}
+{{$h :=""}}
+{{$log_s :=""}}
+{{$opt :=""}}
+{{$r_m :=""}}
+{{$i_m :=""}}
+{{$w_m :=""}}
+{{$d_m :=""}}
+{{$dwm :=""}}
+{{$dlm :=""}}
+{{$auth :=false}}
+{{- range $ar -}}
+{{- if hasRoleName . -}}
+{{- $auth =true -}}
+{{- end -}}
+{{- end -}}
+{{if not $auth}}
+{{$log_s =$n.Get "ad"}}
+{{$dwm = joinStr "" "```" ($n.Get "x") "```\n"}}
+{{$unix_t :=(add $t $log_exp_t)}}
+{{$d_t :=joinStr "" "<t:" $unix_t ":R>"}}
+{{$msg :=joinStr "" ($n.Get "m") $d_t}}
+{{$mini_embed :=cembed "title" ($n.Get "q") "description" $msg}}
+{{$msg_id :=sendMessageRetID nil $mini_embed}}
+{{deleteMessage nil $msg_id 60}}
 {{else}}
-    {{$warning_embed = false}}
-
+{{$log_s =$n.Get "aa"}}
+{{$len :=(len .CmdArgs)}}
+{{$w_l :=""}}
+{{$disp :=""}}
+{{$c :=0}}
+{{$cl :=false}}
+{{$t_disp :=$n.Get "nq"}}
+{{if lt $q_tm $t}}
+{{$t_disp =$n.Get "lp"}}
+{{$i_m =$n.Get "it"}}
+{{$w_l ="a"}}
 {{end}}
-
-{{if $warning_embed }}
-    {{/* Warning Embed POSTING shared CODE */}}
-    {{$msg := joinStr "" "```" $embed_msg "```\n" $help}}
-    {{/* $msg := joinStr "" "```" $embed_msg "```" "\nMessage expires " $disp_t */}}
-    {{$mini_embed = cembed "title" "Question of the Day Wizard - Alert" "description" $msg "thumbnail" (sdict "url" $embed_tn) "footer" (sdict "icon_url" "" "text" "www.flaticon.com")}}
-    {{$msg_id := sendMessageRetID $log_id $mini_embed}}
-    {{if $auto_delete}}
-        {{deleteMessage $log_id $msg_id $exp_time}}
-        {{if $mention_id}}
-            {{deleteMessage $log_id $mention_id $exp_time}}
-        {{end}}
-    {{end}}
-
+{{$p_t_disp :=joinStr "" $t_disp " <t:" $q_tm ":t><t:" $q_tm ":R>**"}}
+{{if gt $len 1}}
+{{$opt =lower (index .CmdArgs 0)}}
+{{$num :=toInt (index .CmdArgs 1)}}
+{{$inp_slice :=slice .CmdArgs 1}}
+{{$inp :=joinStr " " $inp_slice}}
+{{if eq $opt "add"}}
+{{$esc :=split $inp `\?`}}
+{{$mrkr :=joinStr "¬" $esc}}
+{{$splt :=split $mrkr "?"}}
+{{$deltr :=joinStr "?|" $splt}}
+{{$re_sp :=split $deltr "¬"}}
+{{$re_jn :=joinStr "?" $re_sp}}
+{{$nl_sp :=split $re_jn `\n`}}
+{{$re_nl :=joinStr "\n" $nl_sp}}
+{{$ent :=split $re_nl "|"}}
+{{$disp_q :=""}}
+{{- range $ent -}}
+{{- $a :=trimSpace .}}
+{{- if $a -}}
+{{- $q_db =$q_db.Append $a -}}
+{{- $c =add ($c) 1 -}}
+{{- $disp_q =joinStr "" $disp_q "```md\n> " (add $q_tot $c) ". " $a "```" -}}
+{{- $dlm =joinStr "" $dlm "```md\n> " $a "```" -}}
+{{- end -}}
+{{- end -}}
+{{if eq $c 1 }}
+{{$w_m =joinStr "" "✅ " $c ($n.Get "qa")}}
+{{else}}
+{{$w_m =joinStr "" "✅ " $c ($n.Get "qs")}}
 {{end}}
-
-{{if $post_ready }}
-    {{/* Question of the Day Post Emned */}}
-    {{$q_1 = (index $q_db 1)}}
-    {{$author := "Go4Spencer's Question of the Day"}}
-    {{$avatar := "https://cdn.discordapp.com/attachments/965742497257119834/1195752761439031378/image.png"}}
-
-    {{/* Question of The Day Embed */}}
-    {{if $mention_everyone }}
-        {{ $mention_id = sendMessageNoEscapeRetID $question_channel "Good morning @everyone" }}
-    {{else}}
-        {{ $mention_id = sendMessageRetID $question_channel "Good morning @everyone" }}
-    {{end}}
-	{{$display_time := joinStr "" "<t:" $unix_timestamp ":R>"}}
-	{{$msg := joinStr "" "# " $q_1 }} {{/* "\n\nMessage expires " $display_time */}}
-    {{$mini_embed := cembed "author" (sdict "name" $author "icon_url" $avatar) "title" "" "description" $msg "thumbnail" (sdict "url" "https://cdn.discordapp.com/attachments/965742497257119834/1195414232569761954/image.png") "footer" (sdict "text" "www.flaticon.com")}}
-	{{$msg_id := sendMessageRetID $question_channel $mini_embed}}
-	{{if $auto_delete}}
-        {{deleteMessage $question_channel $msg_id $exp_time}}
-        {{if $mention_id}}
-            {{deleteMessage $question_channel $mention_id $exp_time}}
-        {{end}}
-    {{end}}
-
-    {{/* Delete Question 1 */}}
-        {{$q_update := slice $q_db 0 1}}
-        {{if lt 1 $q_tot}}
-            {{$end := slice $q_db 2}}
-            {{- range $end -}}
-                {{- $q_update = $q_update.Append . -}}
-            {{- end -}}
-        {{end}}
-        {{$q_db = $q_update}}
-        {{$q_tot = sub $q_tot 1}}
-
-    {{/* Append to Archive */}}
-    {{ $db_q_archive := dbGet 1 "archive" }}
-    {{ $q_archive_full := $db_q_archive.Value }}
-    {{ $new_archive := cslice (sdict "d" 0 "m" 0 "c" 0 "q" "Archive Zero") (sdict "d" $time "m" $msg_id "c" $question_channel "q" $q_1) }}
-    {{ if gt (len $q_archive_full) 1 }}
-        {{ $q_archive := slice $q_archive_full 1 }}
-        {{- range $q_archive -}}
-            {{- $new_archive = $new_archive.Append . -}}
-        {{- end -}}
-    {{ end }}
-    {{ dbSet 1 "archive" $new_archive }}
-
+{{$q_tot =add $q_tot $c}}
+{{$disp =joinStr "" ($n.Get "qt") $disp_q}}
+{{$w_pg =0}}
+{{else if eq $opt "edit"}}
+{{if lt $len 3}}
+{{$w_m =$n.Get "sq"}}
+{{$w_l ="w"}}
+{{else}}
+{{$inp_slice =slice .CmdArgs 2}}
+{{$inp =joinStr " " $inp_slice}}
+{{$nl_sp :=split $inp `\n`}}
+{{$inp_nl :=joinStr "\n" $nl_sp}}
+{{if gt $num $q_tot}}
+{{$w_m =$hi}}
+{{$w_l ="w"}}
+{{else if lt $num 1}}
+{{$w_m =$lo}}
+{{$w_l ="w"}}
+{{else}}
+{{$w_m =joinStr "" "☑️ Question " $num ($n.Get "e")}}
+{{$d_m =joinStr "" "```fix\nx " (index $q_db $num) "``````md\n> " $inp_nl "```"}}
+{{$q_db.Set $num $inp_nl}}
 {{end}}
-
-{{ $d.Set 6 $q_db }}
-{{ dbSet 1 "question" $d }}
-
-{{/* If Wizard is ACTIVE - UPDATE Wizard EMBED */}}
-{{if gt $wiz_id 0}}
-    {{/* Additional Embd var */}}
-	{{$title := "Welcome to the Question of the Day Wizard" }}
-    {{$p_header := joinStr "" "You can use this command with options using\nthe following format `!question <option> <input>`\n\nThe available options are:\n`add` `edit` `delete` `list` `jump` `refresh` `archive` `help`"}}
-    {{$disp_warn_msg := joinStr "" "```" $w_msg "```\n"}}
-
-    {{if lt $q_tot 1}}
-        {{$q_1 = "❗No Questions❗"}}
-        {{$ftr_tn = $tn_alert}}
-        {{$ftr = "No questions in the database | www.flaticon.com"}}
-    {{else}}
-        {{$q_1 = (index $q_db 1)}}
-    {{end}}
-
-    {{$p_t_disp := joinStr "" "**Next Question Post Time: <t:" $new_question_time ":t><t:" $new_question_time ":R>**"}}
-
-    {{$p_content := joinStr "" "\n# Total Questions: " $q_tot "\n**Next Question to be Posted:**```" $q_1 "```\n" $p_t_disp}}
-
-    {{/* Embed */}}
-    {{$desc := joinStr "" $disp_warn_msg $p_header $p_content}}
-    {{$embed := cembed "title" $title "description" $desc "color" 0 "thumbnail" (sdict "url" $tn) "footer" (sdict "icon_url" $ftr_tn "text" $ftr)}}
-    {{editMessage $wiz_ch $wiz_id $embed}}
-
+{{end}}
+{{else if or (eq $opt "delete") (eq $opt "del")}}
+{{if gt $num $q_tot}}
+{{$w_m =$hi}}
+{{$w_l ="w"}}
+{{else if lt $num 1}}
+{{$w_m =$lo}}
+{{$w_l ="w"}}
+{{else}}
+{{$q_update :=slice $q_db 0 $num}}
+{{$q_e :=index $q_db $num}}
+{{if lt $num $q_tot}}
+{{$end :=slice $q_db (add $num 1)}}
+{{- range $end -}}
+{{- $q_update =$q_update.Append . -}}
+{{- end -}}
+{{end}}
+{{$q_db =$q_update}}
+{{$q_tot =sub $q_tot 1}}
+{{$w_m =joinStr "" "☑️ Question " $num ($n.Get "d")}}
+{{$d_m =joinStr "" "```diff\n- " $q_e "```"}}
+{{end}}
+{{else if or (eq $opt "jump") (eq $opt "j")}}
+{{if gt $num $q_tot}}
+{{$w_m =$hi}}
+{{$w_l ="w"}}
+{{else if lt $num 2}}
+{{$w_m =$lo}}
+{{$w_l ="w"}}
+{{else}}
+{{$jump_q :=index $q_db $num}}
+{{$h_p :=index $q_db 0}}
+{{$q_update :=cslice $h_p $jump_q}}
+{{$start :=slice $q_db 0 $num}}
+{{- range $index,$value :=$start -}}
+{{- if gt $index 0 -}}
+{{- $q_update =$q_update.Append . -}}
+{{- end -}}
+{{- end -}}
+{{if lt $num $q_tot}}
+{{$end :=slice $q_db (add $num 1)}}
+{{- range $end -}}
+{{- $q_update =$q_update.Append . -}}
+{{- end -}}
+{{end}}
+{{$q_db =$q_update}}
+{{$w_m =joinStr "" "✅ Question " $num ($n.Get "j")}}
+{{end}}
+{{else if or (eq $opt "list") (eq $opt "page")}}
+{{if gt (mult $num 10) (add $q_tot 9)}}
+{{$w_m =$hi}}
+{{$w_l ="w"}}
+{{else if lt $num 1}}
+{{$w_m =$lo}}
+{{$w_l ="w"}}
+{{else}}
+{{$w_pg =$num}}
+{{end}}
+{{else if or (eq $opt "archive") (eq $opt "arc")}}
+{{if gt (mult $num 10) (add $a_tot 9)}}
+{{$w_m =$hi}}
+{{$w_l ="w"}}
+{{else if lt $num 1}}
+{{$w_m =$lo}}
+{{$w_l ="w"}}
+{{else}}
+{{$w_pg =add $num 1000}}
+{{end}}
+{{else if eq $opt "channel"}}
+{{$q_ch =$num}}
+{{$w_m =joinStr "" ($n.Get "p") $num }}
+{{$w_l ="w"}}
+{{else}}
+{{$w_m =$n.Get "no"}}
+{{$w_l ="w"}}
+{{end}}
+{{else if eq $len 1}}
+{{$opt =lower (index .CmdArgs 0)}}
+{{if eq $opt "add"}}
+{{$w_m =$n.Get "w1"}}
+{{$w_l ="w"}}
+{{else if eq $opt "edit"}}
+{{$w_m =$n.Get "we"}}
+{{$w_l ="w"}}
+{{else if eq $opt "delete"}}
+{{$w_m =$n.Get "wd"}}
+{{$w_l ="w"}}
+{{else if eq $opt "jump"}}
+{{$w_m =$n.Get "wj"}}
+{{$w_l ="w"}}
+{{else if eq $opt "list"}}
+{{$w_pg =1}}
+{{else if or (eq $opt "archive") (eq $opt "arc")}}
+{{$w_pg =1001}}
+{{else if or (eq $opt "help") (or (eq $opt "h") (eq $opt "?"))}}
+{{$w_pg =0}}
+{{$h ="h"}}
+{{else if or (eq $opt "advanced") (eq $opt "adv")}}
+{{$w_pg =0}}
+{{$h ="a"}}
+{{else if or (eq $opt "refresh") (eq $opt "r")}}
+{{$r_m =$n.Get "r"}}
+{{$w_l ="r"}}
+{{else if and (eq $opt "close") ($w_id)}}
+{{$w_m =$n.Get "cl"}}
+{{$w_l ="w"}}
+{{$cl =true}}
+{{else}}
+{{$w_m =$n.Get "no"}}
+{{$w_l ="w"}}
+{{end}}
+{{else}}
+{{$w_pg =0}}
+{{end}}
+{{if and (lt $q_tot 1) (not $w_m)}}
+{{$w_m =$n.Get "wn"}}
+{{if ne $w_l "r"}}
+{{$w_l ="a"}}
+{{end}}
+{{end}}
+{{if and (ne $w_ch $ch) ($w_id)}}
+{{$r_m =$n.Get "rn"}}
+{{$w_l ="r"}}
+{{else if and (gt (sub $t $w_tm) 600) ($w_id)}}
+{{$r_m =$n.Get "ri"}}
+{{$w_l ="r"}}
+{{end}}
+{{$w_tm =$t}}
+{{$ttl :=$n.Get "tw"}}
+{{$p_hdr :=""}}
+{{$tn :=$n.Get "tng"}}
+{{$p_cont :=""}}
+{{$ftr :=$n.Get "f"}}
+{{if $r_m}}
+{{$dwm =joinStr "" "```" $r_m "```"}}
+{{end}}
+{{if $i_m}}
+{{$dwm =joinStr "" $dwm "```" $i_m "```"}}
+{{end}}
+{{if $w_m}}
+{{$dwm =joinStr "" $dwm "```" $w_m "```"}}
+{{end}}
+{{if $d_m}}
+{{$dwm =joinStr "" $dwm $d_m}}
+{{end}}
+{{$dlm =joinStr "" $dwm $dlm}}
+{{if $dwm}}
+{{$dwm =joinStr "" $dwm "\n"}}
+{{end}}
+{{if $dlm}}
+{{$dlm =joinStr "" $dlm "\n"}}
+{{end}}
+{{if gt $w_pg 1000}}
+{{$a_page :=sub $w_pg 1000}}
+{{$p_start :=sub (mult $a_page 10) 10}}
+{{$p_end :=add $p_start 10}}
+{{$list :=""}}
+{{- range $index,$value :=$q_arc -}}
+{{- if and (gt $index $p_start) (le $index $p_end) -}}
+{{- $ent_time :=joinStr "" "<t:" .d ":f>"}}
+{{- $msg_url :=joinStr "" ($n.Get "c") $sid "/" .c "/" .m }}
+{{- $list =joinStr "" $list $ent_time "    " $msg_url "```" .q "```"  "\n" -}}
+{{- end -}}
+{{- end -}}
+{{$ttl =$n.Get "ta"}}
+{{$p_hdr =joinStr "" ($n.Get "ah") $a_page "**\n\n"}}
+{{$p_cont =$list}}
+{{else if gt $w_pg 0}}
+{{$p_start :=sub (mult $w_pg 10) 10}}
+{{$p_end :=add $p_start 10}}
+{{$list :=""}}
+{{- range $index,$value :=$q_db -}}
+{{- if and (gt $index $p_start) (le $index $p_end) -}}
+{{- $list =joinStr "" $list "```" $index ". " $value "```" -}}
+{{- end -}}
+{{- end -}}
+{{$ttl =$n.Get "td"}}
+{{$p_hdr =joinStr "" ($n.Get "dh") $w_pg "**"}}
+{{$p_cont =$list}}
+{{else}}
+{{$q_1 :=$n.Get "n"}}
+{{if gt $q_tot 0}}
+{{$q_1 =(index $q_db 1)}}
+{{end}}
+{{$p_hdr =$n.Get "hh"}}
+{{$p_cont =joinStr "" ($n.Get "tq") $q_tot ($n.Get "np") "```" $q_1 "```\n" $p_t_disp}}
+{{if eq $h "h"}}
+{{$ttl =$n.Get "th"}}
+{{$hlp_db :=dbGet 1 "help" }}
+{{$p_hdr =$hlp_db.Value }}
+{{else if eq $h "a"}}
+{{$ttl =$n.Get "a"}}
+{{$adv_db :=dbGet 1 "advanced" }}
+{{$p_hdr =$adv_db.Value }}
+{{end}}
+{{if $disp}}
+{{$p_cont =$disp}}
+{{end}}
+{{end}}
+{{if eq $w_l "w" }}
+{{$tn =$n.Get "tno"}}
+{{$ftr =$n.Get "fw"}}
+{{else if eq $w_l "r"}}
+{{$tn =$n.Get "tnw"}}
+{{$ftr =$n.Get "fr"}}
+{{else if eq $w_l "a"}}
+{{$tn =$n.Get "tnr"}}
+{{$ftr =$n.Get "fa"}}
+{{end}}
+{{$desc :=joinStr "" $dwm $p_hdr $p_cont}}
+{{$embed :=cembed "title" $ttl "description" $desc "color" 0 "thumbnail" (sdict "url" $tn) "footer" (sdict "icon_url" $tn "text" $ftr)}}
+{{$msg_id :=$w_id}}
+{{if and ($w_id) ($cl)}}
+{{deleteMessage $w_ch $w_id 0}}
+{{$msg_id =0}}
+{{$w_ch =0}}
+{{$w_tm =0}}
+{{$w_pg =0}}
+{{else if and ($w_id) (eq $w_l "r")}}
+{{$msg_id =sendMessageRetID nil $embed}}
+{{if ne $w_ch $ch}}
+{{$unix_t :=(add $t 30)}}
+{{$d_t :=joinStr "" "<t:" $unix_t ":R>"}}
+{{$msg :=joinStr "" ($n.Get "wm") $sid "/" $ch "/" $msg_id "\n# Closing " $d_t}}
+{{$mini_embed :=cembed "title" ($n.Get "tn") "description" $msg "thumbnail" (sdict "url" $tn) "footer" (sdict "text" ($n.Get "f"))}}
+{{editMessage $w_ch $w_id $mini_embed}}
+{{deleteMessage $w_ch $w_id 30}}
+{{else}}
+{{deleteMessage $w_ch $w_id 0}}
+{{end}}
+{{$w_ch =$ch}}
+{{else if $w_id}}
+{{editMessage $w_ch $w_id $embed}}
+{{else}}
+{{$msg_id =sendMessageRetID nil $embed}}
+{{$w_ch =$ch}}
+{{end}}
+{{$d.Set 0 $msg_id}}
+{{$d.Set 1 $w_ch}}
+{{$d.Set 2 $w_tm}}
+{{$d.Set 3 $w_pg}}
+{{$d.Set 4 $q_ch}}
+{{$d.Set 5 $q_tm}}
+{{$d.Set 6 $q_db}}
+{{dbSet 1 "question" $d}}
+{{end}}
+{{if $opt}}
+{{$log_s =joinStr "" $log_s "   `➡️` `" $opt "`"}}
+{{end}}
+{{$d_t :=joinStr "" "<t:" $t ":F>"}}
+{{$x_t :=(add $t $log_exp_t)}}
+{{$usr :=joinStr "" .User.Globalname " - " ($n.Get "tl")}}
+{{$avt :=.User.AvatarURL "64"}}
+{{$des :=joinStr "" $dlm $d_t}}
+{{if $a_del}}
+{{$des =joinStr "" $des " - **Expires** <t:" $x_t ":R>"}}
+{{end}}
+{{$emb :=cembed "author" (sdict "name" $usr "icon_url" $avt) "title" $log_s "description" $des "color" 0}}
+{{$log_m_id :=sendMessageRetID $log_c_id $emb}}
+{{if $a_del}}
+{{deleteMessage $log_c_id $log_m_id $log_exp_t}}
 {{end}}
