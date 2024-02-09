@@ -1,15 +1,15 @@
-{{ $exp_time := 3000 }}
-{{ $log_id := 864053949484498962 }}
-{{ $mention_user := "<@748617194279272599> <@848025900720848896>" }}
-{{ $mention_role := "<@&864053948155035671>" }}
+{{ $exp_time := 60 }}
+{{ $log_id := 870080747229306900 }}
+{{ $mention_user := "<@848025900720848896>" }}
+{{ $mention_role := "<@&1198821107541741618>" }}
 {{ $mention_alert_on := true }}
-{{ $mention_everyone := true }}
-{{ $auto_delete := false }}
-{{ $interval := 86400 }}
+{{ $mention_everyone := false }}
+{{ $auto_delete := true }}
+{{ $interval := 300 }}
 {{ $watchdog_grace :=30 }}
 
 {{ $exec_data := "watchdog" }}
-{{ scheduleUniqueCC 33 nil (add $interval $watchdog_grace) "question" $exec_data }}
+{{ scheduleUniqueCC 117 nil (add $interval $watchdog_grace) "question" $exec_data }}
 {{ $time := currentTime.UTC.Unix }}
 {{ $mention_id := 0 }}
 {{ $alert_mentions :=  joinStr " " "Alert Notification" $mention_user $mention_role }}
