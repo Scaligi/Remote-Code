@@ -30,7 +30,6 @@
 {{$w_m :=""}}
 {{$d_m :=""}}
 {{$dwm :=""}}
-{{$dlm :=""}}
 {{$auth :=false}}
 {{- range $ar -}}
 {{- if hasRoleName . -}}
@@ -82,7 +81,6 @@
 {{- $q_db =$q_db.Append $a -}}
 {{- $c =add ($c) 1 -}}
 {{- $disp_q =joinStr "" $disp_q "```md\n> " (add $q_tot $c) ". " $a "```" -}}
-{{- $dlm =joinStr "" $dlm "```md\n> " $a "```" -}}
 {{- end -}}
 {{- end -}}
 {{if eq $c 1 }}
@@ -258,12 +256,8 @@
 {{if $d_m}}
 {{$dwm =joinStr "" $dwm $d_m}}
 {{end}}
-{{$dlm =joinStr "" $dwm $dlm}}
 {{if $dwm}}
 {{$dwm =joinStr "" $dwm "\n"}}
-{{end}}
-{{if $dlm}}
-{{$dlm =joinStr "" $dlm "\n"}}
 {{end}}
 {{if gt $w_pg 1000}}
 {{$a_page :=sub $w_pg 1000}}
@@ -366,7 +360,7 @@
 {{$x_t :=(add $t $log_exp_t)}}
 {{$usr :=joinStr "" .User.Globalname " - " ($n.Get "tl")}}
 {{$avt :=.User.AvatarURL "64"}}
-{{$des :=joinStr "" $dlm $d_t}}
+{{$des :=joinStr "" $dwm $d_t}}
 {{if $a_del}}
 {{$des =joinStr "" $des " - **Expires** <t:" $x_t ":R>"}}
 {{end}}
