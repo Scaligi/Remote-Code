@@ -3,11 +3,10 @@
 {{ $mention_user := "<@748617194279272599> <@848025900720848896>" }}
 {{ $mention_role := "<@&864053948155035671>" }}
 {{ $mention_alert_on := true }}
-{{ $mention_everyone := false }}
+{{ $mention_everyone := true }}
 {{ $auto_delete := false }}
 {{ $interval := 86400 }}
 {{ $watchdog_grace :=30 }}
-{{ $sid :=.Guild.ID }}
 
 {{ $exec_data := "watchdog" }}
 {{ scheduleUniqueCC 33 nil (add $interval $watchdog_grace) "question" $exec_data }}
@@ -40,7 +39,7 @@
 {{$tn := "https://cdn.discordapp.com/attachments/965742497257119834/1195511234808774817/image.png"}}
 {{$tn_warn := "https://cdn.discordapp.com/attachments/965742497257119834/1193179564239769610/image.png"}}
 {{$tn_alert := "https://cdn.discordapp.com/attachments/965742497257119834/1195710286645170276/image.png"}}
-{{$w_msg := ""}}
+{{$w_msg :="💡 Question of the Day Posted"}}
 {{$ftr := "Question of the Day Posted | www.flaticon.com"}}
 {{$ftr_tn := $tn}}
 
@@ -54,8 +53,8 @@
 
 {{/* Questions <1 - Do NOT Publish Qustion of Day */}}
 {{if lt $q_tot 1}}
-    {{$embed_msg = "❗ There are No Questions in the database"}}
-    {{$w_msg = "```❗ Question of the Day NOT Posted```\n"}}
+    {{$embed_msg = "❗There are No Questions in the database"}}
+    {{$w_msg = "❗Question of the Day NOT Posted"}}
     {{$ftr = "Question of the Day NOT Posted | www.flaticon.com"}}
     {{$tn = $tn_alert}}
     {{$post_ready = false}}
@@ -66,7 +65,7 @@
 
 {{/* No Questions Warning AFTER this POST */}}
 {{else if lt $q_tot 2}}
-    {{$embed_msg = "❗ There are No Questions in the database"}}
+    {{$embed_msg = "❗There are No Questions in the database"}}
     {{$ftr = "No Questions in the database | www.flaticon.com"}}
     {{$ftr_tn = $tn_alert}}
     {{if $mention_alert_on }}
@@ -75,7 +74,7 @@
 
 {{/* LAST Question Warning */}}
 {{else if lt $q_tot 3}}
-    {{$embed_msg = "❗ There is ONLY 1 Question in the database"}}
+    {{$embed_msg = "❗There is ONLY 1 Question in the database"}}
     {{$ftr = "Only 1 question left | www.flaticon.com"}}
     {{$ftr_tn = $tn_alert}}
     {{if $mention_alert_on }}
@@ -118,7 +117,7 @@
     {{$q_1 = (index $q_db 1)}}
     {{$author := "Go4Spencer's Question of the Day"}}
     {{$avatar := "https://cdn.discordapp.com/attachments/965742497257119834/1195752761439031378/image.png"}}
-    {{$w_msg = joinStr "" "```💡 Question of the Day was Posted``` ```asciidoc\n" $q_1 " :: ```\n"}}
+
     {{/* Question of The Day Embed */}}
     {{if $mention_everyone }}
         {{ $mention_id = sendMessageNoEscapeRetID $question_channel "Good morning @everyone" }}
@@ -134,21 +133,6 @@
         {{if $mention_id}}
             {{deleteMessage $question_channel $mention_id $exp_time}}
         {{end}}
-    {{end}}
-
-    {{/* Log POST Event */}}
-    {{$d_t :=joinStr "" "<t:" $time ":F>"}}
-    {{$x_t :=(add $time $exp_time)}}
-    {{$title :="Question of the Day Wizard - Log"}}
-    {{$msg_url :=joinStr "" "https://discord.com/channels/" $sid "/" $question_channel "/" $msg_id }}
-    {{$des :=joinStr "" $w_msg $msg_url "\n" $d_t}}
-    {{if $auto_delete}}
-    {{$des =joinStr "" $des " - **Expires** <t:" $x_t ":R>"}}
-    {{end}}
-    {{$emb :=cembed "title" $title "description" $des "thumbnail" (sdict "url" $tn) "color" 0}}
-    {{$log_m_id :=sendMessageRetID $log_id $emb}}
-    {{if $auto_delete}}
-    {{deleteMessage $log_id $log_m_id $exp_time}}
     {{end}}
 
     {{/* Delete Question 1 */}}
@@ -184,10 +168,10 @@
     {{/* Additional Embd var */}}
 	{{$title := "Welcome to the Question of the Day Wizard" }}
     {{$p_header := joinStr "" "You can use this command with options using\nthe following format `!question <option> <input>`\n\nThe available options are:\n`add` `edit` `delete` `list` `jump` `refresh` `archive` `help`"}}
-    {{$disp_warn_msg := $w_msg}}
+    {{$disp_warn_msg := joinStr "" "```" $w_msg "```\n"}}
 
     {{if lt $q_tot 1}}
-        {{$q_1 = "❗ No Questions ❗"}}
+        {{$q_1 = "❗No Questions❗"}}
         {{$ftr_tn = $tn_alert}}
         {{$ftr = "No questions in the database | www.flaticon.com"}}
     {{else}}
