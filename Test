@@ -13,7 +13,7 @@
 {{ scheduleUniqueCC 33 nil (add $interval $watchdog_grace) "question" $exec_data }}
 {{ $time := currentTime.UTC.Unix }}
 {{ $mention_id := 0 }}
-{{ $alert_mentions := "" }}
+{{ $alert_mentions :=  joinStr " " "Alert Notification" $mention_user $mention_role }}
 
 {{/* Check for Question of the Day Database Entries */}}
 {{ $db_data := dbGet 1 "question" }}
@@ -60,20 +60,27 @@
     {{$tn = $tn_alert}}
     {{$post_ready = false}}
     {{$alert_mentions = joinStr " " "Alert Notification" $mention_user}}
+    {{if and $mention_alert_on $mention_user}}
+        {{ $mention_id = sendMessageNoEscapeRetID $log_id $alert_mentions}}
+    {{end}}
 
 {{/* No Questions Warning AFTER this POST */}}
 {{else if lt $q_tot 2}}
     {{$embed_msg = "❗ There are No Questions in the database"}}
     {{$ftr = "No Questions in the database | www.flaticon.com"}}
     {{$ftr_tn = $tn_alert}}
-    {{$alert_mentions =  joinStr " " "Alert Notification" $mention_user $mention_role}}
+    {{if $mention_alert_on }}
+        {{ $mention_id = sendMessageNoEscapeRetID $log_id $alert_mentions}}
+    {{end}}
 
 {{/* LAST Question Warning */}}
 {{else if lt $q_tot 3}}
     {{$embed_msg = "❗ There is ONLY 1 Question in the database"}}
     {{$ftr = "Only 1 question left | www.flaticon.com"}}
     {{$ftr_tn = $tn_alert}}
-    {{$alert_mentions =  joinStr " " "Alert Notification" $mention_user $mention_role}}
+    {{if $mention_alert_on }}
+        {{ $mention_id = sendMessageNoEscapeRetID $log_id $alert_mentions}}
+    {{end}}
 
 {{/* LOW Questions Warning */}}
 {{else if lt $q_tot 6}}
@@ -82,12 +89,29 @@
     {{$ftr_tn = $tn_alert}}
     {{$embed_tn = $tn_warn}}
     {{$alert_mentions = joinStr " " "Alert Notification" $mention_role}}
+    {{if and $mention_alert_on $mention_role }}
+        {{ $mention_id = sendMessageNoEscapeRetID $log_id $alert_mentions}}
+    {{end}}
 
 {{else}}
     {{$warning_embed = false}}
 
 {{end}}
 
+{{if $warning_embed }}
+    {{/* Warning Embed POSTING shared CODE */}}
+    {{$msg := joinStr "" "```" $embed_msg "```\n" $help}}
+    {{/* $msg := joinStr "" "```" $embed_msg "```" "\nMessage expires " $disp_t */}}
+    {{$mini_embed = cembed "title" "Question of the Day Wizard - Alert" "description" $msg "thumbnail" (sdict "url" $embed_tn) "footer" (sdict "icon_url" "" "text" "www.flaticon.com")}}
+    {{$msg_id := sendMessageRetID $log_id $mini_embed}}
+    {{if $auto_delete}}
+        {{deleteMessage $log_id $msg_id $exp_time}}
+        {{if $mention_id}}
+            {{deleteMessage $log_id $mention_id $exp_time}}
+        {{end}}
+    {{end}}
+
+{{end}}
 
 {{if $post_ready }}
     {{/* Question of the Day Post Emned */}}
@@ -149,24 +173,6 @@
         {{- end -}}
     {{ end }}
     {{ dbSet 1 "archive" $new_archive }}
-
-{{end}}
-
-{{if $warning_embed }}
-    {{/* Warning Embed POSTING shared CODE */}}
-    {{if$mention_alert_on}}
-        {{$mention_id = sendMessageNoEscapeRetID $log_id $alert_mentions}}
-    {{end}}
-    {{$msg := joinStr "" "```" $embed_msg "```\n" $help}}
-    {{/* $msg := joinStr "" "```" $embed_msg "```" "\nMessage expires " $disp_t */}}
-    {{$mini_embed = cembed "title" "Question of the Day Wizard - Alert" "description" $msg "thumbnail" (sdict "url" $embed_tn) "footer" (sdict "icon_url" "" "text" "www.flaticon.com")}}
-    {{$msg_id := sendMessageRetID $log_id $mini_embed}}
-    {{if $auto_delete}}
-        {{deleteMessage $log_id $msg_id $exp_time}}
-        {{if $mention_id}}
-            {{deleteMessage $log_id $mention_id $exp_time}}
-        {{end}}
-    {{end}}
 
 {{end}}
 
