@@ -1,5 +1,5 @@
 title ="Fake Ban Update Testing";
-rc_v ="GH Beta v2.10 - v3.9-Dev";
+rc_v ="GH Beta v2.11 - v3.9-Dev";
 rc_url ="/Scaligi/Remote-Code/main/Ban";
 debug = debug;
 debug_data ="";
@@ -365,7 +365,7 @@ else if(t_id=="s5gX"){"ðŸª„ s5g magically converted your ban into a hug "+u+" ðŸ
 
 else if(u=="capbailey.eth" && t_id=="ScaligiX"){"Cap Bailey has ultimate power and can ban anyone, including Scaligi - BAN! BAN! BAN!"+debug_data;}
 else if(u=="capbailey.eth" || u=="CapBailey"){"Cap Bailey has ultimate power and can ban anyone, "+q+" is now banned!"+debug_data;}
-else if(t_id=="CapBaileyX" && u=="Scaligi"){"Cap Bailey cannot be banned, even by Scaligi"+debug_data;}
+else if(t_id=="CapBaileyX" && u=="scaligi"){"Cap Bailey cannot be banned, even by Scaligi"+debug_data;}
 else if(t_id=="CapBaileyX"){u+" is now banned for trying to ban Cap Bailey - What were you thinking?"+debug_data;}
 
 else if(t_id=="ApacheX"){apache[Math.floor(Math.random()*apache.length)].join("")+debug_data;}
