@@ -1,5 +1,5 @@
 title ="🍒🍒🍒 Bandit";
-rc_v ="v1.2";
+rc_v ="v1.1";
 rc_url ="/Scaligi/Remote-Code/main/Bandit";
 
 
@@ -252,7 +252,7 @@ reels =[
 ];
 
 test =title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Reels="+reels.length+", URLfetch Successful: Remote_Code:"+rc_url;
-help ="```Play the one armed bandit! | 🔔🔔🔔 - 💲💲💲 Jackpot 💲💲💲 1 in 200 | 🍇🍇🍇 or 🍉🍉🍉 - 💲💲💲💲💲 1 in 100 | 🍋🍋🍋 or 🍊🍊🍊 - 💲💲💲💲 1 in 66 | 
+help ="```Play the classic one armed bandit! | 🔔🔔🔔 - 💲💲💲 Jackpot 💲💲💲 1 in 200 | 🍇🍇🍇 or 🍉🍉🍉 - 💲💲💲💲💲 1 in 100 | 🍋🍋🍋 or 🍊🍊🍊 - 💲💲💲💲 1 in 66 | 
 🍒🍒🍒 - 💲💲💲 1 in 50 | 🍒🍒 - 💲💲 i in 40 | 🍒 - 💲 1 in 33```";
 
 if(q=="test"){"> ```"+test+"```";}
