@@ -1,9 +1,7 @@
 title ="`🍒🍒🍒` Bandit";
-rc_v ="v1.0";
+rc_v ="v1.1";
 rc_url ="/Scaligi/Remote-Code/main/Bandit";
 
-help ="Play the classic one armed bandit fruit machine for a chance to win!";
-test ="```"+title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", URLfetch Successful: Remote_Code:"+rc_url+"```";
 
 reels =[
 "`🍒` `🍒` `🍒` - Win 3 line cherry `🎉`",
@@ -12,6 +10,9 @@ reels =[
 "`🍒` `🍒` `🍒` - Win 3 line cherry `🎉`",
 "`🍒` `🍒` `🍒` - Win 3 line cherry `🎉`",
 ];
+
+test ="```"+title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Reels="+reels.length+", URLfetch Successful: Remote_Code:"+rc_url+"```";
+help ="Play the classic one armed bandit fruit machine for a chance to win!";
 
 if(q=="test"){test;}
 else if(q=="v"){"`Version: NC_"+nc_v+"/RC_"+rc_v+"`";}
