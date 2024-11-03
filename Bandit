@@ -1,11 +1,11 @@
-title ="`🍒🍒🍒` Bandit";
-rc_v ="v1.3";
+title ="🍒🍒🍒 Bandit";
+rc_v ="v1.4";
 rc_url ="/Scaligi/Remote-Code/main/Bandit";
 
 
 reels =[
-"`🍒` `🍒` `🍒` |  Win 3 line cherry 🎉",
-"`🍒` `🍒` `🍒` |  Win 3 line cherry `🎉`",
+"`🍒` `🍒` `🍒`   WIN 3 line cherry 🎉",
+"`🍒` `🍒` `🍒`   Win 3 line cherry `🎉`",
 ];
 
 test =title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Reels="+reels.length+", URLfetch Successful: Remote_Code:"+rc_url;
