@@ -1,5 +1,5 @@
 title ="`🍒🍒🍒` Bandit";
-rc_v ="v1.1";
+rc_v ="v1.2";
 rc_url ="/Scaligi/Remote-Code/main/Bandit";
 
 
@@ -11,11 +11,11 @@ reels =[
 "`🍒` `🍒` `🍒` - Win 3 line cherry `🎉`",
 ];
 
-test ="```"+title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Reels="+reels.length+", URLfetch Successful: Remote_Code:"+rc_url+"```";
+test =title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Reels="+reels.length+", URLfetch Successful: Remote_Code:"+rc_url;
 help ="Play the classic one armed bandit fruit machine for a chance to win!";
 
-if(q=="test"){test;}
-else if(q=="v"){"`Version: NC_"+nc_v+"/RC_"+rc_v+"`";}
+if(q=="test"){"> ```"+test+"```";}
+else if(q=="v"){"> ### `Version: NC_"+nc_v+"/RC_"+rc_v+"`";}
 else if(q=="help"||q=="?"){help;}
 
-else {reels[Math.floor(Math.random()*reels.length)];}
+else {"> # "+reels[Math.floor(Math.random()*reels.length)];}
