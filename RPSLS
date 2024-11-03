@@ -1,5 +1,5 @@
 title ="`🪨📃✂️🦎🖖` Command";
-rc_v ="v1.4";
+rc_v ="v1.4.5";
 rc_url ="/Scaligi/Remote-Code/main/RPSLS";
 sk_url ="https://bit.ly/3FKMppi";
 s =" - Hail Sam Kass!";
@@ -14,7 +14,7 @@ spock =['`🖖` Spock - Tie `❗`', '`🦎` Lizard - You lose `❌` Lizard poiso
 
 if(q=="test"){"```"+title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Calling Command="+i+", URLfetch Successful: Remote_Code:"+rc_url+"```";}
 else if(q=="v"){"`Version: NC_"+nc_v+"/RC_"+rc_v+"`";}
-else if(q=="help"||q=="?"){"*"+help+" "+sk_url+s+"*";}
+else if(q=="help"||q=="?"){help+" "+sk_url+s;}
 
 else if (i=="rock" && q=="sk"){rock[Math.floor(Math.random()*5)]+s;}
 else if (i=="rock"){rock[Math.floor(Math.random()*3)];}
