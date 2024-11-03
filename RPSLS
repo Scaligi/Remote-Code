@@ -1,20 +1,20 @@
-title ="🪨📄✂️🦎🖖 Command";
+title ="`🪨📄✂️🦎🖖` Command";
 rc_v ="v1.2";
 rc_url ="/Scaligi/Remote-Code/main/RPSLS";
 sk_url ="https://bit.ly/3FKMppi";
 s =" - Hail Sam Kass!";
 help ="Play the classic !rock !paper !scissors game with those commands or play the extended Sam Kass version by specifying sk after the command [eg !paper sk] Use the !lizard and !spock commands for the extended version too ";
 
-rock =['✂️ Scissors - You win ✅ Rock blunts scissors', '🪨 Rock - Tie ❗', '📄 Paper - You lose ❌ Paper covers rock', '🦎 Lizard - You win ✅ Rock crushes lizard', '🖖 Spock - You lose ❌ Spock vaporises rock'];
-paper =['🪨 Rock - You win ✅ Paper covers rock', '📄 Paper - Tie ❗', '✂️ Scissors - You lose ❌ Scissors cuts paper', '🦎 Lizard - You lose ❌ Lizard eats paper', '🖖 Spock - You win ✅ Paper disproves Spock'];
-scissors =['🪨 Rock - You lose ❌ Rock blunts scissors', '✂️ Scissors - Tie ❗', '📄 Paper - You win ✅ Scissors cuts paper', '🦎 Lizard - You win ✅ Scissors decapitates lizard', '🖖 Spock - You lose ❌ Spock smashes scissors'];
-lizard =['🦎 Lizard - Tie ❗', '🪨 Rock - You lose ❌ Rock crushes lizard', '✂️ Scissors - You lose ❌ Scissors decapitates lizard', '📄 Paper - You win ✅ Lizard eats paper', '🖖 Spock - You win ✅ Lizard poisons Spock'];
-spock =['🖖 Spock - Tie ❗', '🦎 Lizard - You lose ❌ Lizard poisons Spock', '📄 Paper - You lose ❌ Paper disproves Spock', '✂️ Scissors - You win ✅ Spock smashes scissors', '🪨 Rock - You win ✅ Spock vaporises rock'];
+rock =['`✂️` Scissors - You win `✅` Rock blunts scissors', '`🪨` Rock - Tie `❗`', '`📄` Paper - You lose `❌` Paper covers rock', '`🦎` Lizard - You win `✅` Rock crushes lizard', '`🖖` Spock - You lose `❌` Spock vaporises rock'];
+paper =['`🪨` Rock - You win `✅` Paper covers rock', '`📄` Paper - Tie `❗`', '`✂️` Scissors - You lose `❌` Scissors cuts paper', '`🦎` Lizard - You lose `❌` Lizard eats paper', '`🖖` Spock - You win `✅` Paper disproves Spock'];
+scissors =['`🪨` Rock - You lose `❌` Rock blunts scissors', '`✂️` Scissors - Tie `❗`', '`📄` Paper - You win `✅` Scissors cuts paper', '`🦎` Lizard - You win `✅` Scissors decapitates lizard', '`🖖` Spock - You lose `❌` Spock smashes scissors'];
+lizard =['`🦎` Lizard - Tie `❗`', '`🪨` Rock - You lose `❌` Rock crushes lizard', '`✂️` Scissors - You lose `❌` Scissors decapitates lizard', '`📄` Paper - You win `✅` Lizard eats paper', '`🖖` Spock - You win `✅` Lizard poisons Spock'];
+spock =['`🖖` Spock - Tie `❗`', '`🦎` Lizard - You lose `❌` Lizard poisons Spock', '`📄` Paper - You lose `❌` Paper disproves Spock', '`✂️` Scissors - You win `✅` Spock smashes scissors', '`🪨` Rock - You win `✅` Spock vaporises rock'];
 
 
-if(q=="test"){title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Calling Command="+i+", URLfetch Successful: Remote_Code:"+rc_url;}
-else if(q=="v"){"Version: NC_"+nc_v+"/RC_"+rc_v;}
-else if(q=="help"||q=="?"){"/me "+help+" "+sk_url+s;}
+if(q=="test"){"```"+title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Calling Command="+i+", URLfetch Successful: Remote_Code:"+rc_url+"```";}
+else if(q=="v"){"`Version: NC_"+nc_v+"/RC_"+rc_v+"`";}
+else if(q=="help"||q=="?"){"*"+help+" "+sk_url+s+"*";}
 
 else if (i=="rock" && q=="sk"){rock[Math.floor(Math.random()*5)]+s;}
 else if (i=="rock"){rock[Math.floor(Math.random()*3)];}
@@ -26,4 +26,4 @@ else if (i=="scissors"){scissors[Math.floor(Math.random()*3)];}
 else if (i=="lizard"){lizard[Math.floor(Math.random()*5)]+s;}
 else if (i=="spock"){spock[Math.floor(Math.random()*5)]+s;}
 
-else{" --> Command Error - Scaligi Please Help!";}
+else{"➡️ Command Error - Scaligi Please Help!";}
