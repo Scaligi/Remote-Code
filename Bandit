@@ -1,5 +1,5 @@
 title ="🍒🍒🍒 Bandit";
-rc_v ="v1.6";
+rc_v ="v1.7";
 rc_url ="/Scaligi/Remote-Code/main/Bandit";
 
 
@@ -289,4 +289,4 @@ if(q=="test"){"> ```"+test+"```";}
 else if(q=="v"){"> ### `Version: NC_"+nc_v+"/RC_"+rc_v+"`";}
 else if(q=="help"||q=="?"){"> "+help;}
 
-else {"> # "+reels[Math.floor(Math.random()*reels.length)];}
+else {"# "+reels[Math.floor(Math.random()*reels.length)];}
