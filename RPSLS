@@ -1,5 +1,5 @@
 title ="`🪨📃✂️🦎🖖` Command";
-rc_v ="v1.4.5";
+rc_v ="v1.5";
 rc_url ="/Scaligi/Remote-Code/main/RPSLS";
 sk_url ="https://bit.ly/3FKMppi";
 s =" - Hail Sam Kass!";
@@ -24,6 +24,6 @@ else if (i=="scissors" && q=="sk"){scissors[Math.floor(Math.random()*5)]+s;}
 else if (i=="scissors"){scissors[Math.floor(Math.random()*3)];}
 
 else if (i=="lizard"){lizard[Math.floor(Math.random()*5)]+s;}
-else if (i=="spockx"){spock[Math.floor(Math.random()*5)]+s;}
+else if (i=="spock"){spock[Math.floor(Math.random()*5)]+s;}
 
-else{"➡️ Command Error - Scaligi Please Help!";}
+else{"`➡️` Command Error - Scaligi Please Help!";}
