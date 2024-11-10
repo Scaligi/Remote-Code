@@ -26,7 +26,7 @@ if (reel_1_spin == "🍒"){win = "💲 1 Cherry WIN 👍";}
 if (reel_1_spin == "🍒" && reel_2_spin == "🍒"){win = "💲💲 2 Cherries WIN 👌👌";}
 for(i =0; i < winning_spins.length; i++) {if (reels_spin == winning_spins[i][0]) {win = winning_spins[i][1];}}
 
-test =title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Reel 1="+reel_1_spin+", Reel 2="+reel_2_spin+", Reel 3="+reel_3_spin+", Reel Spin="+reels_spin+", Win="+win+"URLfetch Successful: Remote_Code:"+rc_url;
+test =title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Reel 1="+reel_1_spin+", Reel 2="+reel_2_spin+", Reel 3="+reel_3_spin+", Reels Spin="+reels_spin+", Win="+win+"URLfetch Successful: Remote_Code:"+rc_url;
 help ="```Play the classic one armed bandit! | 🔔🔔🔔 💲💲💲 Jackpot 💲💲💲 1 in 200 | 🍇🍇🍇 or 🍉🍉🍉 💲💲💲💲💲 1 in 100 | 🍋🍋🍋 or 🍊🍊🍊 💲💲💲💲 1 in 66 | 🍒🍒🍒 💲💲💲 1 in 50 | 🍒🍒➖ 💲💲 i in 40 | 🍒➖➖ 💲 1 in 33```";
 
 if(q=="test"){"> ```"+test+"```";}
