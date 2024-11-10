@@ -1,5 +1,5 @@
 title ="Bandit-Reels";
-rc_v ="v1.1a";
+rc_v ="v1.1b";
 rc_url ="/Scaligi/Remote-Code/main/Bandit-Reels";
 
 winning_spins =[
@@ -33,5 +33,5 @@ if(q=="test"){"> ```"+test+"```";}
 else if(q=="v"){"> ### `Version: NC_"+nc_v+"/RC_"+rc_v+"`";}
 else if(q=="help"||q=="?"){"> "+help;}
 
-if (win !! ""){win = "     `"+ win +"`";}
+if (win != ""){win = "     `"+ win +"`";}
 else {"# `"+reel_1_spin+"` `"+reel_2_spin+"` `"+reel_3_spin+"`"+win;}
