@@ -19,9 +19,9 @@ reel_1_spin = reel_1[Math.floor(Math.random()*reel_1.length)];
 reel_2_spin = reel_2[Math.floor(Math.random()*reel_2.length)];
 reel_3_spin = reel_3[Math.floor(Math.random()*reel_3.length)];
 
-reels_spin = reel_1_spin + reel_2_spin + reel_3_spin
+reels_spin = reel_1_spin + reel_2_spin + reel_3_spin;
 
-win = ""
+win = "";
 if (reel_1 == "🍒"){win = "💲 1 Cherry WIN 👍";}
 if (reel_1 == "🍒" && reel_2 == "🍒"){win = "💲💲 2 Cherries WIN 👌👌";}
 for(i =0; i < winning_spins.length; i++) {if (reels_spin == winning_spins[i][0]) {win = winning_spins[i][1];}
