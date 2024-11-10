@@ -1,16 +1,14 @@
 title ="Bandit-Reels";
-rc_v ="v1.0a";
+rc_v ="v1.1";
 rc_url ="/Scaligi/Remote-Code/main/Bandit-Reels";
 
 winning_spins =[
-"🔔🔔🔔", "💲💲💲💲💲💲 Jackpot WIN ✨✨✨✨✨✨",
-"🍇🍇🍇", "💲💲💲💲💲 3 Grapes WIN 🎉🎉🎉🎉🎉",
-"🍉🍉🍉", "💲💲💲💲💲 3 Melons WIN 🎉🎉🎉🎉🎉",
-"🍋🍋🍋", "💲💲💲💲 3 Lemons WIN 🎊🎊🎊🎊",
-"🍊🍊🍊", "💲💲💲💲 3 Oranges WIN 🎊🎊🎊🎊",
-"🍒🍒🍒", "💲💲💲 3 Cherries WIN 🙌🙌🙌",
-"🍒🍒", "💲💲 2 Cherries WIN 👌👌",
-"🍒", "💲 1 Cherry WIN 👍",
+["🔔🔔🔔", "💲💲💲💲💲💲 Jackpot WIN ✨✨✨✨✨✨"],
+["🍇🍇🍇", "💲💲💲💲💲 3 Grapes WIN 🎉🎉🎉🎉🎉"],
+["🍉🍉🍉", "💲💲💲💲💲 3 Melons WIN 🎉🎉🎉🎉🎉"],
+["🍋🍋🍋", "💲💲💲💲 3 Lemons WIN 🎊🎊🎊🎊"],
+["🍊🍊🍊", "💲💲💲💲 3 Oranges WIN 🎊🎊🎊🎊"],
+["🍒🍒🍒", "💲💲💲 3 Cherries WIN 🙌🙌🙌"]
 ];
 
 reel_1 =["🔔","🍇","🍉","🍋","🍊","🍒","🔔","🔔","🔔","🔔"];
@@ -21,11 +19,19 @@ reel_1_spin = reel_1[Math.floor(Math.random()*reel_1.length)];
 reel_2_spin = reel_2[Math.floor(Math.random()*reel_2.length)];
 reel_3_spin = reel_3[Math.floor(Math.random()*reel_3.length)];
 
-test =title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Reel 1="+reel_1_spin+", Reel 2="+reel_2_spin+", Reel 3="+reel_3_spin+", URLfetch Successful: Remote_Code:"+rc_url;
+reels_spin = reel_1_spin + reel_2_spin + reel_3_spin
+
+win = ""
+if (reel_1 == "🍒"){win = "💲 1 Cherry WIN 👍";}
+if (reel_1 == "🍒" && reel_2 == "🍒"){win = "💲💲 2 Cherries WIN 👌👌";}
+for(i =0; i < winning_spins.length; i++) {if (reels_spin == winning_spins[i][0]) {win = winning_spins[i][1];}
+
+test =title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Reel 1="+reel_1_spin+", Reel 2="+reel_2_spin+", Reel 3="+reel_3_spin+", Win="+win+"URLfetch Successful: Remote_Code:"+rc_url;
 help ="```Play the classic one armed bandit! | 🔔🔔🔔 💲💲💲 Jackpot 💲💲💲 1 in 200 | 🍇🍇🍇 or 🍉🍉🍉 💲💲💲💲💲 1 in 100 | 🍋🍋🍋 or 🍊🍊🍊 💲💲💲💲 1 in 66 | 🍒🍒🍒 💲💲💲 1 in 50 | 🍒🍒➖ 💲💲 i in 40 | 🍒➖➖ 💲 1 in 33```";
 
 if(q=="test"){"> ```"+test+"```";}
 else if(q=="v"){"> ### `Version: NC_"+nc_v+"/RC_"+rc_v+"`";}
 else if(q=="help"||q=="?"){"> "+help;}
 
-else {"# `"+reel_1_spin+"` `"+reel_2_spin+"` `"+reel_3_spin+"`";}
+if (win !! ""){win = "     `"+ win +"`";}
+else {"# `"+reel_1_spin+"` `"+reel_2_spin+"` `"+reel_3_spin+"`"+win;}
