@@ -374,8 +374,8 @@ else if(t_id=="NightbotX"){nightbot[Math.floor(Math.random()*nightbot.length)].j
 else if(t_id=="ScaligiX"){"Scaligi has modfather immunity and cannot be banned "+u+debug_data;}
 
 else if(t_id=="ScaligiX" && u=="_mxryumm"){"Scaligi has modfather immunity and cannot be ban, even by Maryum"+debug_data;}
-else if(u=="Scaligi" && t_id=="MaryumX"){"Scaligi is the modfather and can even ban "+q+" - You Are Banned!"+debug_data;}
-else if(u=="Scaligi"){"Scaligi is the modfather and can ban anyone, "+q+" is now banned!"+debug_data;}
+else if(u=="scaligi" && t_id=="MaryumX"){"Scaligi is the modfather and can even ban "+q+" - You Are Banned!"+debug_data;}
+else if(u=="scaligi"){"Scaligi is the modfather and can ban anyone, "+q+" is now banned!"+debug_data;}
 
 else if(t_id=="BunsX" && m_fail==0){u+" just broke through Buns's mod defences, Buns is now Banned!"+debug_data;}
 else if(t_id=="BunsX"){"Buns has ultimate mod power and cannot be banned right now "+u+debug_data;}
