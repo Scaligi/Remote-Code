@@ -1,5 +1,5 @@
 title ="Fake Ban Command";
-rc_v ="GH Beta v2.3 - v4-Dev";
+rc_v ="v3.0";
 rc_url ="/Scaligi/Remote-Code/main/Ban";
 debug = debug;
 debug_data ="";
@@ -321,23 +321,23 @@ else if (q_split[0]=="messages"){"```Ban Message Databases: Success="+ban_succes
 
 else if (q_split[0]=="warn" && q_split[1]=="message"){
 	if (n>0 && n<=warn.length) {"Warn Message Number "+n+":```🚫 "+warn[n-1].join("")+"```";}
-	else {"/me "+mu+" --> When specifying a warn message number, please select between 1 and "+warn.length;}
+	else {mu+" --> When specifying a warn message number, please select between 1 and "+warn.length;}
 	;}
 else if (q_split[0]=="nightbot" && q_split[1]=="message"){
 	if (n>0 && n<=nightbot.length) {"Nightbot Message Number "+n+":```"+nightbot[n-1].join("")+"```";}
-	else {"/me "+mu+" --> When specifying a Nightbot message number, please select between 1 and "+nightbot.length;}
+	else {mu+" --> When specifying a Nightbot message number, please select between 1 and "+nightbot.length;}
 	;}
 else if (q_split[0]=="apache" && q_split[1]=="message"){
 	if (n>0 && n<=apache.length) {"Apache Message Number "+n+":```"+apache[n-1].join("")+"```";}
-	else {"/me "+mu+" --> When specifying an Apache message number, please select between 1 and "+apache.length;}
+	else {mu+" --> When specifying an Apache message number, please select between 1 and "+apache.length;}
 	;}
 else if (q_split[0]=="fail" && q_split[1]=="message"){
 	if (n>0 && n<=ban_fail.length) {"Ban Fail Message Number "+n+":```"+ban_fail[n-1].join("")+"```";}
-	else {"/me "+mu+" --> When specifying a ban fail number, please select between 1 and "+ban_fail.length;}
+	else {mu+" --> When specifying a ban fail number, please select between 1 and "+ban_fail.length;}
 	;}
 else if (q_split[0]=="success" && q_split[1]=="message"){
 	if (n>0 && n<=ban_success.length) {"Ban Success Message Number "+n+":```"+ban_success[n-1].join("")+"```";}
-	else {"/me "+mu+" --> When specifying a ban success number, please select between 1 and "+ban_success.length;}
+	else {mu+" --> When specifying a ban success number, please select between 1 and "+ban_success.length;}
 	;}
 	
 	
@@ -364,6 +364,7 @@ else if(u=="s5g" || u=="sfiveg"){"s5g will not ban anyone, here's a hug "+q+" �
 else if(t_id=="s5gX"){"🪄 s5g magically converted your ban into a hug "+u+" 🫂🪄🫂🪄🫂"+debug_data;}
 
 else if(u=="capbailey" && t_id=="ScaligiX"){"Cap Bailey has ultimate power and can ban anyone, including Scaligi - BAN! BAN! BAN!"+debug_data;}
+else if(u=="CapBailey" && t_id=="ScaligiX"){"Cap Bailey has ultimate power and can ban anyone, including Scaligi - BAN! BAN! BAN!"+debug_data;}
 else if(u=="capbailey" || u=="CapBailey"){"Cap Bailey has ultimate power and can ban anyone, "+q+" is now banned!"+debug_data;}
 else if(t_id=="CapBaileyX" && u=="scaligi"){"Cap Bailey cannot be banned, even by Scaligi"+debug_data;}
 else if(t_id=="CapBaileyX"){u+" is now banned for trying to ban Cap Bailey - What were you thinking?"+debug_data;}
