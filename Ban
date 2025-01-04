@@ -1,5 +1,5 @@
 title ="Fake Ban Command";
-rc_v ="GH Beta v2.2 - v4-Dev";
+rc_v ="GH Beta v2.3 - v4-Dev";
 rc_url ="/Scaligi/Remote-Code/main/Ban";
 debug = debug;
 debug_data ="";
@@ -314,7 +314,7 @@ if (debug == "basic"){debug_data =" ```Debug Data: User="+u+", Level="+ul+", P="
 
 if (debug == "detailed"){debug_data ="```User="+u+", "+ul+", P="+p+", Input="+q+"```Convert:```Q_AN="+q_an+", Count="+count+", Find="+find+"```Search:```Q_ID="+q_id+", IDs="+IDs.length+", Target="+t_id+"```Messages:```Ban_Success="+ban_success.length+", Ban_Fail="+ban_fail.length+", Warn="+warn.length+", Nightbot="+nightbot.length+", Apache="+apache.length+"```Stats:```B_Fail="+b_fail+", V_Fail="+v_fail+", M_Fail="+m_fail+"```";}
 
-if(q==""){"You need to specify a user "+u;}
+if(q==""){"Test your luck with the ultimate fake ban command "+u+", just specify your target, will you succeed or hilariously fail?;}
 
 else if (q_split[0]=="messages"){"```Ban Message Databases: Success="+ban_success.length+", Fail="+ban_fail.length+", Warn="+warn.length+", Nightbot="+nightbot.length+", Apache="+apache.length+"```";}
 
