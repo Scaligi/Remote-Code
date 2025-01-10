@@ -1,17 +1,17 @@
 title= "Go4Spencer's Twitch Promo Cycle Command";
-version= "v1.2";
+version= "v1.3";
 rc_url= "/Scaligi/Remote-Code/main/G4Spc";
 
-twitch= "🔔 Drop a follow and turn on notifications so you don't miss the next stream";
-twitter= "🐦 Follow me on Twitter https://twitter.com/goforspencer";
-prime= "🅿 Subscribe with Amazon Prime for free! Link your accounts here https://gaming.amazon.com/intro then subscribe";
-instagram= "📷 Follow me on Instagram www.instagram.com/go4spencer";
-bits= "💎 You can support streamers by cheering with bits www.twitch.tv/bits";
-tiktok= "📱 Follow me on TikTok https://tiktok.com/@go4spencer";
-subscribe= "✅ Click here to subscribe to the channel and get ad free viewing www.twitch.tv/subs/go4spencer";
-youtube= "🎥 Subscribe to my YouTube channel https://www.youtube.com/@go4spencer?sub_confirmation=1";
-discord= "👉 Come Join the discord: https://discord.gg/go4spencer";
-rewards= "💵 Check out my new Channel Point Rewards ⬇️";
+twitch= "/announceblue 🔔 Drop a follow and turn on notifications so you don't miss the next stream";
+twitter= "/announceblue 🐦 Follow me on Twitter https://twitter.com/goforspencer";
+prime= "/announceblue 🅿 Subscribe with Amazon Prime for free! Link your accounts here https://gaming.amazon.com/intro then subscribe";
+instagram= "/announceblue 📷 Follow me on Instagram www.instagram.com/go4spencer";
+bits= "/announceblue 💎 You can support streamers by cheering with bits www.twitch.tv/bits";
+tiktok= "/announceblue 📱 Follow me on TikTok https://tiktok.com/@go4spencer";
+subscribe= "/announceblue ✅ Click here to subscribe to the channel and get ad free viewing www.twitch.tv/subs/go4spencer";
+youtube= "/announceblue 🎥 Subscribe to my YouTube channel https://www.youtube.com/@go4spencer?sub_confirmation=1";
+discord= "/announceblue 👉 Come Join the discord: https://discord.gg/go4spencer";
+rewards= "/announceblue 💵 Check out my new Channel Point Rewards ⬇️";
 
 
 if(q=="test"){title+" "+version+" User="+u+", Query="+q+", Command Count="+cc+", Promo Number="+pn+", URLfetch Successful: Remote_Code:"+rc_url;}
