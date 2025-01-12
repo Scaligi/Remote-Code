@@ -3,8 +3,8 @@ rc_v ="v2.0-"+p;
 rc_url ="/Scaligi/Remote-Code/main/RPSLS";
 sk_url ="https://bit.ly/3FKMppi";
 s =" - Hail Sam Kass!";
-dmd =""
-dcb =""
+dmd ="";
+dcb ="";
 help ="Play the classic !rock !paper !scissors game with those commands or play the extended Sam Kass version by specifying sk after the command [eg !paper sk] Use the !lizard and !spock commands for the extended version too ";
 
 rock =['✂️ Scissors - You win ✅ Rock blunts scissors', '🪨 Rock - Tie ❗', '📃 Paper - You lose ❌ Paper covers rock', '🦎 Lizard - You win ✅ Rock crushes lizard', '🖖 Spock - You lose ❌ Spock vaporises rock'];
