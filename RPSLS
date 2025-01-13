@@ -1,10 +1,11 @@
 title ="🪨📃✂️🦎🖖 Command";
-rc_v ="v2.1-"+p;
+rc_v ="v2.2-"+p;
 rc_url ="/Scaligi/Remote-Code/main/RPSLS";
 sk_url ="https://bit.ly/3FKMppi";
 s =" - Hail Sam Kass!";
 dmd ="";
 dcb ="";
+version ="Version: NC_"+nc_v+"/RC_"+rc_v;
 help ="Play the classic !rock !paper !scissors game with those commands or play the extended Sam Kass version by specifying sk after the command [eg !paper sk] Use the !lizard and !spock commands for the extended version too ";
 
 rock =['✂️ Scissors - You win ✅ Rock blunts scissors', '🪨 Rock - Tie ❗', '📃 Paper - You lose ❌ Paper covers rock', '🦎 Lizard - You win ✅ Rock crushes lizard', '🖖 Spock - You lose ❌ Spock vaporises rock'];
@@ -14,7 +15,7 @@ lizard =['🦎 Lizard - Tie ❗', '🪨 Rock - You lose ❌ Rock crushes lizard'
 spock =['🖖 Spock - Tie ❗', '🦎 Lizard - You lose ❌ Lizard poisons Spock', '📃 Paper - You lose ❌ Paper disproves Spock', '✂️ Scissors - You win ✅ Spock smashes scissors', '🪨 Rock - You win ✅ Spock vaporises rock'];
 
 if (p =="discord") {
-dmd="> ### "; dcb ="```";
+dmd="> ### "; dcb ="```"; version ="`Version: NC_"+nc_v+"/RC_"+rc_v+"`";
 rock =['`✂️` Scissors - You win `✅` Rock blunts scissors', '`🪨` Rock - Tie `❗`', '`📃` Paper - You lose `❌` Paper covers rock', '`🦎` Lizard - You win `✅` Rock crushes lizard', '`🖖` Spock - You lose `❌` Spock vaporises rock'];
 paper =['`🪨` Rock - You win `✅` Paper covers rock', '`📃` Paper - Tie `❗`', '`✂️` Scissors - You lose `❌` Scissors cuts paper', '`🦎` Lizard - You lose `❌` Lizard eats paper', '`🖖` Spock - You win `✅` Paper disproves Spock'];
 scissors =['`🪨` Rock - You lose `❌` Rock blunts scissors', '`✂️` Scissors - Tie `❗`', '`📃` Paper - You win `✅` Scissors cuts paper', '`🦎` Lizard - You win `✅` Scissors decapitates lizard', '`🖖` Spock - You lose `❌` Spock smashes scissors'];
@@ -23,7 +24,7 @@ spock =['`🖖` Spock - Tie `❗`', '`🦎` Lizard - You lose `❌` Lizard poiso
 }
 
 if(q=="test"){dcb+title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Query="+q+", Calling Command="+i+", URLfetch Successful: Remote_Code:"+rc_url+dcb;}
-else if(q=="v"){"`Version: NC_"+nc_v+"/RC_"+rc_v+"`";}
+else if(q=="v"){version}
 else if(q=="help"||q=="?"){help+" "+sk_url+s;}
 
 else if (i=="rock" && q=="sk"){rock[Math.floor(Math.random()*5)]+s;}
