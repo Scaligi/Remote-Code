@@ -1,5 +1,5 @@
 title ="Fake Ban Command";
-rc_v ="v3.0";
+rc_v ="v3.1";
 rc_url ="/Scaligi/Remote-Code/main/Ban";
 debug = debug;
 debug_data ="";
@@ -10,6 +10,7 @@ v_fail =Math.floor(Math.random()*4);
 
 p ="";
 if (ul =="regular"){ul ="discord_vip"; p ="VIP"}
+if (ul =="subscriber"){ul ="discord_vip"; p ="VIP"}
 if (ul =="twitch_vip"){p ="VIP";}
 if (ul =="moderator"){p ="Mod";}
 
