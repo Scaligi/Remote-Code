@@ -255,7 +255,7 @@ reels =[
 test =title+": NC_"+nc_v+"/RC_"+rc_v+" User="+u+", Provider="+p+", Query="+q+", Reels="+reels.length+", URLfetch Successful: Remote_Code:"+rc_url;
 help ="Play the classic one armed bandit! | 🔔🔔🔔 💲💲💲 Jackpot 💲💲💲 1 in 200 | 🍇🍇🍇 or 🍉🍉🍉 💲💲💲💲💲 1 in 100 | 🍋🍋🍋 or 🍊🍊🍊 💲💲💲💲 1 in 66 | 🍒🍒🍒 💲💲💲 1 in 50 | 🍒🍒➖ 💲💲 i in 40 | 🍒➖➖ 💲 1 in 33";
 
-if(p=="discord"){d="`";}
+if(p=="discord"){"";}
 else if(q=="test"){test+"";}
 else if(q=="v"){"Version: NC_"+nc_v+"/RC_"+rc_v+"";}
 else if(q=="help"||q=="?"){help;}
