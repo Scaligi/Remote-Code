@@ -1,5 +1,5 @@
-title ="Updated Christmas Command 2025";
-rc_v ="v3.2-Beta";
+title ="Updated Christmas Command 2026";
+rc_v ="v3.3";
 rc_url ="/Scaligi/Remote-Code/main/Christmas";
 
 help ="User Guide can be found here on Discord: https://discord.com/channels/744238012606709872/1013552348892762182/1051202605524734032";
@@ -13,7 +13,7 @@ else if (q[0]=="end"){"Command End: "+e_cd.join(" ");}
 else if (q[0]=="eve"){"Chritmas Eve: "+ce_cd.join(" ");}
 else if (q[0]=="cd"||q[0]=="countdown"){"Christmas Countdown: "+c_cd.join(" ");}
 
-else if (e_cd[e_cd.length-1] == "ago" ) {"Christmas is over "+u+", try again in 2025!";}
+else if (e_cd[e_cd.length-1] == "ago" ) {"Christmas is over "+u+", try again in 2026!";}
 
 else if (q[0]=="list") {"List available here: https://pastebin.com/zC9B7v61";}
 
